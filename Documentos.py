@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import sys
 import os
 
@@ -12,7 +11,7 @@ class Documento(object):
 		self.arg = arg
 
 
-	def readHTML():
+	def readHTML(self):
 		textos_diretorio = os.path.join(os.getcwd(), "textos")
 
 		# Remove HTML tags
