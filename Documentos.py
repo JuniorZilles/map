@@ -1,4 +1,9 @@
-import readHTML
+#!/usr/bin/env python3
+import sys
+import os
+
+from bs4 import BeautifulSoup
+
 
 class Documento(object):
 	"""docstring for Documento"""
@@ -6,3 +11,11 @@ class Documento(object):
 		super(Documento, self).__init__()
 		self.arg = arg
 
+
+	def readHTML():
+		textos_diretorio = os.path.join(os.getcwd(), "textos")
+
+		# Remove HTML tags
+		for arquivo in os.walk(textos_diretorio):
+			texto = open(arquivo, "r")
+			texto = BeautifulSoup(texto)
