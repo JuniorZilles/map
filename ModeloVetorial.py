@@ -82,26 +82,40 @@ class ModeloVetorial:
 
                 for termo in termos_unicos:
                     self.postings[termo][file] = termos.count(termo)
-        self.calcDF()
-        print(self.postings)
+        self.calcDFIDF()
 
     def calcDF(self):
         """Calculo da frequência de cada termo"""
         for termo in self.dicionario:
             self.df[termo] = len(self.postings[termo])
-        print(self.df)
+        
 
     def calcIDF(self):
         """Calcular a frequencia invertida"""
         for termo in self.dicionario:
-            self.idf = math.log(qnt_documentos/self.df[termo], 10)
-
+            if self.df[termo] != 0:
+                self.idf[termo] = math.log(self.qnt_documentos/self.df[termo], 10)
+            else:
+                self.idf[termo] = 0
 
     def calcDFIDF(self):
-        # for termo in self.dicionario:
-        #     self.dfidf = (self.idf/)
-        pass
+        self.calcDF()
+        self.calcIDF()
 
+        for doc in self.documentos:
+            max_freq = 0
+            for termo in self.dicionario:
+                if doc in self.postings[termo]:
+                    if self.postings[termo][doc] > max_freq:
+                        max_freq = self.postings[termo][doc]
+            
+            for termo in self.dicionario:
+                if termo in self.dicionario and doc in self.documentos \
+                and max_freq != 0:
+                    self.dfidf[termo][doc] = (self.df[termo]/max_freq) \
+                        * self.idf[termo]
+                else:
+                    self.dfidf[termo] = 0
 
 
     def calcSimilaridade(df, idf, docfreq):
