@@ -1,8 +1,6 @@
 import sys
 import os
 
-from bs4 import BeautifulSoup
-
 
 class Documento(object):
 	"""docstring for Documento"""
@@ -12,7 +10,8 @@ class Documento(object):
 
 
 	def readHTML(self):
-		textos_diretorio = os.path.join(os.getcwd(), "textos")
+		from bs4 import BeautifulSoup
+		textos_diretorio = os.path.join(str(os.getcwd()), "textos"))
 
 		textos = []
 
@@ -21,3 +20,4 @@ class Documento(object):
 			texto = open(arquivo, "r")
 			texto = BeautifulSoup(texto)
 			textos.append(texto)
+
