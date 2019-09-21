@@ -2,21 +2,44 @@ import sys
 import os
 
 
-class IndiceInvertido(object):
-	"""docstring for IndiceInvertido"""
-	def __init__(self, arg):
-		super(IndiceInvertido, self).__init__()
-		self.arg = arg
+class IndiceInvertido:
+    """docstring for IndiceInvertido"""
+    def __init__(self, arg):
+        #super(IndiceInvertido, self).__init__()
+        #self.words = words
+        pass
 
+    def carregarHTML(self, arquivo):
+        """Carregar HTML e remover tags"""
+        from bs4 import BeautifulSoup
 
-	def readHTML(self):
-		from bs4 import BeautifulSoup
-		textos_diretorio = os.path.join(str(os.getcwd()), "textos")
+        # Remove HTML tags
+        texto = open(arquivo, "r")
+        t = texto.read()
+        texto.close()
 
-		textos = []
+        texto_bs = BeautifulSoup(t, "html.parser")
+        # Remove js scripts
+        for script in texto_bs(["script", "style"]):
+            script.decompose()
+        
+        text = texto_bs.text
+        # break into lines and remove leading and trailing space on each
+        lines = (line.strip() for line in text.splitlines())
+        # break multi-headlines into a line each
+        chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+        # drop blank lines
+        text = '\n'.join(chunk for chunk in chunks if chunk)
+        
+        return text
 
-		# Remove HTML tags
-		for arquivo in os.walk(textos_diretorio):
-			texto = open(arquivo, "r")
-			texto = BeautifulSoup(texto)
-			textos.append(texto)
+    def tokenize(self, texto):
+        pass
+
+    def criarIndice(self):
+        textos_diretorio = os.path.join(str(os.getcwd()), "textos")
+        
+
+    def removeStopwords(self, caminho):
+        stopwords = open(caminho, "r")
+        stopwords = stopwords.split()
