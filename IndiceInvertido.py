@@ -82,14 +82,16 @@ class IndiceInvertido:
 
                 for termo in termos_unicos:
                     self.postings[termo][file] = termos.count(termo)
-                
+
 
     def calcDF(self):
         """Calculo da frequência de cada termo"""
         for termo in self.dicionario:
             self.df[termo] = len(self.postings[termo])
 
+
     def calcIDF(self):
+        """Calcular a frequencia invertida"""
         for termo in self.dicionario:
             self.idf = math.log(qnt_documentos/self.df[termo], 10)
 
