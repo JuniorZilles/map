@@ -11,7 +11,7 @@ class Documento(object):
 
 	def readHTML(self):
 		from bs4 import BeautifulSoup
-		textos_diretorio = os.path.join(str(os.getcwd()), "textos"))
+		textos_diretorio = os.path.join(str(os.getcwd()), "textos")
 
 		textos = []
 
