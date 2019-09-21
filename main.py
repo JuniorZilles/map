@@ -7,9 +7,8 @@ indice = IndiceInvertido(1)
 
 textos_diretorio = os.path.join(str(os.getcwd()), "textos\\PPGComp_1.html")
 
-indice.carregarHTML(textos_diretorio)
+doc = indice.carregarHTML(textos_diretorio)
 
-print(indice)
-
+indice.tokenize(doc)
 # if __name__ == "__main__":
 #     main()

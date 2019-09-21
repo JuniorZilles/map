@@ -30,11 +30,19 @@ class IndiceInvertido:
         chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
         # drop blank lines
         text = '\n'.join(chunk for chunk in chunks if chunk)
-        
+        text = text.lower()
         return text
 
     def tokenize(self, texto):
-        pass
+        pontuacao = " .,-!#$%^&*();:\n\t\\\"|/?!{}[]<>+"
+        for i in range(0, len(texto)):
+            for j in range(0, len(pontuacao)):
+                if texto[i] == pontuacao[j]:
+                    texto = texto.replace(pontuacao[j], " ") 
+        termos = texto.split()
+
+        te = [t.strip(pontuacao) for t in termos]
+        print(te[:])
 
     def criarIndice(self):
         textos_diretorio = os.path.join(str(os.getcwd()), "textos")
