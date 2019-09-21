@@ -31,6 +31,7 @@ class IndiceInvertido:
         # drop blank lines
         text = '\n'.join(chunk for chunk in chunks if chunk)
         text = text.lower()
+
         return text
 
     def removeStopwords(self, palavras):
@@ -61,8 +62,10 @@ class IndiceInvertido:
         return terms
 
     def criarIndice(self):
-        # textos_diretorio = os.path.join(str(os.getcwd()), "textos")
-        
+        textos_diretorio = os.path.join(str(os.getcwd()), "textos")
+        for root, dire, file in os.walk(textos_diretorio):
+            print(file)
+            f = open(file)
 
 
 

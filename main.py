@@ -9,6 +9,6 @@ textos_diretorio = os.path.join(str(os.getcwd()), "textos\\PPGComp_1.html")
 
 doc = indice.carregarHTML(textos_diretorio)
 
-indice.tokenize(doc)
+indice.criarIndice()
 # if __name__ == "__main__":
 #     main()
