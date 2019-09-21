@@ -6,8 +6,8 @@ class IndiceInvertido:
     """docstring for IndiceInvertido"""
     def __init__(self, arg):
         #super(IndiceInvertido, self).__init__()
-        #self.words = words
-        pass
+        self.termos = {}
+        
 
     def carregarHTML(self, arquivo):
         """Carregar HTML e remover tags"""
@@ -33,21 +33,37 @@ class IndiceInvertido:
         text = text.lower()
         return text
 
+    def removeStopwords(self, palavras):
+        import codecs
+        stopwords = codecs.open("stopwords.txt", "r", encoding="utf-8")
+        f = stopwords.read()
+        stopwords.close()
+        stopwords = f.split()
+
+        for stopword in stopwords:
+            for palavra in palavras:
+                if stopword == palavra:
+                    palavras.remove(stopword)
+            
+
+        return palavras
+
     def tokenize(self, texto):
-        pontuacao = " .,-!#$%^&*();:\n\t\\\"|/?!{}[]<>+"
+        pontuacao = " .,-!#$%^&*();:\n\t\\\"|/?!\{\}[]<>+©"
         for i in range(0, len(texto)):
             for j in range(0, len(pontuacao)):
                 if texto[i] == pontuacao[j]:
                     texto = texto.replace(pontuacao[j], " ") 
-        termos = texto.split()
 
-        te = [t.strip(pontuacao) for t in termos]
-        print(te[:])
+        terms = self.removeStopwords( texto.split() )
+
+        #self.termos = {t.strip(pontuacao) for t in term}
+        return terms
 
     def criarIndice(self):
-        textos_diretorio = os.path.join(str(os.getcwd()), "textos")
+        # textos_diretorio = os.path.join(str(os.getcwd()), "textos")
         
 
-    def removeStopwords(self, caminho):
-        stopwords = open(caminho, "r")
-        stopwords = stopwords.split()
+
+
+
