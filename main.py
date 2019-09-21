@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 import os
 
-from Indice import *
+from ModeloVetorial import *
 
-indice = Indice()
+indice = ModeloVetorial()
 
 textos_diretorio = os.path.join(str(os.getcwd()), "textos\\PPGComp_1.html")
 
@@ -14,10 +14,3 @@ indice.criarIndice()
 #     main()
 
 
-def calcSimilaridade(df, idf, docfreq):
-	pass
-
-
-
-def consulta(termo, ):
-	pass

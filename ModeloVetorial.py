@@ -82,13 +82,14 @@ class ModeloVetorial:
 
                 for termo in termos_unicos:
                     self.postings[termo][file] = termos.count(termo)
-
+        self.calcDF()
+        print(self.postings)
 
     def calcDF(self):
         """Calculo da frequência de cada termo"""
         for termo in self.dicionario:
             self.df[termo] = len(self.postings[termo])
-
+        print(self.df)
 
     def calcIDF(self):
         """Calcular a frequencia invertida"""
@@ -97,6 +98,8 @@ class ModeloVetorial:
 
 
     def calcDFIDF(self):
+        # for termo in self.dicionario:
+        #     self.dfidf = (self.idf/)
         pass
 
 
