@@ -1,10 +1,11 @@
 import sys
 import os
 import math
-
+import codecs
+from bs4 import BeautifulSoup
 from collections import defaultdict
 
-class IndiceInvertido:
+class ModeloVetorial:
     """docstring for IndiceInvertido"""
     def __init__(self):
         self.documentos = []
@@ -13,12 +14,12 @@ class IndiceInvertido:
         self.dicionario  = set()
         self.df = defaultdict(dict)
         self.idf = defaultdict(dict)
+        self.dfidf = defaultdict(dict)
+        self.frequencia_consulta = defaultdict(dict)
+        self.w_consulta = defaultdict(dict)
 
     def carregarHTML(self, arquivo):
         """Carregar HTML e remover tags"""
-        from bs4 import BeautifulSoup
-
-        # Remove HTML tags
         texto = open(arquivo, "r")
         t = texto.read()
         texto.close()
@@ -41,7 +42,6 @@ class IndiceInvertido:
 
     def removeStopwords(self, palavras):
         """Remover Stopwords"""
-        import codecs
         stopwords = codecs.open("stopwords.txt", "r", encoding="utf-8")
         f = stopwords.read()
         stopwords.close()
@@ -95,5 +95,15 @@ class IndiceInvertido:
         for termo in self.dicionario:
             self.idf = math.log(qnt_documentos/self.df[termo], 10)
 
+
     def calcDFIDF(self):
+        pass
+
+
+
+    def calcSimilaridade(df, idf, docfreq):
+        pass
+
+
+    def consulta(termo, ):
         pass
