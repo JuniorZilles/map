@@ -3,7 +3,7 @@ import os
 
 from IndiceInvertido import *
 
-indice = IndiceInvertido(1)
+indice = IndiceInvertido()
 
 textos_diretorio = os.path.join(str(os.getcwd()), "textos\\PPGComp_1.html")
 
