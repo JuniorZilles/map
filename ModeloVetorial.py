@@ -41,7 +41,7 @@ class ModeloVetorial:
 
         return text
 
-    def removeStopwords(self, palavras):
+    def removerStopwords(self, palavras):
         """Remover Stopwords"""
         stopwords = codecs.open("stopwords.txt", "r", encoding="utf-8")
         f = stopwords.read()
@@ -63,7 +63,7 @@ class ModeloVetorial:
                 if texto[i] == pontuacao[j]:
                     texto = texto.replace(pontuacao[j], " ") 
 
-        terms = self.removeStopwords( texto.split() )
+        terms = self.removerStopwords( texto.split() )
 
         #self.termos = {t.strip(pontuacao) for t in term}
         return terms
@@ -83,15 +83,15 @@ class ModeloVetorial:
 
                 for termo in termos_unicos:
                     self.postings[termo][file] = termos.count(termo)
-        self.calcDFIDF()
+        self.calcularDFIDF()
 
-    def calcDF(self):
+    def calcularDF(self):
         """Calculo da frequência de cada termo"""
         for termo in self.dicionario:
             self.df[termo] = len(self.postings[termo])
         
 
-    def calcIDF(self):
+    def calcularIDF(self):
         """Calcular a frequencia invertida"""
         for termo in self.dicionario:
             if self.df[termo] != 0:
@@ -99,9 +99,9 @@ class ModeloVetorial:
             else:
                 self.idf[termo] = 0
 
-    def calcDFIDF(self):
-        self.calcDF()
-        self.calcIDF()
+    def calcularDFIDF(self):
+        self.calcularDF()
+        self.calcularIDF()
 
         for doc in self.documentos:
             max_freq = 0
@@ -118,8 +118,11 @@ class ModeloVetorial:
                 else:
                     self.dfidf[termo] = 0
 
+        for termo in self.dicionario:
+            for doc in self.documentos:
+                print(self.dfidf[termo][doc])
 
-    def calcSimilaridade(df, idf, docfreq):
+    def calcularSimilaridade(df, idf, docfreq):
         pass
 
 
