@@ -23,7 +23,7 @@ class ModeloVetorial:
 
     def carregarHTML(self, arquivo):
         """Carregar HTML e remover tags"""
-        texto = open(arquivo, "r")
+        texto = open(arquivo, "rb")
         t = texto.read()
         texto.close()
 
@@ -116,6 +116,7 @@ class ModeloVetorial:
                 and max_freq != 0:
                     self.dfidf[termo][doc] = (self.df[termo]/max_freq) \
                         * self.idf[termo]
+                    #print(self.dfidf[termo][doc])
                 else:
                     self.dfidf[termo] = 0
 
@@ -125,28 +126,26 @@ class ModeloVetorial:
             if termo in self.dicionario:
                 self.frequencia_consulta[termo] = termos.count(termo)
 
-        for doc in self.documentos:
+        for termo in self.consulta:
             # Calculo do peso máximo de cada palavra na pesquisa
-            for termo in self.consulta:
+            for doc in self.documentos:
                 max_freq = 0
                 if termo in self.consulta:
                     if self.frequencia_consulta[termo] > max_freq:
                         max_freq = self.frequencia_consulta[termo]
 
-
+        for termo in self.consulta:
             # Calculo do peso de cada palavra 
-            for termo in self.consulta:
-                for doc in self.documentos:
-                    if self.frequencia_consulta[termo] == 0:
-                        self.w_consulta[termo][doc] = 0
-                    else:
-                        self.w_consulta[termo][doc] = (self.alpha + \
-                            (((self.alpha * self.frequencia_consulta[termo])\
-                                /max_freq)*self.dfidf[termo][doc]))
-                        print("freq: ", self.frequencia_consulta[termo])
-                        print("max_freq ", max_freq)
-                        print("dfidf: ", self.dfidf[termo][doc])
-                        print(self.w_consulta[termo])
+            for doc in self.documentos:
+                if self.frequencia_consulta[termo] == 0:
+                    self.w_consulta[termo][doc] = 0
+                else:
+                    self.w_consulta[termo][doc] = (self.alpha + \
+                        ((((1 - self.alpha) * self.frequencia_consulta[termo])\
+                        /max_freq))*self.idf[termo])
+                print("freq: ", self.frequencia_consulta[termo])
+                print("max_freq ", max_freq)
+                print(self.w_consulta[termo])        
 
 
     def pesquisar(self, busca):
@@ -154,3 +153,7 @@ class ModeloVetorial:
         busca_unica = set(termos)
         self.consulta = self.consulta.union(busca_unica)
         self.calcularSimilaridade(termos)
+
+
+    def ranquear(self):
+        pass
