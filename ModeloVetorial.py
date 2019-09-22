@@ -7,7 +7,7 @@ from collections import defaultdict
 
 class ModeloVetorial:
     """docstring for IndiceInvertido"""
-    def __init__(self):
+    def __init__(self, alpha = 0.5):
         self.documentos = []
         self.qnt_documentos = 0
         self.postings    = defaultdict(dict)
@@ -17,6 +17,7 @@ class ModeloVetorial:
         self.dfidf = defaultdict(dict)
         self.frequencia_consulta = defaultdict(dict)
         self.w_consulta = defaultdict(dict)
+        self.alpha = 0.5
 
     def carregarHTML(self, arquivo):
         """Carregar HTML e remover tags"""
@@ -122,5 +123,5 @@ class ModeloVetorial:
         pass
 
 
-    def consulta(termo, ):
-        pass
+    def consulta(self, busca):
+        busca = tokenize(busca)
