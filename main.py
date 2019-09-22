@@ -9,5 +9,6 @@ indice = ModeloVetorial()
 
 
 indice.criarIndice()
+indice.pesquisar("ppgcomp c3 ppgcomp")
 # if __name__ == "__main__":
 #     main()
