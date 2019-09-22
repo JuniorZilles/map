@@ -5,12 +5,9 @@ from ModeloVetorial import *
 
 indice = ModeloVetorial()
 
-textos_diretorio = os.path.join(str(os.getcwd()), "textos\\PPGComp_1.html")
+# textos_diretorio = os.path.join(str(os.getcwd()), "textos\\PPGComp_1.html")
 
-doc = indice.carregarHTML(textos_diretorio)
 
 indice.criarIndice()
 # if __name__ == "__main__":
 #     main()
-
-
