@@ -90,7 +90,6 @@ class ModeloVetorial:
         for termo in self.dicionario:
             self.df[termo] = len(self.postings[termo])
         
-
     def calcularIDF(self):
         """Calcular a frequencia invertida"""
         for termo in self.dicionario:
@@ -118,13 +117,8 @@ class ModeloVetorial:
                 else:
                     self.dfidf[termo] = 0
 
-        for termo in self.dicionario:
-            for doc in self.documentos:
-                print(self.dfidf[termo][doc])
-
     def calcularSimilaridade(df, idf, docfreq):
         pass
-
 
     def consulta(self, busca):
         busca = tokenize(busca)
