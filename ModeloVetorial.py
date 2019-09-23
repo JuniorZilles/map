@@ -21,6 +21,10 @@ class ModeloVetorial:
         self.similaridade = defaultdict(dict)
         self.alpha = alpha
 
+    def mostrarIndiceInvertido(self):
+        for termo in self.dicionario:
+            print(termo, ": ", self.postings[termo])
+
     def carregarHTML(self, arquivo):
         """Carregar HTML e remover tags"""
         texto = open(arquivo, "rb")
@@ -125,17 +129,18 @@ class ModeloVetorial:
         for termo in self.consulta:
             if termo in self.dicionario:
                 self.frequencia_consulta[termo] = termos.count(termo)
+            else:
+                self.frequencia_consulta[termo] = 0
 
         for termo in self.consulta:
             # Calculo do peso máximo de cada palavra na pesquisa
-            for doc in self.documentos:
-                max_freq = 0
-                if termo in self.consulta:
-                    if self.frequencia_consulta[termo] > max_freq:
-                        max_freq = self.frequencia_consulta[termo]
+            max_freq = 0
+            if termo in self.consulta and termo in self.dicionario:
+                if self.frequencia_consulta[termo] > max_freq:
+                    max_freq = self.frequencia_consulta[termo]
 
-        for termo in self.consulta:
-            # Calculo do peso de cada palavra 
+        # Calculo do peso de cada palavra
+        for termo in self.consulta: 
             for doc in self.documentos:
                 if self.frequencia_consulta[termo] == 0:
                     self.w_consulta[termo][doc] = 0
@@ -147,9 +152,16 @@ class ModeloVetorial:
                 print("max_freq ", max_freq)
                 print(self.w_consulta[termo])        
 
+        # Calcular similaridade
+
+
 
     def pesquisar(self, busca):
         termos = self.tokenize(busca)
+        for termo in termos:
+            if termo not in self.dicionario:
+                termos.remove(termo)
+
         busca_unica = set(termos)
         self.consulta = self.consulta.union(busca_unica)
         self.calcularSimilaridade(termos)
