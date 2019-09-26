@@ -44,7 +44,7 @@ class ModeloVetorial:
         # drop blank lines
         text = '\n'.join(chunk for chunk in chunks if chunk)
         text = text.lower()
-
+        print(text)
         return text
 
     def removerStopwords(self, palavras):

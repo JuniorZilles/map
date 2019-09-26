@@ -13,3 +13,15 @@ indice.pesquisar("safiodsja")
 indice.mostrarIndiceInvertido()
 # if __name__ == "__main__":
 #     main()
+
+
+
+##### Observações do Eduardo
+# -> Separação em classe:
+# --> Documento
+# --> Consulta (criar uma variável de Documentos)
+# --> Indice
+# --> 
+
+# -> Trabalhar com os número e não passa-lôs para palavras
+# -> Deve trabalhar com documentos simples
