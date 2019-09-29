@@ -22,8 +22,11 @@ class ModeloVetorial:
         self.alpha = alpha
 
     def mostrarIndiceInvertido(self):
+        print(" ")
+        print("Questão 1 - ÍNDICE")
+        print(" ")
         for termo in self.dicionario:
-            print(termo, ": ", self.postings[termo])
+            print(termo, ": ", self.df[termo], " -> ", self.postings[termo])
 
     def carregarHTML(self, arquivo):
         """Carregar HTML e remover tags"""
@@ -89,6 +92,9 @@ class ModeloVetorial:
 
                 for termo in termos_unicos:
                     self.postings[termo][file] = termos.count(termo)
+        self.calcularDF()
+        self.calcularIDF()
+        self.mostrarIndiceInvertido()
         self.calcularDFIDF()
 
     def calcularDF(self):
@@ -105,8 +111,8 @@ class ModeloVetorial:
                 self.idf[termo] = 0
 
     def calcularDFIDF(self):
-        self.calcularDF()
-        self.calcularIDF()
+        print(" ")
+        print("Questão 2 - TFIDF")
 
         for doc in self.documentos:
             max_freq = 0
