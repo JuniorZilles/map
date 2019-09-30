@@ -9,7 +9,8 @@ indice = ModeloVetorial()
 
 
 indice.criarIndice()
-indice.pesquisar("safiodsja")
+#indice.pesquisar("semestre")
+indice.mostrarIndiceInvertido()
 # if __name__ == "__main__":
 #     main()
 

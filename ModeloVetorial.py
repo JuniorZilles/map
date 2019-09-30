@@ -27,6 +27,8 @@ class ModeloVetorial:
         print(" ")
         for termo in self.dicionario:
             print(termo, ": ", self.df[termo], " -> ", self.postings[termo])
+        print("\n\n\n")
+        print(self.dfidf)
 
     def carregarHTML(self, arquivo):
         """Carregar HTML e remover tags"""
@@ -47,7 +49,7 @@ class ModeloVetorial:
         # drop blank lines
         text = '\n'.join(chunk for chunk in chunks if chunk)
         text = text.lower()
-        print(text)
+        #print(text)
         return text
 
     def removerStopwords(self, palavras):
@@ -92,9 +94,10 @@ class ModeloVetorial:
 
                 for termo in termos_unicos:
                     self.postings[termo][file] = termos.count(termo)
+
         self.calcularDF()
         self.calcularIDF()
-        self.mostrarIndiceInvertido()
+        #self.mostrarIndiceInvertido()
         self.calcularDFIDF()
 
     def calcularDF(self):
@@ -110,9 +113,12 @@ class ModeloVetorial:
             else:
                 self.idf[termo] = 0
 
+        for termo in self.dicionario:
+            print(termo, " ", self.df[termo])
+
     def calcularDFIDF(self):
-        print(" ")
-        print("Questão 2 - TFIDF")
+        #print(" ")
+        #print("Questão 2 - TFIDF")
 
         for doc in self.documentos:
             max_freq = 0
@@ -122,13 +128,15 @@ class ModeloVetorial:
                         max_freq = self.postings[termo][doc]
             
             for termo in self.dicionario:
-                if termo in self.dicionario and doc in self.documentos \
+                print(termo, " ", doc)
+                if termo in self.dicionario and doc in self.postings[termo] \
                 and max_freq != 0:
-                    self.dfidf[termo][doc] = (self.df[termo]/max_freq) \
+                    self.dfidf[termo][doc] = (self.postings[termo][doc]/max_freq) \
                         * self.idf[termo]
                     #print(self.dfidf[termo][doc])
                 else:
-                    self.dfidf[termo] = 0
+                    self.dfidf[termo][doc] = 0
+
 
     def calcularSimilaridade(self, termos):
         # Calculo da frequencia de cada palavra na consulta
