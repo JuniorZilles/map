@@ -27,15 +27,13 @@ class ModeloVetorial:
         print(" ")
         for termo in self.dicionario:
             print(termo, ": ", self.df[termo], " -> ", self.postings[termo])
-        print("\n\n\n")
-        print(self.dfidf)
 
     def carregarHTML(self, arquivo):
         """Carregar HTML e remover tags"""
         with open(arquivo, "rb") as arq:
             texto = arq.read()
 
-        texto_bs = BeautifulSoup(t, "html.parser")
+        texto_bs = BeautifulSoup(texto, "html.parser")
 
         # Remove js scripts
         for script in texto_bs(["script", "style"]):
@@ -52,7 +50,7 @@ class ModeloVetorial:
         #print(text)
         return texto.lower()
 
-    def removerStopwords(self, palavras):
+    def removerStopwords(self, palavras, stopwords_arquivo):
         """Remover Stopwords"""
         with codecs.open(stopwords_arquivo, "r", encoding="utf-8") as stopwords:
             sw = stopwords.read()
@@ -74,7 +72,7 @@ class ModeloVetorial:
                 if texto[i] == pontuacao[j]:
                     texto = texto.replace(pontuacao[j], " ") 
 
-        terms = self.removerStopwords( texto.split() )
+        terms = self.removerStopwords( texto.split(), "stopwords.txt" )
 
         return terms
 
@@ -112,8 +110,6 @@ class ModeloVetorial:
             else:
                 self.idf[termo] = 0
 
-        for termo in self.dicionario:
-            print(termo, " ", self.df[termo])
 
     def calcularDFIDF(self):
         #print(" ")
@@ -127,7 +123,6 @@ class ModeloVetorial:
                         max_freq = self.postings[termo][doc]
             
             for termo in self.dicionario:
-                print(termo, " ", doc)
                 if termo in self.dicionario and doc in self.postings[termo] \
                 and max_freq != 0:
                     self.dfidf[termo][doc] = (self.postings[termo][doc]/max_freq) \
