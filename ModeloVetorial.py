@@ -132,7 +132,7 @@ class ModeloVetorial:
                     self.dfidf[termo][doc] = 0
 
 
-    def calcularSimilaridade(self, termos):
+    def calcularW(self, termos):
         # Calculo da frequencia de cada palavra na consulta
         for termo in self.consulta:
             if termo in self.dicionario:
@@ -150,19 +150,23 @@ class ModeloVetorial:
         # Calculo do peso de cada palavra
         for termo in self.consulta: 
             for doc in self.documentos:
+                print(self.postings[termo][doc])
                 if self.frequencia_consulta[termo] == 0:
                     self.w_consulta[termo][doc] = 0
                 else:
                     self.w_consulta[termo][doc] = (self.alpha + \
                         ((((1 - self.alpha) * self.frequencia_consulta[termo])\
                         /max_freq))*self.idf[termo])
-                print("freq: ", self.frequencia_consulta[termo])
-                print("max_freq ", max_freq)
-                print(self.w_consulta[termo])        
+            print("freq: ", self.frequencia_consulta[termo])
+            print("max_freq ", max_freq)
+            print(self.w_consulta[termo])        
 
         # Calcular similaridade
 
 
+    def calcularSimilaridade(self):
+        pass
+        
 
     def pesquisar(self, busca):
         termos = self.tokenize(busca)
