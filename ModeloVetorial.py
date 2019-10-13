@@ -32,34 +32,34 @@ class ModeloVetorial:
 
     def carregarHTML(self, arquivo):
         """Carregar HTML e remover tags"""
-        texto = open(arquivo, "rb")
-        t = texto.read()
-        texto.close()
+        with open(arquivo, "rb") as arq:
+            texto = arq.read()
 
         texto_bs = BeautifulSoup(t, "html.parser")
+
         # Remove js scripts
         for script in texto_bs(["script", "style"]):
             script.decompose()
         
-        text = texto_bs.text
+        texto = texto_bs.text
         # break into lines and remove leading and trailing space on each
-        lines = (line.strip() for line in text.splitlines())
+        linhas = (linha.strip() for linha in texto.splitlines())
         # break multi-headlines into a line each
-        chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+        pedacos = (frase.strip() for linha in linhas for frase in linha.split(" "))
         # drop blank lines
-        text = '\n'.join(chunk for chunk in chunks if chunk)
-        text = text.lower()
+        texto = '\n'.join(pedaco for pedaco in pedacos if pedaco)
+
         #print(text)
-        return text
+        return texto.lower()
 
     def removerStopwords(self, palavras):
         """Remover Stopwords"""
-        stopwords = codecs.open("stopwords.txt", "r", encoding="utf-8")
-        f = stopwords.read()
-        stopwords.close()
-        stopwords = f.split()
+        with codecs.open(stopwords_arquivo, "r", encoding="utf-8") as stopwords:
+            sw = stopwords.read()
+        
+        stopwords_lista = sw.split()
 
-        for stopword in stopwords:
+        for stopword in stopwords_lista:
             for palavra in palavras:
                 if stopword == palavra:
                     palavras.remove(stopword)
@@ -76,7 +76,6 @@ class ModeloVetorial:
 
         terms = self.removerStopwords( texto.split() )
 
-        #self.termos = {t.strip(pontuacao) for t in term}
         return terms
 
     def criarIndice(self):
