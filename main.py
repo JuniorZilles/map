@@ -8,7 +8,7 @@ from Indice import Indice
 from Consulta import Consulta
 
 
-def main():
+if __name__ == '__main__':
     # local de dos textos html
     # nome do arquivo stopwords
     parser = argparse.ArgumentParser(description="Criação de indice invertido \
@@ -48,8 +48,3 @@ def main():
     print(consulta_ranqueada)
     for c in consulta_ranqueada:
         print(c[0], "  ", c[1])
-
-
-
-if __name__ == '__main__':
-    main()

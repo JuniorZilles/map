@@ -6,7 +6,6 @@ from ProcessaHTML import tokenize
 class Consulta:
     """docstring for Consulta"""
     def __init__(self, documentos, dicionario, idf, tf_idf, stopwords, alpha = 0.5):
-        self.consulta = set()
         self.frequencia_consulta = defaultdict(dict)
         self.w_consulta = defaultdict(dict)
         self.similaridade = defaultdict(dict)
@@ -28,23 +27,23 @@ class Consulta:
         print("\n" * 2)
 
 
-    def calcularW(self, termos):
+    def calcularW(self, termos, consulta):
         # Calculo da frequencia de cada palavra na consulta
-        for termo in self.consulta:
+        for termo in consulta:
             if termo in self.dicionario:
                 self.frequencia_consulta[termo] = termos.count(termo)
             else:
                 self.frequencia_consulta[termo] = 0
 
-        for termo in self.consulta:
+        for termo in consulta:
             # Calculo do peso máximo de cada palavra na pesquisa
             max_freq = 0
-            if termo in self.consulta and termo in self.dicionario:
+            if termo in consulta and termo in self.dicionario:
                 if self.frequencia_consulta[termo] > max_freq:
                     max_freq = self.frequencia_consulta[termo]
 
         # Calculo do peso de cada palavra
-        for termo in self.consulta: 
+        for termo in consulta: 
             if self.frequencia_consulta[termo] == 0:
                 self.w_consulta[termo] = 0
             else:
@@ -53,12 +52,12 @@ class Consulta:
                     /max_freq)) * self.idf[termo])
 
 
-    def calcularSimilaridade(self):
+    def calcularSimilaridade(self, consulta):
         for doc in self.documentos:
             soma    = 0
             w_tfidf = 0
             w_cons  = 0
-            for termo in self.consulta:
+            for termo in consulta:
                 soma   += (self.w_consulta[termo] * self.tf_idf[termo][doc])
                 w_cons += (self.w_consulta[termo] * self.w_consulta[termo])
 
@@ -70,15 +69,16 @@ class Consulta:
 
 
     def pesquisar(self, busca):
+        consulta = set()
         termos = tokenize(busca, self.arquivo_stopwords)
 
         termos_no_dicionario = [t for t in termos if t in self.dicionario]
 
         busca_unica = set(termos_no_dicionario)
-        self.consulta = self.consulta.union(busca_unica)
+        consulta = consulta.union(busca_unica)
         
-        self.calcularW(termos)
-        self.calcularSimilaridade()
+        self.calcularW(termos, consulta)
+        self.calcularSimilaridade(consulta)
 
         return [arq for arq, val in self.similaridade.items() if self.similaridade[arq] != 0]
 
