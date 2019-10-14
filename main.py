@@ -2,20 +2,11 @@
 import os
 import sys
 import argparse
-
 from collections import defaultdict
 
 from Indice import Indice
 from Consulta import Consulta
 
-# indice = Indice()
-# indice.criarIndice()
-# freq = Frequencia()
-# freq.calcularTFIDF(indice.getDocumentos(), indice.getDicionario(), indice.getPostings())
-
-# consulta = Consulta(indice.getDocumentos(), indice.getDicionario(), freq.getIDF(), freq.getTFIDF())
-# b = consulta.pesquisar("rei cavalo")
-# print(b)
 
 def main():
     # local de dos textos html

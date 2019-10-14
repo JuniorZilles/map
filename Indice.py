@@ -1,6 +1,5 @@
 import os
 import math
-
 from collections import defaultdict
 
 from ProcessaHTML import carregarHTML, tokenize
