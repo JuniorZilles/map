@@ -42,9 +42,8 @@ if __name__ == '__main__':
     consulta.mostrarSimilaridade()
 
     print(" ")
-    print("Questão 2 - TFxIDF")
-    print(" ")
+    print("Questão 4 - Ranking")
+    print("--> Pesquisa: ", busca)
     consulta_ranqueada = consulta.ranquear()
-    print(consulta_ranqueada)
     for c in consulta_ranqueada:
         print(c[0], "  ", c[1])

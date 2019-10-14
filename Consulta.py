@@ -76,7 +76,9 @@ class Consulta:
 
         busca_unica = set(termos_no_dicionario)
         consulta = consulta.union(busca_unica)
-        
+        if len(consulta) == 0:
+            raise Exception("Busca não consta nos documentos.")
+
         self.calcularW(termos, consulta)
         self.calcularSimilaridade(consulta)
 
