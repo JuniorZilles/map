@@ -2,18 +2,19 @@
 import os
 
 from ModeloVetorial import *
+from Consulta import Consulta
+from Frequencia import Frequencia
 
 indice = ModeloVetorial()
-
-# textos_diretorio = os.path.join(str(os.getcwd()), "textos\\PPGComp_1.html")
-
-
 indice.criarIndice()
-indice.pesquisar("policiais assaltante")
-print(indice.ranquear())
-#indice.mostrarIndiceInvertido()
-# if __name__ == "__main__":
-#     main()
+freq = Frequencia()
+freq.calcularTFIDF(indice.getDocumentos(), indice.getDicionario(), indice.getPostings())
+
+consulta = Consulta(indice.getDocumentos(), indice.getDicionario(), freq.getIDF(), freq.getTFIDF())
+b = consulta.pesquisar("rei cavalo")
+print(b)
+
+
 
 
 
