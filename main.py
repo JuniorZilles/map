@@ -9,7 +9,8 @@ indice = ModeloVetorial()
 
 
 indice.criarIndice()
-indice.pesquisar("cavalo")
+indice.pesquisar("policiais assaltante")
+print(indice.ranquear())
 #indice.mostrarIndiceInvertido()
 # if __name__ == "__main__":
 #     main()

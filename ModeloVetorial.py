@@ -186,4 +186,4 @@ class ModeloVetorial:
 
 
     def ranquear(self):
-        pass
+        return [sorted(self.similaridade.items(), key=lambda k_v: k_v[1], reverse=True)]
