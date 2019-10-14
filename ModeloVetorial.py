@@ -14,7 +14,7 @@ class ModeloVetorial:
         self.dicionario  = set()
         self.df = defaultdict(dict)
         self.idf = defaultdict(dict)
-        self.dfidf = defaultdict(dict)
+        self.tfidf = defaultdict(dict)
         self.consulta = set()
         self.frequencia_consulta = defaultdict(dict)
         self.w_consulta = defaultdict(dict)
@@ -95,7 +95,7 @@ class ModeloVetorial:
         self.calcularDF()
         self.calcularIDF()
         #self.mostrarIndiceInvertido()
-        self.calcularDFIDF()
+        self.calcularTFIDF()
 
     def calcularDF(self):
         """Calculo da frequência de cada termo"""
@@ -111,7 +111,7 @@ class ModeloVetorial:
                 self.idf[termo] = 0
 
 
-    def calcularDFIDF(self):
+    def calcularTFIDF(self):
         #print(" ")
         #print("Questão 2 - TFIDF")
 
@@ -125,11 +125,10 @@ class ModeloVetorial:
             for termo in self.dicionario:
                 if termo in self.dicionario and doc in self.postings[termo] \
                 and max_freq != 0:
-                    self.dfidf[termo][doc] = (self.postings[termo][doc]/max_freq) \
+                    self.tfidf[termo][doc] = (self.postings[termo][doc]/max_freq) \
                         * self.idf[termo]
-                    #print(self.dfidf[termo][doc])
                 else:
-                    self.dfidf[termo][doc] = 0
+                    self.tfidf[termo][doc] = 0
 
 
     def calcularW(self, termos):
@@ -158,9 +157,20 @@ class ModeloVetorial:
 
 
     def calcularSimilaridade(self):
-        for termo in self.dicionario:
-            for doc in self.documentos:
-                pass
+        for doc in self.documentos:
+            soma    = 0
+            w_tfidf = 0
+            w_cons  = 0
+            for termo in self.consulta:
+                soma   += (self.w_consulta[termo] * self.tfidf[termo][doc])
+                w_cons += (self.w_consulta[termo] * self.w_consulta[termo])
+
+            for termo in self.tfidf:
+                w_tfidf += self.tfidf[termo][doc] * self.tfidf[termo][doc]
+
+            self.similaridade[doc] = soma/(math.sqrt(w_tfidf) * math.sqrt(w_cons))
+
+        print(self.similaridade)
 
 
     def pesquisar(self, busca):
@@ -172,6 +182,7 @@ class ModeloVetorial:
         busca_unica = set(termos)
         self.consulta = self.consulta.union(busca_unica)
         self.calcularW(termos)
+        self.calcularSimilaridade()
 
 
     def ranquear(self):
