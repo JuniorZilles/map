@@ -24,21 +24,21 @@ def carregarHTML(arquivo):
     #print(text)
     return texto.lower()
 
-def removerStopwords(palavras, stopwords_arquivo):
+
+def removerStopwords(palavras, arquivo_stopwords):
     """Remover Stopwords"""
-    with codecs.open(stopwords_arquivo, "r", encoding="utf-8") as stopwords:
+    with codecs.open(arquivo_stopwords, "r", encoding="utf-8") as stopwords:
         sw = stopwords.read()
     
     stopwords_lista = sw.split()
 
-    for stopword in stopwords_lista:
-        for palavra in palavras:
-            if stopword == palavra:
-                palavras.remove(stopword)
-        
-    return palavras
+    palavras_novo = [palavra for palavra in palavras \
+                             if palavra not in stopwords_lista]
 
-def tokenize(texto):
+    return palavras_novo
+
+
+def tokenize(texto, arquivo_stopwords):
     """Tokenização"""
     pontuacao = " .,-!#$%^&*();:\n\t\\\"|/?!\{\}[]<>+©"
     for i in range(0, len(texto)):
@@ -46,6 +46,6 @@ def tokenize(texto):
             if texto[i] == pontuacao[j]:
                 texto = texto.replace(pontuacao[j], " ") 
 
-    termos = removerStopwords( texto.split(), "stopwords.txt" )
+    termos = removerStopwords( texto.split(), arquivo_stopwords )
 
     return termos

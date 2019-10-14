@@ -6,7 +6,7 @@ from ProcessaHTML import tokenize
 
 class Consulta:
     """docstring for Consulta"""
-    def __init__(self, documentos, dicionario, idf, tf_idf, alpha = 0.5):
+    def __init__(self, documentos, dicionario, idf, tf_idf, stopwords, alpha = 0.5):
         self.consulta = set()
         self.frequencia_consulta = defaultdict(dict)
         self.w_consulta = defaultdict(dict)
@@ -14,9 +14,20 @@ class Consulta:
         self.alpha = alpha
 
         self.documentos = documentos
+        self.arquivo_stopwords = stopwords
         self.dicionario = dicionario
         self.idf        = idf
         self.tf_idf     = tf_idf
+
+
+    def mostrarSimilaridade(self):
+        print(" ")
+        print("Questão 3 - SIMILARIDADE DA CONSULTA")
+        print(" ")
+        for doc in self.documentos:
+            print(doc, " -> ", self.similaridade[doc])
+        print("\n" * 2)
+
 
     def calcularW(self, termos):
         # Calculo da frequencia de cada palavra na consulta
@@ -57,11 +68,10 @@ class Consulta:
 
             self.similaridade[doc] = soma/(math.sqrt(w_tfidf) * math.sqrt(w_cons))
 
-        print(self.similaridade)
 
 
     def pesquisar(self, busca):
-        termos = tokenize(busca)
+        termos = tokenize(busca, self.arquivo_stopwords)
 
         termos_no_dicionario = [t for t in termos if t in self.dicionario]
 
@@ -75,5 +85,5 @@ class Consulta:
 
 
     def ranquear(self):
-        return [sorted(self.similaridade.items(), key=lambda k_v: k_v[1], reverse=True)]
+        return sorted(self.similaridade.items(), key=lambda k_v: k_v[1], reverse=True)
 
