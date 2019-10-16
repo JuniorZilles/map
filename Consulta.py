@@ -1,11 +1,19 @@
 import math
 from collections import defaultdict
 
-from ProcessaHTML import tokenize
+from processa import tokenize
+
 
 class Consulta:
     """docstring for Consulta"""
-    def __init__(self, documentos, dicionario, idf, tf_idf, stopwords, alpha = 0.5):
+
+    def __init__(self, 
+                documentos, 
+                dicionario, 
+                idf, 
+                tf_idf, 
+                stopwords, 
+                alpha = 0.5):
         self.frequencia_consulta = defaultdict(dict)
         self.w_consulta = defaultdict(dict)
         self.similaridade = defaultdict(dict)
@@ -17,17 +25,13 @@ class Consulta:
         self.idf        = idf
         self.tf_idf     = tf_idf
 
-
-    def mostrarSimilaridade(self):
+    def mostrar_similaridade(self):
         print(" ")
         print("Questão 3 - SIMILARIDADE DA CONSULTA")
-        print(" ")
         for doc in self.documentos:
             print(doc, " -> ", self.similaridade[doc])
-        print("\n" * 2)
 
-
-    def calcularW(self, termos, consulta):
+    def calcular_w(self, termos, consulta):
         # Calculo da frequencia de cada palavra na consulta
         for termo in consulta:
             if termo in self.dicionario:
@@ -47,12 +51,11 @@ class Consulta:
             if self.frequencia_consulta[termo] == 0:
                 self.w_consulta[termo] = 0
             else:
-                self.w_consulta[termo] = (self.alpha + \
-                    ((((1 - self.alpha) * self.frequencia_consulta[termo])\
-                    /max_freq)) * self.idf[termo])
+                self.w_consulta[termo] = (self.alpha 
+                    + ((((1 - self.alpha) * self.frequencia_consulta[termo])
+                    / max_freq)) * self.idf[termo])
 
-
-    def calcularSimilaridade(self, consulta):
+    def calcular_similaridade(self, consulta):
         for doc in self.documentos:
             soma    = 0
             w_tfidf = 0
@@ -64,27 +67,31 @@ class Consulta:
             for termo in self.tf_idf:
                 w_tfidf += self.tf_idf[termo][doc] * self.tf_idf[termo][doc]
 
-            self.similaridade[doc] = soma/(math.sqrt(w_tfidf) * math.sqrt(w_cons))
-
-
+            self.similaridade[doc] = (soma 
+                                    / (math.sqrt(w_tfidf) * math.sqrt(w_cons)))
 
     def pesquisar(self, busca):
         consulta = set()
         termos = tokenize(busca, self.arquivo_stopwords)
+        termos = [ter.lower() for ter in termos]
 
         termos_no_dicionario = [t for t in termos if t in self.dicionario]
 
         busca_unica = set(termos_no_dicionario)
         consulta = consulta.union(busca_unica)
         if len(consulta) == 0:
-            raise Exception("Busca não consta nos documentos.")
+            for doc in self.documentos:
+                self.similaridade[doc] = 0
+            print("**** Busca não encontrada. ****")
+            return
 
-        self.calcularW(termos, consulta)
-        self.calcularSimilaridade(consulta)
+        self.calcular_w(termos, consulta)
+        self.calcular_similaridade(consulta)
 
-        return [arq for arq, val in self.similaridade.items() if self.similaridade[arq] != 0]
-
+        return [arq for arq, val in self.similaridade.items() 
+                if self.similaridade[arq] != 0]
 
     def ranquear(self):
-        return sorted(self.similaridade.items(), key=lambda k_v: k_v[1], reverse=True)
-
+        return sorted(self.similaridade.items(), 
+                     key=lambda k_v: k_v[1], 
+                     reverse=True)

@@ -1,8 +1,9 @@
 import os
 import codecs
+
 from bs4 import BeautifulSoup
 
-def carregarHTML(arquivo):
+def carregar_HTML(arquivo):
     """Carregar HTML e remover tags"""
     with open(arquivo, "rb") as arq:
         texto = arq.read()
@@ -25,15 +26,15 @@ def carregarHTML(arquivo):
     return texto.lower()
 
 
-def removerStopwords(palavras, arquivo_stopwords):
+def remover_stopwords(palavras, arquivo_stopwords):
     """Remover Stopwords"""
     with codecs.open(arquivo_stopwords, "r", encoding="utf-8") as stopwords:
         sw = stopwords.read()
     
     stopwords_lista = sw.split()
 
-    palavras_novo = [palavra for palavra in palavras \
-                             if palavra not in stopwords_lista]
+    palavras_novo = [palavra for palavra in palavras 
+                    if palavra not in stopwords_lista]
 
     return palavras_novo
 
@@ -46,6 +47,6 @@ def tokenize(texto, arquivo_stopwords):
             if texto[i] == pontuacao[j]:
                 texto = texto.replace(pontuacao[j], " ") 
 
-    termos = removerStopwords( texto.split(), arquivo_stopwords )
+    termos = remover_stopwords(texto.split(), arquivo_stopwords)
 
     return termos

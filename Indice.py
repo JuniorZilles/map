@@ -2,10 +2,13 @@ import os
 import math
 from collections import defaultdict
 
-from ProcessaHTML import carregarHTML, tokenize
+from processa import carregar_HTML
+from processa import tokenize
+
 
 class Indice:
     """docstring for IndiceInvertido"""
+
     def __init__(self):
         self.documentos = []
         self.qnt_documentos = 0
@@ -16,52 +19,42 @@ class Indice:
         self.idf = defaultdict(dict)
         self.tf_idf = defaultdict(dict)
 
-
-    def getDicionario(self):
+    def get_dicionario(self):
         return self.dicionario
 
-
-    def getDocumentos(self):
+    def get_documentos(self):
         return self.documentos
 
-
-    def getPostings(self):
+    def get_postings(self):
         return self.postings
 
-
-    def getIDF(self):
+    def get_idf(self):
         return self.idf
 
-
-    def getTFIDF(self):
+    def get_tfidf(self):
         return self.tf_idf
 
-    def mostrarTFIDF(self):
+    def mostrar_tfidf(self):
         print(" ")
         print("Questão 2 - TFxIDF")
-        print(" ")
         for termo in self.dicionario:
             print("--- ", termo, " ---",)
             for doc in self.documentos:
                 print(doc, " ", self.tf_idf[termo][doc])
-        print("\n" * 2)
-
         
-    def mostrarIndice(self):
+    def mostrar_indice(self):
         print(" ")
         print("Questão 1 - ÍNDICE")
-        print(" ")
         for termo in self.dicionario:
             print(termo, " -> ", self.postings[termo])
-        print("\n" * 2)
 
-    def criarIndice(self, local, arquivo_stopwords):
+    def criar_indice(self, local, arquivo_stopwords):
         pasta_textos = os.path.join(os.getcwd(), local)
         for root, dirs, files in os.walk(pasta_textos):
             self.documentos = files
             for file in files:
                 abs_file = os.path.join(root, file)
-                texto  = carregarHTML(abs_file)
+                texto  = carregar_HTML(abs_file)
                 termos = tokenize(texto, arquivo_stopwords)
                 termos_unicos = set(termos)
                 self.dicionario = self.dicionario.union(termos_unicos)
@@ -71,26 +64,24 @@ class Indice:
 
         self.qnt_documentos = len(self.documentos)
 
-    def calcularDF(self):
+    def calcular_df(self):
         """Calculo da frequência de cada termo"""
         for termo in self.dicionario:
             self.df[termo] = len(self.postings[termo])
         
-
-    def calcularIDF(self):
+    def calcular_idf(self):
         """Calcular a frequencia invertida"""
         for termo in self.dicionario:
             if self.df[termo] != 0:
-                self.idf[termo] = math.log(self.qnt_documentos/self.df[termo], 10)
+                self.idf[termo] = math.log(self.qnt_documentos / self.df[termo], 10)
             else:
                 self.idf[termo] = 0
 
-
-    def calcularTFIDF(self):
+    def calcular_tfidf(self):
         if len(self.df) == 0:
-            self.calcularDF()
+            self.calcular_df()
         if len(self.idf) == 0:
-            self.calcularIDF()
+            self.calcular_idf()
 
         for doc in self.documentos:
             max_freq = 0

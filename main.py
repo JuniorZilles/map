@@ -4,8 +4,8 @@ import sys
 import argparse
 from collections import defaultdict
 
-from Indice import Indice
-from Consulta import Consulta
+from indice import Indice
+from consulta import Consulta
 
 
 if __name__ == '__main__':
@@ -15,35 +15,36 @@ if __name__ == '__main__':
         e busca texto por similaridade.")
     parser.add_argument("-d", help = "Define diretório dos textos html")
     parser.add_argument("-s", help = "Define arquivo contendo stopwords")
-    parser.add_argument("-b", help = "Busca por palavras. NECESSÁRIO USO DE ASPAS")
 
     args = parser.parse_args()
     local_documentos  = args.__dict__["d"] if args.__dict__["d"] else "textos"
     arquivo_stopwords = args.__dict__["s"] if args.__dict__["s"] else "stopwords.txt"
-    busca             = args.__dict__["b"] 
 
     # Criação do indice invertido e visualização
     indice = Indice()
-    indice.criarIndice(local_documentos, arquivo_stopwords)
-    indice.calcularTFIDF()
-    indice.mostrarIndice()
+    indice.criar_indice(local_documentos, arquivo_stopwords)
+    indice.calcular_tfidf()
 
-    indice.mostrarTFIDF()
+    if input("Deseja mostrar o indice? ").lower() == "s":
+        indice.mostrar_indice()
+
+    # indice.mostrar_tfidf()
 
     # Inicialização da consulta com os dados calculados
-    consulta = Consulta(documentos = indice.getDocumentos(), \
-                        dicionario = indice.getDicionario(), \
-                        idf        = indice.getIDF(), \
-                        tf_idf     = indice.getTFIDF(), \
+    consulta = Consulta(documentos = indice.get_documentos(), \
+                        dicionario = indice.get_dicionario(), \
+                        idf        = indice.get_idf(), \
+                        tf_idf     = indice.get_tfidf(), \
                         stopwords  = arquivo_stopwords)
 
-    b = consulta.pesquisar(busca)
+    while True:
+        busca = input("Digite a busca: ")
+        b = consulta.pesquisar(busca)
+        consulta.mostrar_similaridade()
 
-    consulta.mostrarSimilaridade()
-
-    print(" ")
-    print("Questão 4 - Ranking")
-    print("--> Pesquisa: ", busca)
-    consulta_ranqueada = consulta.ranquear()
-    for c in consulta_ranqueada:
-        print(c[0], "  ", c[1])
+        print(" ")
+        print("Questão 4 - RANKING")
+        print("--> Pesquisa: ", busca)
+        consulta_ranqueada = consulta.ranquear()
+        for cons in consulta_ranqueada:
+            print(cons[0], "  ", cons[1])
