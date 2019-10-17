@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
+import argparse
 import os
 import sys
-import argparse
+
 from collections import defaultdict
 
-from indice import Indice
 from consulta import Consulta
+from indice import Indice
 
 
-if __name__ == '__main__':
+def main():
     # local de dos textos html
     # nome do arquivo stopwords
     parser = argparse.ArgumentParser(description="Criação de indice invertido \
@@ -48,3 +49,7 @@ if __name__ == '__main__':
         consulta_ranqueada = consulta.ranquear()
         for cons in consulta_ranqueada:
             print(cons[0], "  ", cons[1])
+
+
+if __name__ == '__main__':
+    main()    
