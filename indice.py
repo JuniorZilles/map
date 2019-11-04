@@ -49,8 +49,12 @@ class Indice:
             print(termo, " -> ", self.postings[termo])
 
     def criar_indice(self, local, arquivo_stopwords):
+        # Concatena diretório atual com o diretório dos textos
         pasta_textos = os.path.join(os.getcwd(), local)
         for root, dirs, files in os.walk(pasta_textos):
+            # root -> diretório atual
+            # dirs -> diretórios dentro do atual
+            # files -> arquivos dentro do diretorio atual e dirs
             self.documentos = files
             for file in files:
                 abs_file = os.path.join(root, file)

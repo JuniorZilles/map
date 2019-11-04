@@ -6,7 +6,6 @@ from processa import tokenize
 
 class Consulta:
     """docstring for Consulta"""
-
     def __init__(self, 
                 documentos, 
                 dicionario, 
@@ -39,8 +38,8 @@ class Consulta:
             else:
                 self.frequencia_consulta[termo] = 0
 
+        # Calculo do peso máximo de cada palavra na pesquisa
         for termo in consulta:
-            # Calculo do peso máximo de cada palavra na pesquisa
             max_freq = 0
             if termo in consulta and termo in self.dicionario:
                 if self.frequencia_consulta[termo] > max_freq:
@@ -75,6 +74,8 @@ class Consulta:
         termos = tokenize(busca, self.arquivo_stopwords)
         termos = [ter.lower() for ter in termos]
 
+        # Criação de lista de pesquisa com somente 
+        # termos contidos no dicionário
         termos_no_dicionario = [t for t in termos if t in self.dicionario]
 
         busca_unica = set(termos_no_dicionario)
