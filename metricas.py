@@ -3,6 +3,9 @@ import numpy as np
 
 
 def precision(retrived: list, relevant: list):
+    """
+    Retorna a medida de precisão.
+    """
     if len(retrived) == 0:
         return 0
     
@@ -12,6 +15,10 @@ def precision(retrived: list, relevant: list):
 
 
 def precision_at_k(retrived: list, relevant: list):
+    """
+    Retorna uma lista contendo a precisão para os documentos
+    recuperados.
+    """
     count = 0.0
     precision_at = [1,]
 
@@ -25,6 +32,9 @@ def precision_at_k(retrived: list, relevant: list):
 
 
 def average_precision(retrived: list, relevant: list):
+    """
+    Retorna o Average Precision.
+    """
     count = 0
     avg_prec = 0
 
@@ -37,6 +47,9 @@ def average_precision(retrived: list, relevant: list):
 
 
 def recall(retrived: list, relevant: list):
+    """
+    Retorna a medida de recall.
+    """
     if len(relevant) == 0:
         return 0
 
@@ -47,8 +60,8 @@ def recall(retrived: list, relevant: list):
 
 def recall_at_k(retrived: list, relevant: list):
     """
-    Return:
-
+    Retorna uma lista contendo a medida de recall 
+    para cada documento recuperado.
     """
     count = 0.0
     recall_at = [0,]
@@ -63,6 +76,9 @@ def recall_at_k(retrived: list, relevant: list):
 
 
 def f_measure(retrived: list, relevant: list):
+    """
+    Retorna a medida F Measure.
+    """
     precision_v = precision(retrived, relevant)
     recall_v = recall(retrived, relevant)
     if recall_v == 0 or precision_v == 0:
@@ -72,6 +88,9 @@ def f_measure(retrived: list, relevant: list):
 
 
 def find_next_nearest(array: list, value):
+    """
+    Retorna o elemento do array com valor mais próximo de value.
+    """
     n = [(i - value) for i in array]
     idx = n.index(min([i for i in n if i >= 0])) if max(n) > 0 else None
 
@@ -82,6 +101,10 @@ def find_next_nearest(array: list, value):
 
 
 def interpolate_at(recall_list, precision_list, recall_at):
+    """
+    Retorna uma nova lista de "precision" com mais proximidade
+    aos "recall" de cada recall_at.
+    """
     precision_interpolated = []
 
     for r in recall_at:
@@ -96,20 +119,30 @@ def interpolate_at(recall_list, precision_list, recall_at):
 
 
 def interpolate(precision_list: list):
+    """
+    Retorna uma nova lista de "precision" com os maiores valores da 
+    lista antiga a partir da posição pos.
+    """
     precision_interpolated = []
 
-    for i in range(len(precision_list)):
-        max_value = max(precision_list[i:])
+    for pos in range(len(precision_list)):
+        max_value = max(precision_list[pos:])
         precision_interpolated.append(max_value)
 
     return precision_interpolated
 
 
 def calculate_area(y, x):
+    """
+    Retorna a área abaixo da curva pelo método trapezoidal.
+    """
     return np.trapz(y, x, axis = -1)
 
 
-def plot_curve(precision_list: list, recall_list: list):  
+def plot_curve(precision_list: list, recall_list: list):
+    """
+    Plot das curvas e cálculo de suas áreas.
+    """  
     # Definições do plot
     plt.title("Recall x Precision")  
     plt.xlabel("recall")
@@ -123,7 +156,6 @@ def plot_curve(precision_list: list, recall_list: list):
     # área abaixo da mesma
     prec = np.array(precision_list)
     rec = np.array(recall_list)
-    print(prec)
     plt.plot(rec, prec, color = "blue", label = "Completa")
     area_rp_1 = calculate_area(prec, rec)
 
@@ -131,8 +163,6 @@ def plot_curve(precision_list: list, recall_list: list):
     # área abaixo da mesma
     precision_interpolated = np.array(interpolate(precision_list))
     recall_interpolated = np.array(recall_list)
-    print(precision_interpolated)
-    print(recall_interpolated)
     plt.plot(recall_interpolated, precision_interpolated, 
         color = "red", label = "Interpolada")
     area_rp_2 = calculate_area(precision_interpolated, recall_interpolated)

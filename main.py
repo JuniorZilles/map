@@ -69,7 +69,7 @@ def main():
         print("\n### Métricas")
         print("-> Precisão: ", precision(retrieved, relevant))
         print("-> Recall:   ", recall(retrieved, relevant))
-        print("-> F1 :      ", f_measure(retrieved, relevant))
+        print("-> F:        ", f_measure(retrieved, relevant))
         print("-> AvgPrec:  ", average_precision(retrieved, relevant))
 
         # Calculo do recall e precision para cada pontos
@@ -79,8 +79,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()    
-
+    main()
 
 
 # TESTE
