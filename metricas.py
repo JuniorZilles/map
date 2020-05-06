@@ -43,7 +43,7 @@ def average_precision(retrived: list, relevant: list):
             count += 1
             avg_prec +=  count / (retrived.index(ret) + 1)
             
-    return avg_prec / count
+    return avg_prec / (count if count != 0 else 1 ) 
 
 
 def recall(retrived: list, relevant: list):
@@ -70,7 +70,7 @@ def recall_at_k(retrived: list, relevant: list):
         if ret in relevant:
             count += 1
 
-        recall_at.append(count / len(relevant))
+        recall_at.append(count / (len(relevant) if len(relevant) != 0 else 1))
 
     return recall_at
 
@@ -182,4 +182,38 @@ def plot_curve(precision_list: list, recall_list: list):
     print("-> Interpolada em 11 pontos: ", area_rp_3)
 
     plt.legend()
+    plt.show()
+
+def plot_curve_j(precision_list: list, recall_list: list):
+    """
+    Plot das curvas e cálculo de suas áreas.
+    """  
+
+    points = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    # Definições do plot
+    plt.title("Recall x Precision")  
+    plt.xlabel("Recall")
+    plt.ylabel("Precision")
+    plt.ylim(top = 1.05, bottom = 0)
+    plt.xlim(left = 0, right = 1.05)
+    plt.xticks(points)
+    plt.yticks(points)
+
+    # Plot da curva interpolada em 11 pontos e
+    # cálculo da área abaixo da mesma
+    recall_at = np.array(points)
+    precision_interpolated = np.array(interpolate(precision_list))
+    recall_interpolated = np.array(recall_list)
+    precision_at = np.array(interpolate_at(list(recall_interpolated), 
+        list(precision_interpolated), list(recall_at)))
+    plt.plot(recall_at, precision_at, 
+        color = "green", label = "Interpolada 11 pts")
+    area_rp_3 = calculate_area(precision_at, recall_at)
+
+    print("\n### Área abaixo das curvas")
+    print("-> Interpolada em 11 pontos: ", area_rp_3)
+
+    plt.legend()
+    plt.grid(True)
+    plt.savefig('grafico.png', dpi=1280, orientation='portrait')
     plt.show()
