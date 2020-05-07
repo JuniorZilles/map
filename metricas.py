@@ -184,7 +184,7 @@ def plot_curve(precision_list: list, recall_list: list):
     plt.legend()
     plt.show()
 
-def plot_curve_j(precision_list: list, recall_list: list):
+def plot_curve_j(precision_list: list, recall_list: list, method:str):
     """
     Plot das curvas e cálculo de suas áreas.
     """  
@@ -192,8 +192,8 @@ def plot_curve_j(precision_list: list, recall_list: list):
     points = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
     # Definições do plot
     plt.title("Recall x Precision")  
-    plt.xlabel("Recall")
-    plt.ylabel("Precision")
+    plt.xlabel("Recall/100")
+    plt.ylabel("Precision/100")
     plt.ylim(top = 1.05, bottom = 0)
     plt.xlim(left = 0, right = 1.05)
     plt.xticks(points)
@@ -207,7 +207,7 @@ def plot_curve_j(precision_list: list, recall_list: list):
     precision_at = np.array(interpolate_at(list(recall_interpolated), 
         list(precision_interpolated), list(recall_at)))
     plt.plot(recall_at, precision_at, 
-        color = "green", label = "Interpolada 11 pts")
+        color = "green", label = "11-point interpolated curve")
     area_rp_3 = calculate_area(precision_at, recall_at)
 
     print("\n### Área abaixo das curvas")
@@ -215,5 +215,5 @@ def plot_curve_j(precision_list: list, recall_list: list):
 
     plt.legend()
     plt.grid(True)
-    plt.savefig('grafico.png', dpi=1280, orientation='portrait')
+    plt.savefig('grafico_'+method+'.png', dpi=1280, orientation='portrait')
     plt.show()

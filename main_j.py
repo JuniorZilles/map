@@ -11,6 +11,11 @@ def main():
     qtdTrocas = int(input("Trocar quantos caracteres de cada palavra? "))
     qtdAmostrasBD = input("Quantidade de amostras do banco? ")
     qtdAmostrasAPI = input("Quantidade de amostras da API? ")
+    metodoAPI = input("Metodo de consulta da API(ws/s/lk/eq)? ").lower()
+    methodList = ['lk', 'eq', 's', 'ws']
+    if metodoAPI not in methodList:
+        metodoAPI = 'ws'
+        print('O metodo informado não existe, será usado o padrão "ws"')
     query = obter_query(qtdAmostrasBD)
     rows = get_database_rows(query)
     df = pd.DataFrame(rows)
@@ -21,7 +26,7 @@ def main():
         #print('Termo de original: '+nome + ', posição:' + str(i))
         cnome, pnome, unome = quebra_nome(nome.strip(), qtdTrocas)
         #print('Termo de busca: '+cnome)
-        url = "http://localhost:8080/v3/obterinspetor?nome="+cnome+"&limite="+qtdAmostrasAPI+"&metodo=ws"
+        url = "http://localhost:8080/v3/obterinspetor?nome="+cnome+"&limite="+qtdAmostrasAPI+"&metodo="+metodoAPI
         jsonstring = get_request_as_json(url)
         inspectors = jsonstring["inspetor"]
         retrieved = []
@@ -51,10 +56,10 @@ def main():
     print("-> Média AvgPrec:  ", media)
     inf = info(media, mrec_list, mpr_list, lista)
     #convert to JSON string
-    with open('base.json', 'w') as outfile:
+    with open('base_'+metodoAPI+'.json', 'w') as outfile:
         js = inf.toJSON()
         outfile.write(js)
-    plot_curve_j(mpr_list, mrec_list)
+    plot_curve_j(mpr_list, mrec_list, metodoAPI)
 
 def media_avg(lista:list):
     soma = 0.0
