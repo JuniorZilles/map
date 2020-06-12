@@ -184,11 +184,21 @@ def plot_curve(precision_list: list, recall_list: list):
     plt.legend()
     plt.show()
 
-def plot_curve_j(precision_list: list, recall_list: list, method:str):
+def getLabel(value:str):
+    if value == 'eq':
+        return 'equals'
+    elif value == 'lk':
+        return 'like'
+    elif value == 'ws':
+        return 'word_similarity'
+    elif value == 's':
+        return 'similarity'
+
+def plot_curve_j1(precision_list: list, recall_list: list, method:str):
     """
     Plot das curvas e cálculo de suas áreas.
     """  
-
+    mlabel = getLabel(method)
     points = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
     # Definições do plot
     plt.title("Recall x Precision")  
@@ -207,13 +217,61 @@ def plot_curve_j(precision_list: list, recall_list: list, method:str):
     precision_at = np.array(interpolate_at(list(recall_interpolated), 
         list(precision_interpolated), list(recall_at)))
     plt.plot(recall_at, precision_at, 
-        color = "green", label = "11-point interpolated curve")
+        color = "green", label = mlabel)
     area_rp_3 = calculate_area(precision_at, recall_at)
 
     print("\n### Área abaixo das curvas")
-    print("-> Interpolada em 11 pontos: ", area_rp_3)
+    print("->", area_rp_3)
 
     plt.legend()
     plt.grid(True)
     plt.savefig('grafico_'+method+'.png', dpi=1280, orientation='portrait')
+    plt.show()
+
+def plot_curve_j2(precision_list_1: list, recall_list_1: list,precision_list_2: list, recall_list_2: list, method_1:str, method_2:str):
+    """
+    Plot das curvas e cálculo de suas áreas.
+    """  
+    mlabel_1 = getLabel(method_1)
+    mlabel_2 = getLabel(method_2)
+    points = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    # Definições do plot
+    plt.title("Recall x Precision")  
+    plt.xlabel("Recall")
+    plt.ylabel("Precision")
+    plt.ylim(top = 1.05, bottom = 0)
+    plt.xlim(left = 0, right = 1.05)
+    plt.xticks(points)
+    plt.yticks(points)
+
+    # Plot da curva interpolada em 11 pontos e
+    # cálculo da área abaixo da mesma
+    recall_at_1 = np.array(points)
+    precision_interpolated_1 = np.array(interpolate(precision_list_1))
+    recall_interpolated_1 = np.array(recall_list_1)
+    precision_at_1 = np.array(interpolate_at(list(recall_interpolated_1), 
+        list(precision_interpolated_1), list(recall_at_1)))
+    plt.plot(recall_at_1, precision_at_1, 
+        color = "green", label = mlabel_1)
+    area_rp_1 = calculate_area(precision_at_1, recall_at_1)
+
+    print("\n### Área abaixo da curva(1)")
+    print("->",area_rp_1)
+
+    recall_at_2 = np.array(points)
+    precision_interpolated_2 = np.array(interpolate(precision_list_2))
+    recall_interpolated_2 = np.array(recall_list_2)
+    precision_at_2 = np.array(interpolate_at(list(recall_interpolated_2), 
+        list(precision_interpolated_2), list(recall_at_2)))
+    area_rp_2 = calculate_area(precision_at_2, recall_at_2)
+    plt.plot(recall_at_2, precision_at_2, '--', 
+        color = "red", label = mlabel_2)
+    
+
+    print("\n### Área abaixo da curva(2)")
+    print("->",area_rp_2)
+
+    plt.legend()
+    plt.grid(True)
+    plt.savefig('grafico.png', dpi=1280, orientation='portrait')
     plt.show()

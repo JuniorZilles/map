@@ -1,0 +1,13 @@
+# cliente
+Tempo de execução Total: 10024,400937795639 segundos = 2,7845558160543442128 horas
+Tempo médio de execução das requisições ws: 1.0004093894958497 segundos
+Tempo médio de execução das requisições s: 0.9612052049636841 segundos
+Tempo médio de execução geral ws e s: 0.9806949578918793 segundos
+Tempo médio de processamento de cada requisição: 0.9807833976344537 segundos
+
+# servidor
+Tempo médio de execução das requisições ws: 0.99481503345139721262 segundos
+Tempo médio de execução das requisições s: 0.9561196 segundos
+Tempo médio de execução geral ws e s: 0.97562467764332472253 segundos
+
+diferença 0.01 segundo entre o servidor e cliente
