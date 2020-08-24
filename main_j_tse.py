@@ -17,7 +17,7 @@ def get_consult(query: str, method: str, documents_id: list):
         'method': method,
         'documents': documents_id
     })
-    response = requests.post(url='http://0.0.0.0:5000/search', data=jsonbody, headers = {'content-type': 'application/json'})
+    response = requests.post(url='http://172.17.0.2:31227/search', data=jsonbody, headers = {'content-type': 'application/json'})
     return response.json()
 
 
