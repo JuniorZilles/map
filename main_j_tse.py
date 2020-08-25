@@ -41,6 +41,7 @@ def get_interactions():
         interactions = res['_source']['interacao']
         documents_id = get_documents_from_interactions(interactions)
         search = get_consult(query, method, documents_id)
+        print(search)
 
 
 def main():

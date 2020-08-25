@@ -89,7 +89,7 @@ for a in range(0,10):
   posdoc = random.randint(0, 14)
   posicao = random.randint(0, 20)
   jsonstr = {
-      "query": querys[posquer], "metodo": methods[posmeth], "timestamp": datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S"),"interacao":[]
+      "query": querys[posquer], "metodo": methods[posmeth], "timestamp": datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S"),"limit":0, "offset":20, "interacao":[]
   }
   jsonstr1 = {
       "script": {
@@ -100,11 +100,21 @@ for a in range(0,10):
       }
     }
   }
-  
+  jsonstr2 = {
+      "script": {
+      "source": "ctx._source.offset = params.offset",
+      "lang": "painless",
+      "params": {
+        "offset": 40
+      }
+    }
+  }
   strjson = json.dumps(jsonstr)
   strjson1 = json.dumps(jsonstr1)
+  strjson2 = json.dumps(jsonstr2)
   index_single_document(client, index, a, strjson)
   update_single_document(client, index, a, strjson1)
+  update_single_document(client, index, a, strjson2)
 #print(get_document(client, index, 3))
 
 get = {
