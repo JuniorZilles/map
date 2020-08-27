@@ -4,6 +4,7 @@ import time
 import json
 from metricas import *
 from model import *
+from utils import *
 class Document:
     def __init__(self, doc_id, posicao):
         self.doc_id = doc_id
@@ -44,6 +45,8 @@ def get_consult(query: str, method: str, limit:int, offset:int, documents_id: li
     response = requests.post(url='http://172.17.0.2:31227/search', data=jsonbody, headers = {'content-type': 'application/json'})
     return response.json()
 
+def filterfuntion(lista, method):
+    return [x for x in lista if x.method == method]
 
 def get_interactions():
     methods = [
@@ -88,8 +91,23 @@ def get_interactions():
 
         recall_list =  recall_at_k(retrieved, relevant)
         precision_list = precision_at_k(retrieved, relevant)
-        m = model(res, search, qtd_retornado, avg, relevant, precision_list, recall_list)
+        m = model(res, search, qtd_retornado, avg, relevant, precision_list, recall_list, method)
         iteration_list.append(m)
+    list_plot = []
+    for y in methods:
+        method_list = filterfuntion(iteration_list, y)
+        if len(method_list) > 0:
+            mrec_iterac_list = obter_recal(method_list)
+            mpr_iterac_list = obter_prec(method_list)
+            media_itera = media_avg(method_list)
+            print("-> Quantidade Registros ", y, ": ", len(method_list))
+            print("-> Média AvgPrec ", y, ": ", media_itera)
+            inf = info(media_itera, mrec_iterac_list, mpr_iterac_list, method_list, y)
+            list_plot.append(inf)
+            with open('interacoes'+y+'.json', 'w') as outfile:
+                js = inf.toJSON()
+                outfile.write(js)
+    plot_curve_j3(list_plot)
 def main():
     inicio = time.time()
     get_interactions()

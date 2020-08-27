@@ -1,0 +1,1536 @@
+{
+    "base": [
+        {
+            "avg": 1.0,
+            "method": "equality",
+            "posicoes": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+            ],
+            "precision_list": [
+                1,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+            ],
+            "qtd_retornado": "20",
+            "recal_list": [
+                0,
+                0.05,
+                0.1,
+                0.15,
+                0.2,
+                0.25,
+                0.3,
+                0.35,
+                0.4,
+                0.45,
+                0.5,
+                0.55,
+                0.6,
+                0.65,
+                0.7,
+                0.75,
+                0.8,
+                0.85,
+                0.9,
+                0.95,
+                1.0
+            ],
+            "termo_bd": {
+                "_source": {
+                    "interacao": [
+                        {
+                            "id_documento": "ed863078-463c-4302-bd6a-e6ef7db89778",
+                            "opera\u00e7\u00e3o": "visualizou",
+                            "posicao": 11,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 8,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 19,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 7,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 12,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                            "opera\u00e7\u00e3o": "visualizou",
+                            "posicao": 8,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                            "opera\u00e7\u00e3o": "visualizou",
+                            "posicao": 2,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 19,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "e770e245-5688-422b-8965-1fc181f3edc8",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 16,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 13,
+                            "timestamp": "2020/08/26 11:24:54"
+                        }
+                    ],
+                    "limit": 20,
+                    "metodo": "equality",
+                    "offset": 0,
+                    "query": "energia",
+                    "timestamp": "2020/08/26 11:24:54"
+                }
+            },
+            "termo_busca": {
+                "hits": [
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "hrg9IXQBpwE8LF2Wyc91",
+                        "lines": [
+                            {
+                                "line_words": "SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA",
+                                "ocr_line": "line_9_34",
+                                "score": 12.810875,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1122,
+                                            1399,
+                                            1336,
+                                            1463
+                                        ],
+                                        "ocrx_word": "word_9_200",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1122 1399 1336 1463; x_wconf 100",
+                                        "word": "ENERGIA"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador",
+                                "ocr_line": "line_9_35",
+                                "score": 11.641573,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            773,
+                                            1475,
+                                            908,
+                                            1536
+                                        ],
+                                        "ocrx_word": "word_9_208",
+                                        "score": 7.5950336,
+                                        "title": "bbox 773 1475 908 1536; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                                "ocr_line": "line_9_67",
+                                "score": 11.026204,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1234,
+                                            3243,
+                                            1369,
+                                            3304
+                                        ],
+                                        "ocrx_word": "word_9_513",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1234 3243 1369 3304; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_9",
+                        "page": 9,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 10 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN c) Todos os circuitos para o sistema de intercomunica\u00e7\u00e3o s\u00e3o energizados durante todo o ciclo; d) Abertura da quantidade de disjuntores correspondente a condi\u00e7\u00e3o operacional mais severa no in\u00edcio do ciclo; e) Fechamento da quantidade de disjuntores correspondente \u00e0 energiza\u00e7\u00e3o dos carregadores de bateria. O carregador deve ser ligado em paralelo com a bateria, sendo esta \u00faltima mantida em flutua\u00e7\u00e3o autom\u00e1tica. O carregador deve possuir recarga manual e autom\u00e1tica e ser capaz de manter a tens\u00e3o de sa\u00edda do consumidor dentro de limites adequados \u00e0 opera\u00e7\u00e3o das cargas. O n\u00edvel de tens\u00e3o residual alternada (ripple) para as cargas n\u00e3o deve ser superior a 2%, estando a bateria desconectada O carregador deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ser flutuante. Deve ser prevista sinaliza\u00e7\u00e3o no caso de aterramento acidental de um dos polos do sistema, a ser localizada na parte frontal do Painel de Corrente Cont\u00ednua. 4.3. SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador de bateria, inversor, transformador auxiliar de alimenta\u00e7\u00e3o alternativa (by-pass), chave est\u00e1tica e um quadro de distribui\u00e7\u00e3o de UPS. Quando necess\u00e1rio ao projeto a instala\u00e7\u00e3o de UPS na subesta\u00e7\u00e3o, deve haver um sistema destinado a alimentar as cargas de instrumenta\u00e7\u00e3o, shut-down e sistemas de seguran\u00e7a em 120 V CA; independente de outros UPSs eventualmente requeridos com outras finalidades, tal como alimenta\u00e7\u00e3o de ilumina\u00e7\u00e3o de emerg\u00eancia em corrente alternada. As cargas de Telecomunica\u00e7\u00f5es tamb\u00e9m devem ser consideradas. A alimenta\u00e7\u00e3o el\u00e9trica para atender os equipamentos de Telecomunica\u00e7\u00f5es deve ser em 208 VAC. O UPS destinado a alimenta\u00e7\u00e3o de instrumenta\u00e7\u00e3o, anteriormente descrito deve possuir bateria de acumuladores dimensionada para um per\u00edodo necess\u00e1rio a parada segura das unidades de processo. Para carregador de bateria e a bateria de acumuladores do UPS, sempre que aplic\u00e1vel, devem ser seguidos os crit\u00e9rios descritos para sistema de corrente cont\u00ednua. Para alimenta\u00e7\u00e3o das cargas atrav\u00e9s do UPS, devem ser seguidos os seguintes crit\u00e9rios de segrega\u00e7\u00e3o, \u00e0 partir do painel de distribui\u00e7\u00e3o do UPS: a) Devem ser previstos circuitos de alimenta\u00e7\u00e3o exclusivos para a automa\u00e7\u00e3o; b) Devem ser previstos circuitos exclusivos para grupos de instrumentos; c) Devem ser previstos circuitos exclusivos para cada c\u00e2mera e para cada ponto de controle de acesso eletr\u00f4nico; d) Devem ser previstos circuitos exclusivos para grandes equipamentos como fornos, compressores, caldeiras, etc. e) Devem ser previsto dois circuitos exclusivos para cada bastidor de Telecomunica\u00e7\u00f5es. O UPS deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ter neutro isolado. O Painel deve conter sistema de monitora\u00e7\u00e3o de isolamento capaz de identificar o ramal da carga com baixa isola\u00e7\u00e3o. A condi\u00e7\u00e3o mais severa deve ser considerada para o dimensionamento do UPS, considerando a parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                        "score": 39.484756
+                    },
+                    {
+                        "file_id": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                        "id": "8Lg9IXQBpwE8LF2WXM4x",
+                        "lines": [
+                            {
+                                "line_words": "SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA",
+                                "ocr_line": "line_9_34",
+                                "score": 12.810875,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1122,
+                                            1399,
+                                            1336,
+                                            1463
+                                        ],
+                                        "ocrx_word": "word_9_200",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1122 1399 1336 1463; x_wconf 100",
+                                        "word": "ENERGIA"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador",
+                                "ocr_line": "line_9_35",
+                                "score": 11.641573,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            773,
+                                            1475,
+                                            908,
+                                            1536
+                                        ],
+                                        "ocrx_word": "word_9_208",
+                                        "score": 7.5950336,
+                                        "title": "bbox 773 1475 908 1536; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                                "ocr_line": "line_9_67",
+                                "score": 11.026204,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1234,
+                                            3243,
+                                            1369,
+                                            3304
+                                        ],
+                                        "ocrx_word": "word_9_513",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1234 3243 1369 3304; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_9",
+                        "page": 9,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 10 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN c) Todos os circuitos para o sistema de intercomunica\u00e7\u00e3o s\u00e3o energizados durante todo o ciclo; d) Abertura da quantidade de disjuntores correspondente a condi\u00e7\u00e3o operacional mais severa no in\u00edcio do ciclo; e) Fechamento da quantidade de disjuntores correspondente \u00e0 energiza\u00e7\u00e3o dos carregadores de bateria. O carregador deve ser ligado em paralelo com a bateria, sendo esta \u00faltima mantida em flutua\u00e7\u00e3o autom\u00e1tica. O carregador deve possuir recarga manual e autom\u00e1tica e ser capaz de manter a tens\u00e3o de sa\u00edda do consumidor dentro de limites adequados \u00e0 opera\u00e7\u00e3o das cargas. O n\u00edvel de tens\u00e3o residual alternada (ripple) para as cargas n\u00e3o deve ser superior a 2%, estando a bateria desconectada O carregador deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ser flutuante. Deve ser prevista sinaliza\u00e7\u00e3o no caso de aterramento acidental de um dos polos do sistema, a ser localizada na parte frontal do Painel de Corrente Cont\u00ednua. 4.3. SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador de bateria, inversor, transformador auxiliar de alimenta\u00e7\u00e3o alternativa (by-pass), chave est\u00e1tica e um quadro de distribui\u00e7\u00e3o de UPS. Quando necess\u00e1rio ao projeto a instala\u00e7\u00e3o de UPS na subesta\u00e7\u00e3o, deve haver um sistema destinado a alimentar as cargas de instrumenta\u00e7\u00e3o, shut-down e sistemas de seguran\u00e7a em 120 V CA; independente de outros UPSs eventualmente requeridos com outras finalidades, tal como alimenta\u00e7\u00e3o de ilumina\u00e7\u00e3o de emerg\u00eancia em corrente alternada. As cargas de Telecomunica\u00e7\u00f5es tamb\u00e9m devem ser consideradas. A alimenta\u00e7\u00e3o el\u00e9trica para atender os equipamentos de Telecomunica\u00e7\u00f5es deve ser em 208 VAC. O UPS destinado a alimenta\u00e7\u00e3o de instrumenta\u00e7\u00e3o, anteriormente descrito deve possuir bateria de acumuladores dimensionada para um per\u00edodo necess\u00e1rio a parada segura das unidades de processo. Para carregador de bateria e a bateria de acumuladores do UPS, sempre que aplic\u00e1vel, devem ser seguidos os crit\u00e9rios descritos para sistema de corrente cont\u00ednua. Para alimenta\u00e7\u00e3o das cargas atrav\u00e9s do UPS, devem ser seguidos os seguintes crit\u00e9rios de segrega\u00e7\u00e3o, \u00e0 partir do painel de distribui\u00e7\u00e3o do UPS: a) Devem ser previstos circuitos de alimenta\u00e7\u00e3o exclusivos para a automa\u00e7\u00e3o; b) Devem ser previstos circuitos exclusivos para grupos de instrumentos; c) Devem ser previstos circuitos exclusivos para cada c\u00e2mera e para cada ponto de controle de acesso eletr\u00f4nico; d) Devem ser previstos circuitos exclusivos para grandes equipamentos como fornos, compressores, caldeiras, etc. e) Devem ser previsto dois circuitos exclusivos para cada bastidor de Telecomunica\u00e7\u00f5es. O UPS deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ter neutro isolado. O Painel deve conter sistema de monitora\u00e7\u00e3o de isolamento capaz de identificar o ramal da carga com baixa isola\u00e7\u00e3o. A condi\u00e7\u00e3o mais severa deve ser considerada para o dimensionamento do UPS, considerando a parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                        "score": 39.484756
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "wLg-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA",
+                                "ocr_line": "line_9_34",
+                                "score": 12.810875,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1122,
+                                            1399,
+                                            1336,
+                                            1463
+                                        ],
+                                        "ocrx_word": "word_9_200",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1122 1399 1336 1463; x_wconf 100",
+                                        "word": "ENERGIA"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador",
+                                "ocr_line": "line_9_35",
+                                "score": 11.641573,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            773,
+                                            1475,
+                                            908,
+                                            1536
+                                        ],
+                                        "ocrx_word": "word_9_208",
+                                        "score": 7.5950336,
+                                        "title": "bbox 773 1475 908 1536; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                                "ocr_line": "line_9_67",
+                                "score": 11.026204,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1234,
+                                            3243,
+                                            1369,
+                                            3304
+                                        ],
+                                        "ocrx_word": "word_9_513",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1234 3243 1369 3304; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_9",
+                        "page": 9,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 10 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN c) Todos os circuitos para o sistema de intercomunica\u00e7\u00e3o s\u00e3o energizados durante todo o ciclo; d) Abertura da quantidade de disjuntores correspondente a condi\u00e7\u00e3o operacional mais severa no in\u00edcio do ciclo; e) Fechamento da quantidade de disjuntores correspondente \u00e0 energiza\u00e7\u00e3o dos carregadores de bateria. O carregador deve ser ligado em paralelo com a bateria, sendo esta \u00faltima mantida em flutua\u00e7\u00e3o autom\u00e1tica. O carregador deve possuir recarga manual e autom\u00e1tica e ser capaz de manter a tens\u00e3o de sa\u00edda do consumidor dentro de limites adequados \u00e0 opera\u00e7\u00e3o das cargas. O n\u00edvel de tens\u00e3o residual alternada (ripple) para as cargas n\u00e3o deve ser superior a 2%, estando a bateria desconectada O carregador deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ser flutuante. Deve ser prevista sinaliza\u00e7\u00e3o no caso de aterramento acidental de um dos polos do sistema, a ser localizada na parte frontal do Painel de Corrente Cont\u00ednua. 4.3. SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador de bateria, inversor, transformador auxiliar de alimenta\u00e7\u00e3o alternativa (by-pass), chave est\u00e1tica e um quadro de distribui\u00e7\u00e3o de UPS. Quando necess\u00e1rio ao projeto a instala\u00e7\u00e3o de UPS na subesta\u00e7\u00e3o, deve haver um sistema destinado a alimentar as cargas de instrumenta\u00e7\u00e3o, shut-down e sistemas de seguran\u00e7a em 120 V CA; independente de outros UPSs eventualmente requeridos com outras finalidades, tal como alimenta\u00e7\u00e3o de ilumina\u00e7\u00e3o de emerg\u00eancia em corrente alternada. As cargas de Telecomunica\u00e7\u00f5es tamb\u00e9m devem ser consideradas. A alimenta\u00e7\u00e3o el\u00e9trica para atender os equipamentos de Telecomunica\u00e7\u00f5es deve ser em 208 VAC. O UPS destinado a alimenta\u00e7\u00e3o de instrumenta\u00e7\u00e3o, anteriormente descrito deve possuir bateria de acumuladores dimensionada para um per\u00edodo necess\u00e1rio a parada segura das unidades de processo. Para carregador de bateria e a bateria de acumuladores do UPS, sempre que aplic\u00e1vel, devem ser seguidos os crit\u00e9rios descritos para sistema de corrente cont\u00ednua. Para alimenta\u00e7\u00e3o das cargas atrav\u00e9s do UPS, devem ser seguidos os seguintes crit\u00e9rios de segrega\u00e7\u00e3o, \u00e0 partir do painel de distribui\u00e7\u00e3o do UPS: a) Devem ser previstos circuitos de alimenta\u00e7\u00e3o exclusivos para a automa\u00e7\u00e3o; b) Devem ser previstos circuitos exclusivos para grupos de instrumentos; c) Devem ser previstos circuitos exclusivos para cada c\u00e2mera e para cada ponto de controle de acesso eletr\u00f4nico; d) Devem ser previstos circuitos exclusivos para grandes equipamentos como fornos, compressores, caldeiras, etc. e) Devem ser previsto dois circuitos exclusivos para cada bastidor de Telecomunica\u00e7\u00f5es. O UPS deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ter neutro isolado. O Painel deve conter sistema de monitora\u00e7\u00e3o de isolamento capaz de identificar o ramal da carga com baixa isola\u00e7\u00e3o. A condi\u00e7\u00e3o mais severa deve ser considerada para o dimensionamento do UPS, considerando a parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                        "score": 39.484756
+                    },
+                    {
+                        "file_id": "e770e245-5688-422b-8965-1fc181f3edc8",
+                        "id": "uLg9IXQBpwE8LF2WLs53",
+                        "lines": [
+                            {
+                                "line_words": "SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA",
+                                "ocr_line": "line_9_34",
+                                "score": 12.810875,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1122,
+                                            1399,
+                                            1336,
+                                            1463
+                                        ],
+                                        "ocrx_word": "word_9_200",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1122 1399 1336 1463; x_wconf 100",
+                                        "word": "ENERGIA"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador",
+                                "ocr_line": "line_9_35",
+                                "score": 11.641573,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            773,
+                                            1475,
+                                            908,
+                                            1536
+                                        ],
+                                        "ocrx_word": "word_9_208",
+                                        "score": 7.5950336,
+                                        "title": "bbox 773 1475 908 1536; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                                "ocr_line": "line_9_67",
+                                "score": 11.026204,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1234,
+                                            3243,
+                                            1369,
+                                            3304
+                                        ],
+                                        "ocrx_word": "word_9_513",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1234 3243 1369 3304; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_9",
+                        "page": 9,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 10 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN c) Todos os circuitos para o sistema de intercomunica\u00e7\u00e3o s\u00e3o energizados durante todo o ciclo; d) Abertura da quantidade de disjuntores correspondente a condi\u00e7\u00e3o operacional mais severa no in\u00edcio do ciclo; e) Fechamento da quantidade de disjuntores correspondente \u00e0 energiza\u00e7\u00e3o dos carregadores de bateria. O carregador deve ser ligado em paralelo com a bateria, sendo esta \u00faltima mantida em flutua\u00e7\u00e3o autom\u00e1tica. O carregador deve possuir recarga manual e autom\u00e1tica e ser capaz de manter a tens\u00e3o de sa\u00edda do consumidor dentro de limites adequados \u00e0 opera\u00e7\u00e3o das cargas. O n\u00edvel de tens\u00e3o residual alternada (ripple) para as cargas n\u00e3o deve ser superior a 2%, estando a bateria desconectada O carregador deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ser flutuante. Deve ser prevista sinaliza\u00e7\u00e3o no caso de aterramento acidental de um dos polos do sistema, a ser localizada na parte frontal do Painel de Corrente Cont\u00ednua. 4.3. SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador de bateria, inversor, transformador auxiliar de alimenta\u00e7\u00e3o alternativa (by-pass), chave est\u00e1tica e um quadro de distribui\u00e7\u00e3o de UPS. Quando necess\u00e1rio ao projeto a instala\u00e7\u00e3o de UPS na subesta\u00e7\u00e3o, deve haver um sistema destinado a alimentar as cargas de instrumenta\u00e7\u00e3o, shut-down e sistemas de seguran\u00e7a em 120 V CA; independente de outros UPSs eventualmente requeridos com outras finalidades, tal como alimenta\u00e7\u00e3o de ilumina\u00e7\u00e3o de emerg\u00eancia em corrente alternada. As cargas de Telecomunica\u00e7\u00f5es tamb\u00e9m devem ser consideradas. A alimenta\u00e7\u00e3o el\u00e9trica para atender os equipamentos de Telecomunica\u00e7\u00f5es deve ser em 208 VAC. O UPS destinado a alimenta\u00e7\u00e3o de instrumenta\u00e7\u00e3o, anteriormente descrito deve possuir bateria de acumuladores dimensionada para um per\u00edodo necess\u00e1rio a parada segura das unidades de processo. Para carregador de bateria e a bateria de acumuladores do UPS, sempre que aplic\u00e1vel, devem ser seguidos os crit\u00e9rios descritos para sistema de corrente cont\u00ednua. Para alimenta\u00e7\u00e3o das cargas atrav\u00e9s do UPS, devem ser seguidos os seguintes crit\u00e9rios de segrega\u00e7\u00e3o, \u00e0 partir do painel de distribui\u00e7\u00e3o do UPS: a) Devem ser previstos circuitos de alimenta\u00e7\u00e3o exclusivos para a automa\u00e7\u00e3o; b) Devem ser previstos circuitos exclusivos para grupos de instrumentos; c) Devem ser previstos circuitos exclusivos para cada c\u00e2mera e para cada ponto de controle de acesso eletr\u00f4nico; d) Devem ser previstos circuitos exclusivos para grandes equipamentos como fornos, compressores, caldeiras, etc. e) Devem ser previsto dois circuitos exclusivos para cada bastidor de Telecomunica\u00e7\u00f5es. O UPS deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ter neutro isolado. O Painel deve conter sistema de monitora\u00e7\u00e3o de isolamento capaz de identificar o ramal da carga com baixa isola\u00e7\u00e3o. A condi\u00e7\u00e3o mais severa deve ser considerada para o dimensionamento do UPS, considerando a parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                        "score": 39.484756
+                    },
+                    {
+                        "file_id": "ed863078-463c-4302-bd6a-e6ef7db89778",
+                        "id": "fbg8IXQBpwE8LF2W7c4n",
+                        "lines": [
+                            {
+                                "line_words": "SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA",
+                                "ocr_line": "line_9_34",
+                                "score": 12.810875,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1122,
+                                            1399,
+                                            1336,
+                                            1463
+                                        ],
+                                        "ocrx_word": "word_9_200",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1122 1399 1336 1463; x_wconf 100",
+                                        "word": "ENERGIA"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador",
+                                "ocr_line": "line_9_35",
+                                "score": 11.641573,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            773,
+                                            1475,
+                                            908,
+                                            1536
+                                        ],
+                                        "ocrx_word": "word_9_208",
+                                        "score": 7.5950336,
+                                        "title": "bbox 773 1475 908 1536; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                                "ocr_line": "line_9_67",
+                                "score": 11.026204,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1234,
+                                            3243,
+                                            1369,
+                                            3304
+                                        ],
+                                        "ocrx_word": "word_9_513",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1234 3243 1369 3304; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_9",
+                        "page": 9,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 10 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN c) Todos os circuitos para o sistema de intercomunica\u00e7\u00e3o s\u00e3o energizados durante todo o ciclo; d) Abertura da quantidade de disjuntores correspondente a condi\u00e7\u00e3o operacional mais severa no in\u00edcio do ciclo; e) Fechamento da quantidade de disjuntores correspondente \u00e0 energiza\u00e7\u00e3o dos carregadores de bateria. O carregador deve ser ligado em paralelo com a bateria, sendo esta \u00faltima mantida em flutua\u00e7\u00e3o autom\u00e1tica. O carregador deve possuir recarga manual e autom\u00e1tica e ser capaz de manter a tens\u00e3o de sa\u00edda do consumidor dentro de limites adequados \u00e0 opera\u00e7\u00e3o das cargas. O n\u00edvel de tens\u00e3o residual alternada (ripple) para as cargas n\u00e3o deve ser superior a 2%, estando a bateria desconectada O carregador deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ser flutuante. Deve ser prevista sinaliza\u00e7\u00e3o no caso de aterramento acidental de um dos polos do sistema, a ser localizada na parte frontal do Painel de Corrente Cont\u00ednua. 4.3. SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador de bateria, inversor, transformador auxiliar de alimenta\u00e7\u00e3o alternativa (by-pass), chave est\u00e1tica e um quadro de distribui\u00e7\u00e3o de UPS. Quando necess\u00e1rio ao projeto a instala\u00e7\u00e3o de UPS na subesta\u00e7\u00e3o, deve haver um sistema destinado a alimentar as cargas de instrumenta\u00e7\u00e3o, shut-down e sistemas de seguran\u00e7a em 120 V CA; independente de outros UPSs eventualmente requeridos com outras finalidades, tal como alimenta\u00e7\u00e3o de ilumina\u00e7\u00e3o de emerg\u00eancia em corrente alternada. As cargas de Telecomunica\u00e7\u00f5es tamb\u00e9m devem ser consideradas. A alimenta\u00e7\u00e3o el\u00e9trica para atender os equipamentos de Telecomunica\u00e7\u00f5es deve ser em 208 VAC. O UPS destinado a alimenta\u00e7\u00e3o de instrumenta\u00e7\u00e3o, anteriormente descrito deve possuir bateria de acumuladores dimensionada para um per\u00edodo necess\u00e1rio a parada segura das unidades de processo. Para carregador de bateria e a bateria de acumuladores do UPS, sempre que aplic\u00e1vel, devem ser seguidos os crit\u00e9rios descritos para sistema de corrente cont\u00ednua. Para alimenta\u00e7\u00e3o das cargas atrav\u00e9s do UPS, devem ser seguidos os seguintes crit\u00e9rios de segrega\u00e7\u00e3o, \u00e0 partir do painel de distribui\u00e7\u00e3o do UPS: a) Devem ser previstos circuitos de alimenta\u00e7\u00e3o exclusivos para a automa\u00e7\u00e3o; b) Devem ser previstos circuitos exclusivos para grupos de instrumentos; c) Devem ser previstos circuitos exclusivos para cada c\u00e2mera e para cada ponto de controle de acesso eletr\u00f4nico; d) Devem ser previstos circuitos exclusivos para grandes equipamentos como fornos, compressores, caldeiras, etc. e) Devem ser previsto dois circuitos exclusivos para cada bastidor de Telecomunica\u00e7\u00f5es. O UPS deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ter neutro isolado. O Painel deve conter sistema de monitora\u00e7\u00e3o de isolamento capaz de identificar o ramal da carga com baixa isola\u00e7\u00e3o. A condi\u00e7\u00e3o mais severa deve ser considerada para o dimensionamento do UPS, considerando a parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                        "score": 39.484756
+                    },
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "qLg9IXQBpwE8LF2Wyc91",
+                        "lines": [
+                            {
+                                "line_words": "Energia da USP)",
+                                "ocr_line": "line_43_38",
+                                "score": 14.93058,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            611,
+                                            1805,
+                                            754,
+                                            1866
+                                        ],
+                                        "ocrx_word": "word_43_209",
+                                        "score": 7.5950336,
+                                        "title": "bbox 611 1805 754 1866; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "CEPEL Centro de Pesquisas de Energia El\u00e9trica",
+                                "ocr_line": "line_43_24",
+                                "score": 13.130802,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1226,
+                                            891,
+                                            1368,
+                                            952
+                                        ],
+                                        "ocrx_word": "word_43_135",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1226 891 1368 952; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_43",
+                        "page": 43,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 44 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN Equipamentos e materiais para uso em \u00e1rea classificada, que n\u00e3o possam ser de uso geral, devem possuir Certifica\u00e7\u00e3o de Conformidade, atendendo \u00e0 Portaria INMETRO n\u00ba 179 de 18/05/2010. Esta Resolu\u00e7\u00e3o Normativa pode ser encontrada no web site: http://www.inmetro.gov.br. Este certificado deve ser emitido por um Organismo de Certifica\u00e7\u00e3o de Produto (OCP), que \u00e9 uma entidade credenciada pelo INMETRO respons\u00e1vel pela emiss\u00e3o dos Certificados de Conformidade e pelas inspe\u00e7\u00f5es dos produtos certificados, atestando a similaridade dos requisitos analisados com as disposi\u00e7\u00f5es da Resolu\u00e7\u00e3o acima mencionada. Os organismos de certifica\u00e7\u00e3o credenciados s\u00e3o os seguintes: \u2022 CEPEL - Centro de Pesquisas de Energia El\u00e9trica Escrit\u00f3rio de Certifica\u00e7\u00e3o de Produtos - ECPS Address: Av. 1, s/n\u00ba - Ilha da Cidade Universit\u00e1ria 21941-590 - Rio de Janeiro - RJ -Brasil Tel. + 55-21-598-2442 or 598-2461 Fax. + 55-21-598-2443 \u2022 UCIEE - Uni\u00e3o Certificadora de Ind\u00fastria Eletro-eletr\u00f4nica Address: Av. Brigadeiro Faria Lima, 613, 2\u00ba andar S\u00e3o Paulo - SP -Brazil Tel. + 55-11-820-7144 Fax. + 55-11-820-2674 \u2022 CERTUSP - Servi\u00e7o T\u00e9cnico de Certifica\u00e7\u00e3o do IEE/USP (Instituto de Eletrot\u00e9cnica e Energia da USP) Address: Av. Prof. Luciano Gualberto, 1289 Cidade Universit\u00e1ria - S\u00e3o Paulo - SP CEP 05508-900 - S\u00e3o Paulo - SP - Brazil Tel. + 55-11-818-4912 Fax. + 55-11-212-9923 http://www.iee.usp.br e-mail: certusp@iee.usp.br Em princ\u00edpio, a menos de casos particulares previamente aprovados pela PETROBRAS, equipamentos para uso em \u00e1rea classificada devem atender \u00e0 classe de temperatura T3. Caso os produtos envolvidos requeiram equipamentos com temperatura m\u00e1xima de superf\u00edcie menor que a estabelecida para a classe de temperatura T3, devem ser adotadas classes de temperatura condizentes com os mesmos. No caso de fornecimento de equipamentos ou componentes importados, o fornecedor deve garantir facilidades quanto \u00e0 assist\u00eancia t\u00e9cnica, bem como o pronto atendimento no fornecimento de pe\u00e7as de reposi\u00e7\u00e3o. Especifica\u00e7\u00f5es de equipamentos, componentes e materiais devem atender eventuais padroniza\u00e7\u00f5es de tipos ou modelos definidos pelo cliente. Esta padroniza\u00e7\u00e3o pode ocorrer devido a facilidades de manuten\u00e7\u00e3o ou opera\u00e7\u00e3o. Equipamentos de um mesmo tipo, como por exemplo, transformadores de for\u00e7a, conversores de frequ\u00eancia ou pain\u00e9is devem ser de um \u00fanico fabricante.",
+                        "score": 31.887033
+                    },
+                    {
+                        "file_id": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                        "id": "Erg9IXQBpwE8LF2WXM8y",
+                        "lines": [
+                            {
+                                "line_words": "Energia da USP)",
+                                "ocr_line": "line_43_38",
+                                "score": 14.93058,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            611,
+                                            1805,
+                                            754,
+                                            1866
+                                        ],
+                                        "ocrx_word": "word_43_209",
+                                        "score": 7.5950336,
+                                        "title": "bbox 611 1805 754 1866; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "CEPEL Centro de Pesquisas de Energia El\u00e9trica",
+                                "ocr_line": "line_43_24",
+                                "score": 13.130802,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1226,
+                                            891,
+                                            1368,
+                                            952
+                                        ],
+                                        "ocrx_word": "word_43_135",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1226 891 1368 952; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_43",
+                        "page": 43,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 44 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN Equipamentos e materiais para uso em \u00e1rea classificada, que n\u00e3o possam ser de uso geral, devem possuir Certifica\u00e7\u00e3o de Conformidade, atendendo \u00e0 Portaria INMETRO n\u00ba 179 de 18/05/2010. Esta Resolu\u00e7\u00e3o Normativa pode ser encontrada no web site: http://www.inmetro.gov.br. Este certificado deve ser emitido por um Organismo de Certifica\u00e7\u00e3o de Produto (OCP), que \u00e9 uma entidade credenciada pelo INMETRO respons\u00e1vel pela emiss\u00e3o dos Certificados de Conformidade e pelas inspe\u00e7\u00f5es dos produtos certificados, atestando a similaridade dos requisitos analisados com as disposi\u00e7\u00f5es da Resolu\u00e7\u00e3o acima mencionada. Os organismos de certifica\u00e7\u00e3o credenciados s\u00e3o os seguintes: \u2022 CEPEL - Centro de Pesquisas de Energia El\u00e9trica Escrit\u00f3rio de Certifica\u00e7\u00e3o de Produtos - ECPS Address: Av. 1, s/n\u00ba - Ilha da Cidade Universit\u00e1ria 21941-590 - Rio de Janeiro - RJ -Brasil Tel. + 55-21-598-2442 or 598-2461 Fax. + 55-21-598-2443 \u2022 UCIEE - Uni\u00e3o Certificadora de Ind\u00fastria Eletro-eletr\u00f4nica Address: Av. Brigadeiro Faria Lima, 613, 2\u00ba andar S\u00e3o Paulo - SP -Brazil Tel. + 55-11-820-7144 Fax. + 55-11-820-2674 \u2022 CERTUSP - Servi\u00e7o T\u00e9cnico de Certifica\u00e7\u00e3o do IEE/USP (Instituto de Eletrot\u00e9cnica e Energia da USP) Address: Av. Prof. Luciano Gualberto, 1289 Cidade Universit\u00e1ria - S\u00e3o Paulo - SP CEP 05508-900 - S\u00e3o Paulo - SP - Brazil Tel. + 55-11-818-4912 Fax. + 55-11-212-9923 http://www.iee.usp.br e-mail: certusp@iee.usp.br Em princ\u00edpio, a menos de casos particulares previamente aprovados pela PETROBRAS, equipamentos para uso em \u00e1rea classificada devem atender \u00e0 classe de temperatura T3. Caso os produtos envolvidos requeiram equipamentos com temperatura m\u00e1xima de superf\u00edcie menor que a estabelecida para a classe de temperatura T3, devem ser adotadas classes de temperatura condizentes com os mesmos. No caso de fornecimento de equipamentos ou componentes importados, o fornecedor deve garantir facilidades quanto \u00e0 assist\u00eancia t\u00e9cnica, bem como o pronto atendimento no fornecimento de pe\u00e7as de reposi\u00e7\u00e3o. Especifica\u00e7\u00f5es de equipamentos, componentes e materiais devem atender eventuais padroniza\u00e7\u00f5es de tipos ou modelos definidos pelo cliente. Esta padroniza\u00e7\u00e3o pode ocorrer devido a facilidades de manuten\u00e7\u00e3o ou opera\u00e7\u00e3o. Equipamentos de um mesmo tipo, como por exemplo, transformadores de for\u00e7a, conversores de frequ\u00eancia ou pain\u00e9is devem ser de um \u00fanico fabricante.",
+                        "score": 31.887033
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "4rg-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "Energia da USP)",
+                                "ocr_line": "line_43_38",
+                                "score": 14.93058,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            611,
+                                            1805,
+                                            754,
+                                            1866
+                                        ],
+                                        "ocrx_word": "word_43_209",
+                                        "score": 7.5950336,
+                                        "title": "bbox 611 1805 754 1866; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "CEPEL Centro de Pesquisas de Energia El\u00e9trica",
+                                "ocr_line": "line_43_24",
+                                "score": 13.130802,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1226,
+                                            891,
+                                            1368,
+                                            952
+                                        ],
+                                        "ocrx_word": "word_43_135",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1226 891 1368 952; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_43",
+                        "page": 43,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 44 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN Equipamentos e materiais para uso em \u00e1rea classificada, que n\u00e3o possam ser de uso geral, devem possuir Certifica\u00e7\u00e3o de Conformidade, atendendo \u00e0 Portaria INMETRO n\u00ba 179 de 18/05/2010. Esta Resolu\u00e7\u00e3o Normativa pode ser encontrada no web site: http://www.inmetro.gov.br. Este certificado deve ser emitido por um Organismo de Certifica\u00e7\u00e3o de Produto (OCP), que \u00e9 uma entidade credenciada pelo INMETRO respons\u00e1vel pela emiss\u00e3o dos Certificados de Conformidade e pelas inspe\u00e7\u00f5es dos produtos certificados, atestando a similaridade dos requisitos analisados com as disposi\u00e7\u00f5es da Resolu\u00e7\u00e3o acima mencionada. Os organismos de certifica\u00e7\u00e3o credenciados s\u00e3o os seguintes: \u2022 CEPEL - Centro de Pesquisas de Energia El\u00e9trica Escrit\u00f3rio de Certifica\u00e7\u00e3o de Produtos - ECPS Address: Av. 1, s/n\u00ba - Ilha da Cidade Universit\u00e1ria 21941-590 - Rio de Janeiro - RJ -Brasil Tel. + 55-21-598-2442 or 598-2461 Fax. + 55-21-598-2443 \u2022 UCIEE - Uni\u00e3o Certificadora de Ind\u00fastria Eletro-eletr\u00f4nica Address: Av. Brigadeiro Faria Lima, 613, 2\u00ba andar S\u00e3o Paulo - SP -Brazil Tel. + 55-11-820-7144 Fax. + 55-11-820-2674 \u2022 CERTUSP - Servi\u00e7o T\u00e9cnico de Certifica\u00e7\u00e3o do IEE/USP (Instituto de Eletrot\u00e9cnica e Energia da USP) Address: Av. Prof. Luciano Gualberto, 1289 Cidade Universit\u00e1ria - S\u00e3o Paulo - SP CEP 05508-900 - S\u00e3o Paulo - SP - Brazil Tel. + 55-11-818-4912 Fax. + 55-11-212-9923 http://www.iee.usp.br e-mail: certusp@iee.usp.br Em princ\u00edpio, a menos de casos particulares previamente aprovados pela PETROBRAS, equipamentos para uso em \u00e1rea classificada devem atender \u00e0 classe de temperatura T3. Caso os produtos envolvidos requeiram equipamentos com temperatura m\u00e1xima de superf\u00edcie menor que a estabelecida para a classe de temperatura T3, devem ser adotadas classes de temperatura condizentes com os mesmos. No caso de fornecimento de equipamentos ou componentes importados, o fornecedor deve garantir facilidades quanto \u00e0 assist\u00eancia t\u00e9cnica, bem como o pronto atendimento no fornecimento de pe\u00e7as de reposi\u00e7\u00e3o. Especifica\u00e7\u00f5es de equipamentos, componentes e materiais devem atender eventuais padroniza\u00e7\u00f5es de tipos ou modelos definidos pelo cliente. Esta padroniza\u00e7\u00e3o pode ocorrer devido a facilidades de manuten\u00e7\u00e3o ou opera\u00e7\u00e3o. Equipamentos de um mesmo tipo, como por exemplo, transformadores de for\u00e7a, conversores de frequ\u00eancia ou pain\u00e9is devem ser de um \u00fanico fabricante.",
+                        "score": 31.887033
+                    },
+                    {
+                        "file_id": "e770e245-5688-422b-8965-1fc181f3edc8",
+                        "id": "2rg9IXQBpwE8LF2WLs53",
+                        "lines": [
+                            {
+                                "line_words": "Energia da USP)",
+                                "ocr_line": "line_43_38",
+                                "score": 14.93058,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            611,
+                                            1805,
+                                            754,
+                                            1866
+                                        ],
+                                        "ocrx_word": "word_43_209",
+                                        "score": 7.5950336,
+                                        "title": "bbox 611 1805 754 1866; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "CEPEL Centro de Pesquisas de Energia El\u00e9trica",
+                                "ocr_line": "line_43_24",
+                                "score": 13.130802,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1226,
+                                            891,
+                                            1368,
+                                            952
+                                        ],
+                                        "ocrx_word": "word_43_135",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1226 891 1368 952; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_43",
+                        "page": 43,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 44 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN Equipamentos e materiais para uso em \u00e1rea classificada, que n\u00e3o possam ser de uso geral, devem possuir Certifica\u00e7\u00e3o de Conformidade, atendendo \u00e0 Portaria INMETRO n\u00ba 179 de 18/05/2010. Esta Resolu\u00e7\u00e3o Normativa pode ser encontrada no web site: http://www.inmetro.gov.br. Este certificado deve ser emitido por um Organismo de Certifica\u00e7\u00e3o de Produto (OCP), que \u00e9 uma entidade credenciada pelo INMETRO respons\u00e1vel pela emiss\u00e3o dos Certificados de Conformidade e pelas inspe\u00e7\u00f5es dos produtos certificados, atestando a similaridade dos requisitos analisados com as disposi\u00e7\u00f5es da Resolu\u00e7\u00e3o acima mencionada. Os organismos de certifica\u00e7\u00e3o credenciados s\u00e3o os seguintes: \u2022 CEPEL - Centro de Pesquisas de Energia El\u00e9trica Escrit\u00f3rio de Certifica\u00e7\u00e3o de Produtos - ECPS Address: Av. 1, s/n\u00ba - Ilha da Cidade Universit\u00e1ria 21941-590 - Rio de Janeiro - RJ -Brasil Tel. + 55-21-598-2442 or 598-2461 Fax. + 55-21-598-2443 \u2022 UCIEE - Uni\u00e3o Certificadora de Ind\u00fastria Eletro-eletr\u00f4nica Address: Av. Brigadeiro Faria Lima, 613, 2\u00ba andar S\u00e3o Paulo - SP -Brazil Tel. + 55-11-820-7144 Fax. + 55-11-820-2674 \u2022 CERTUSP - Servi\u00e7o T\u00e9cnico de Certifica\u00e7\u00e3o do IEE/USP (Instituto de Eletrot\u00e9cnica e Energia da USP) Address: Av. Prof. Luciano Gualberto, 1289 Cidade Universit\u00e1ria - S\u00e3o Paulo - SP CEP 05508-900 - S\u00e3o Paulo - SP - Brazil Tel. + 55-11-818-4912 Fax. + 55-11-212-9923 http://www.iee.usp.br e-mail: certusp@iee.usp.br Em princ\u00edpio, a menos de casos particulares previamente aprovados pela PETROBRAS, equipamentos para uso em \u00e1rea classificada devem atender \u00e0 classe de temperatura T3. Caso os produtos envolvidos requeiram equipamentos com temperatura m\u00e1xima de superf\u00edcie menor que a estabelecida para a classe de temperatura T3, devem ser adotadas classes de temperatura condizentes com os mesmos. No caso de fornecimento de equipamentos ou componentes importados, o fornecedor deve garantir facilidades quanto \u00e0 assist\u00eancia t\u00e9cnica, bem como o pronto atendimento no fornecimento de pe\u00e7as de reposi\u00e7\u00e3o. Especifica\u00e7\u00f5es de equipamentos, componentes e materiais devem atender eventuais padroniza\u00e7\u00f5es de tipos ou modelos definidos pelo cliente. Esta padroniza\u00e7\u00e3o pode ocorrer devido a facilidades de manuten\u00e7\u00e3o ou opera\u00e7\u00e3o. Equipamentos de um mesmo tipo, como por exemplo, transformadores de for\u00e7a, conversores de frequ\u00eancia ou pain\u00e9is devem ser de um \u00fanico fabricante.",
+                        "score": 31.887033
+                    },
+                    {
+                        "file_id": "ed863078-463c-4302-bd6a-e6ef7db89778",
+                        "id": "n7g8IXQBpwE8LF2W7c4n",
+                        "lines": [
+                            {
+                                "line_words": "Energia da USP)",
+                                "ocr_line": "line_43_38",
+                                "score": 14.93058,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            611,
+                                            1805,
+                                            754,
+                                            1866
+                                        ],
+                                        "ocrx_word": "word_43_209",
+                                        "score": 7.5950336,
+                                        "title": "bbox 611 1805 754 1866; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "CEPEL Centro de Pesquisas de Energia El\u00e9trica",
+                                "ocr_line": "line_43_24",
+                                "score": 13.130802,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1226,
+                                            891,
+                                            1368,
+                                            952
+                                        ],
+                                        "ocrx_word": "word_43_135",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1226 891 1368 952; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_43",
+                        "page": 43,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 44 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN Equipamentos e materiais para uso em \u00e1rea classificada, que n\u00e3o possam ser de uso geral, devem possuir Certifica\u00e7\u00e3o de Conformidade, atendendo \u00e0 Portaria INMETRO n\u00ba 179 de 18/05/2010. Esta Resolu\u00e7\u00e3o Normativa pode ser encontrada no web site: http://www.inmetro.gov.br. Este certificado deve ser emitido por um Organismo de Certifica\u00e7\u00e3o de Produto (OCP), que \u00e9 uma entidade credenciada pelo INMETRO respons\u00e1vel pela emiss\u00e3o dos Certificados de Conformidade e pelas inspe\u00e7\u00f5es dos produtos certificados, atestando a similaridade dos requisitos analisados com as disposi\u00e7\u00f5es da Resolu\u00e7\u00e3o acima mencionada. Os organismos de certifica\u00e7\u00e3o credenciados s\u00e3o os seguintes: \u2022 CEPEL - Centro de Pesquisas de Energia El\u00e9trica Escrit\u00f3rio de Certifica\u00e7\u00e3o de Produtos - ECPS Address: Av. 1, s/n\u00ba - Ilha da Cidade Universit\u00e1ria 21941-590 - Rio de Janeiro - RJ -Brasil Tel. + 55-21-598-2442 or 598-2461 Fax. + 55-21-598-2443 \u2022 UCIEE - Uni\u00e3o Certificadora de Ind\u00fastria Eletro-eletr\u00f4nica Address: Av. Brigadeiro Faria Lima, 613, 2\u00ba andar S\u00e3o Paulo - SP -Brazil Tel. + 55-11-820-7144 Fax. + 55-11-820-2674 \u2022 CERTUSP - Servi\u00e7o T\u00e9cnico de Certifica\u00e7\u00e3o do IEE/USP (Instituto de Eletrot\u00e9cnica e Energia da USP) Address: Av. Prof. Luciano Gualberto, 1289 Cidade Universit\u00e1ria - S\u00e3o Paulo - SP CEP 05508-900 - S\u00e3o Paulo - SP - Brazil Tel. + 55-11-818-4912 Fax. + 55-11-212-9923 http://www.iee.usp.br e-mail: certusp@iee.usp.br Em princ\u00edpio, a menos de casos particulares previamente aprovados pela PETROBRAS, equipamentos para uso em \u00e1rea classificada devem atender \u00e0 classe de temperatura T3. Caso os produtos envolvidos requeiram equipamentos com temperatura m\u00e1xima de superf\u00edcie menor que a estabelecida para a classe de temperatura T3, devem ser adotadas classes de temperatura condizentes com os mesmos. No caso de fornecimento de equipamentos ou componentes importados, o fornecedor deve garantir facilidades quanto \u00e0 assist\u00eancia t\u00e9cnica, bem como o pronto atendimento no fornecimento de pe\u00e7as de reposi\u00e7\u00e3o. Especifica\u00e7\u00f5es de equipamentos, componentes e materiais devem atender eventuais padroniza\u00e7\u00f5es de tipos ou modelos definidos pelo cliente. Esta padroniza\u00e7\u00e3o pode ocorrer devido a facilidades de manuten\u00e7\u00e3o ou opera\u00e7\u00e3o. Equipamentos de um mesmo tipo, como por exemplo, transformadores de for\u00e7a, conversores de frequ\u00eancia ou pain\u00e9is devem ser de um \u00fanico fabricante.",
+                        "score": 31.887033
+                    },
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "pbg9IXQBpwE8LF2Wyc91",
+                        "lines": [
+                            {
+                                "line_words": "solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET.",
+                                "ocr_line": "line_40_38",
+                                "score": 11.831522,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1094,
+                                            1533,
+                                            1236,
+                                            1594
+                                        ],
+                                        "ocrx_word": "word_40_180",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1094 1533 1236 1594; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia",
+                                "ocr_line": "line_40_36",
+                                "score": 11.467925,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2133,
+                                            1427,
+                                            2268,
+                                            1488
+                                        ],
+                                        "ocrx_word": "word_40_155",
+                                        "score": 7.5950336,
+                                        "title": "bbox 2133 1427 2268 1488; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_40",
+                        "page": 40,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 41 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u2022 Disjuntor fechado (cor vermelha); \u2022 Disjuntor aberto (cor verde); \u2022 Mola descarregada (cor amarela); \u2022 Posi\u00e7\u00e3o teste ou extra\u00eddo (cor branca); \u2022 Supervis\u00e3o da bobina de abertura (cor branca). Os disjuntores de entrada, interliga\u00e7\u00e3o e de alimenta\u00e7\u00e3o de CCMs devem possuir os seguintes contatos dispon\u00edveis para sinaliza\u00e7\u00e3o remota: \u2022 Posi\u00e7\u00e3o \u201cinserido\u201d; \u2022 Estado do disjuntor \u201cligado\u201d e \u201cdesligado\u201d. Os rel\u00e9s t\u00e9rmicos das sa\u00eddas para motores dos CCMs devem ser separados dos respectivos disjuntores caixa moldada. N\u00e3o s\u00e3o aceit\u00e1veis rel\u00e9s t\u00e9rmicos incorporados aos disjuntores de caixa moldada. O certificado para resist\u00eancia ao arco interno do painel deve ser adequado ao local onde ser\u00e1 instalado na subesta\u00e7\u00e3o. Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia incidente de arco de, no m\u00e1ximo, 33,47 J/cm 2 (8cal/cm 2 ), devendo para isso ser adotada uma das solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET. Todos os cub\u00edculos e gavetas de cargas mot\u00f3ricas dever\u00e3o possuir bot\u00e3o de emerg\u00eancia vermelho do tipo cogumelo, que abre o seu respectivo circuito. Todos os cub\u00edculos e gavetas dever\u00e3o ser identificados atrav\u00e9s de plaquetas contendo no m\u00ednimo o tag do equipamento alimentado e sua descri\u00e7\u00e3o. O comando de liga local dos disjuntores que alimentam cargas mot\u00f3ricas s\u00f3 deve atuar com disjuntor na posi\u00e7\u00e3o de teste. 4.17. DUTOS DE BARRAMENTOS Os dutos de barramentos devem possuir barras isoladas. As capacidades de condu\u00e7\u00e3o de corrente dos dutos devem ser compat\u00edveis com as pot\u00eancias dos transformadores atingidas com ventila\u00e7\u00e3o for\u00e7ada. Adicionalmente, as capacidades nominais de condu\u00e7\u00e3o de corrente em regime cont\u00ednuo e de curto-circuito dos dutos devem ser iguais \u00e0s capacidades nominais dos barramentos do painel por eles alimentados. Os dutos de barramentos devem ser adequados \u00e0 instala\u00e7\u00e3o ao tempo, mesmo com a \u00e1rea externa da subesta\u00e7\u00e3o possuindo cobertura para os transformadores. A carca\u00e7a do duto deve ser feita de chapa de a\u00e7o dobrada. N\u00e3o devem ser feitas jun\u00e7\u00f5es e soldas no topo das carca\u00e7as do duto, de forma a evitar a entrada de umidade. Os dutos de m\u00e9dia tens\u00e3o devem possuir sistema de exaust\u00e3o de gases provenientes de curto- circuito interno com arco. O duto de barramento deve ser provido de resistores de aquecimento em seu interior, em quantidade e distribui\u00e7\u00e3o de forma a evitar a condensa\u00e7\u00e3o de umidade. Esses resistores devem ser controlados automaticamente por meio de termostatos, adequadamente localizados, com faixa de gradua\u00e7\u00e3o m\u00e1xima em 60 \u00baC. 4.18. PAIN\u00c9IS PARA ALIMENTA\u00c7\u00c3O DE V\u00c1LVULAS MOTORIZADAS Cada v\u00e1lvula motorizada deve possuir alimenta\u00e7\u00e3o individual, provida de prote\u00e7\u00e3o contra curto- circuito. Para v\u00e1lvulas distantes da subesta\u00e7\u00e3o pode ser previsto painel de distribui\u00e7\u00e3o, localizado na \u00e1rea, pr\u00f3ximo \u00e0s v\u00e1lvulas motorizadas.",
+                        "score": 27.003984
+                    },
+                    {
+                        "file_id": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                        "id": "D7g9IXQBpwE8LF2WXM8y",
+                        "lines": [
+                            {
+                                "line_words": "solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET.",
+                                "ocr_line": "line_40_38",
+                                "score": 11.831522,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1094,
+                                            1533,
+                                            1236,
+                                            1594
+                                        ],
+                                        "ocrx_word": "word_40_180",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1094 1533 1236 1594; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia",
+                                "ocr_line": "line_40_36",
+                                "score": 11.467925,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2133,
+                                            1427,
+                                            2268,
+                                            1488
+                                        ],
+                                        "ocrx_word": "word_40_155",
+                                        "score": 7.5950336,
+                                        "title": "bbox 2133 1427 2268 1488; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_40",
+                        "page": 40,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 41 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u2022 Disjuntor fechado (cor vermelha); \u2022 Disjuntor aberto (cor verde); \u2022 Mola descarregada (cor amarela); \u2022 Posi\u00e7\u00e3o teste ou extra\u00eddo (cor branca); \u2022 Supervis\u00e3o da bobina de abertura (cor branca). Os disjuntores de entrada, interliga\u00e7\u00e3o e de alimenta\u00e7\u00e3o de CCMs devem possuir os seguintes contatos dispon\u00edveis para sinaliza\u00e7\u00e3o remota: \u2022 Posi\u00e7\u00e3o \u201cinserido\u201d; \u2022 Estado do disjuntor \u201cligado\u201d e \u201cdesligado\u201d. Os rel\u00e9s t\u00e9rmicos das sa\u00eddas para motores dos CCMs devem ser separados dos respectivos disjuntores caixa moldada. N\u00e3o s\u00e3o aceit\u00e1veis rel\u00e9s t\u00e9rmicos incorporados aos disjuntores de caixa moldada. O certificado para resist\u00eancia ao arco interno do painel deve ser adequado ao local onde ser\u00e1 instalado na subesta\u00e7\u00e3o. Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia incidente de arco de, no m\u00e1ximo, 33,47 J/cm 2 (8cal/cm 2 ), devendo para isso ser adotada uma das solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET. Todos os cub\u00edculos e gavetas de cargas mot\u00f3ricas dever\u00e3o possuir bot\u00e3o de emerg\u00eancia vermelho do tipo cogumelo, que abre o seu respectivo circuito. Todos os cub\u00edculos e gavetas dever\u00e3o ser identificados atrav\u00e9s de plaquetas contendo no m\u00ednimo o tag do equipamento alimentado e sua descri\u00e7\u00e3o. O comando de liga local dos disjuntores que alimentam cargas mot\u00f3ricas s\u00f3 deve atuar com disjuntor na posi\u00e7\u00e3o de teste. 4.17. DUTOS DE BARRAMENTOS Os dutos de barramentos devem possuir barras isoladas. As capacidades de condu\u00e7\u00e3o de corrente dos dutos devem ser compat\u00edveis com as pot\u00eancias dos transformadores atingidas com ventila\u00e7\u00e3o for\u00e7ada. Adicionalmente, as capacidades nominais de condu\u00e7\u00e3o de corrente em regime cont\u00ednuo e de curto-circuito dos dutos devem ser iguais \u00e0s capacidades nominais dos barramentos do painel por eles alimentados. Os dutos de barramentos devem ser adequados \u00e0 instala\u00e7\u00e3o ao tempo, mesmo com a \u00e1rea externa da subesta\u00e7\u00e3o possuindo cobertura para os transformadores. A carca\u00e7a do duto deve ser feita de chapa de a\u00e7o dobrada. N\u00e3o devem ser feitas jun\u00e7\u00f5es e soldas no topo das carca\u00e7as do duto, de forma a evitar a entrada de umidade. Os dutos de m\u00e9dia tens\u00e3o devem possuir sistema de exaust\u00e3o de gases provenientes de curto- circuito interno com arco. O duto de barramento deve ser provido de resistores de aquecimento em seu interior, em quantidade e distribui\u00e7\u00e3o de forma a evitar a condensa\u00e7\u00e3o de umidade. Esses resistores devem ser controlados automaticamente por meio de termostatos, adequadamente localizados, com faixa de gradua\u00e7\u00e3o m\u00e1xima em 60 \u00baC. 4.18. PAIN\u00c9IS PARA ALIMENTA\u00c7\u00c3O DE V\u00c1LVULAS MOTORIZADAS Cada v\u00e1lvula motorizada deve possuir alimenta\u00e7\u00e3o individual, provida de prote\u00e7\u00e3o contra curto- circuito. Para v\u00e1lvulas distantes da subesta\u00e7\u00e3o pode ser previsto painel de distribui\u00e7\u00e3o, localizado na \u00e1rea, pr\u00f3ximo \u00e0s v\u00e1lvulas motorizadas.",
+                        "score": 27.003984
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "37g-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET.",
+                                "ocr_line": "line_40_38",
+                                "score": 11.831522,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1094,
+                                            1533,
+                                            1236,
+                                            1594
+                                        ],
+                                        "ocrx_word": "word_40_180",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1094 1533 1236 1594; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia",
+                                "ocr_line": "line_40_36",
+                                "score": 11.467925,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2133,
+                                            1427,
+                                            2268,
+                                            1488
+                                        ],
+                                        "ocrx_word": "word_40_155",
+                                        "score": 7.5950336,
+                                        "title": "bbox 2133 1427 2268 1488; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_40",
+                        "page": 40,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 41 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u2022 Disjuntor fechado (cor vermelha); \u2022 Disjuntor aberto (cor verde); \u2022 Mola descarregada (cor amarela); \u2022 Posi\u00e7\u00e3o teste ou extra\u00eddo (cor branca); \u2022 Supervis\u00e3o da bobina de abertura (cor branca). Os disjuntores de entrada, interliga\u00e7\u00e3o e de alimenta\u00e7\u00e3o de CCMs devem possuir os seguintes contatos dispon\u00edveis para sinaliza\u00e7\u00e3o remota: \u2022 Posi\u00e7\u00e3o \u201cinserido\u201d; \u2022 Estado do disjuntor \u201cligado\u201d e \u201cdesligado\u201d. Os rel\u00e9s t\u00e9rmicos das sa\u00eddas para motores dos CCMs devem ser separados dos respectivos disjuntores caixa moldada. N\u00e3o s\u00e3o aceit\u00e1veis rel\u00e9s t\u00e9rmicos incorporados aos disjuntores de caixa moldada. O certificado para resist\u00eancia ao arco interno do painel deve ser adequado ao local onde ser\u00e1 instalado na subesta\u00e7\u00e3o. Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia incidente de arco de, no m\u00e1ximo, 33,47 J/cm 2 (8cal/cm 2 ), devendo para isso ser adotada uma das solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET. Todos os cub\u00edculos e gavetas de cargas mot\u00f3ricas dever\u00e3o possuir bot\u00e3o de emerg\u00eancia vermelho do tipo cogumelo, que abre o seu respectivo circuito. Todos os cub\u00edculos e gavetas dever\u00e3o ser identificados atrav\u00e9s de plaquetas contendo no m\u00ednimo o tag do equipamento alimentado e sua descri\u00e7\u00e3o. O comando de liga local dos disjuntores que alimentam cargas mot\u00f3ricas s\u00f3 deve atuar com disjuntor na posi\u00e7\u00e3o de teste. 4.17. DUTOS DE BARRAMENTOS Os dutos de barramentos devem possuir barras isoladas. As capacidades de condu\u00e7\u00e3o de corrente dos dutos devem ser compat\u00edveis com as pot\u00eancias dos transformadores atingidas com ventila\u00e7\u00e3o for\u00e7ada. Adicionalmente, as capacidades nominais de condu\u00e7\u00e3o de corrente em regime cont\u00ednuo e de curto-circuito dos dutos devem ser iguais \u00e0s capacidades nominais dos barramentos do painel por eles alimentados. Os dutos de barramentos devem ser adequados \u00e0 instala\u00e7\u00e3o ao tempo, mesmo com a \u00e1rea externa da subesta\u00e7\u00e3o possuindo cobertura para os transformadores. A carca\u00e7a do duto deve ser feita de chapa de a\u00e7o dobrada. N\u00e3o devem ser feitas jun\u00e7\u00f5es e soldas no topo das carca\u00e7as do duto, de forma a evitar a entrada de umidade. Os dutos de m\u00e9dia tens\u00e3o devem possuir sistema de exaust\u00e3o de gases provenientes de curto- circuito interno com arco. O duto de barramento deve ser provido de resistores de aquecimento em seu interior, em quantidade e distribui\u00e7\u00e3o de forma a evitar a condensa\u00e7\u00e3o de umidade. Esses resistores devem ser controlados automaticamente por meio de termostatos, adequadamente localizados, com faixa de gradua\u00e7\u00e3o m\u00e1xima em 60 \u00baC. 4.18. PAIN\u00c9IS PARA ALIMENTA\u00c7\u00c3O DE V\u00c1LVULAS MOTORIZADAS Cada v\u00e1lvula motorizada deve possuir alimenta\u00e7\u00e3o individual, provida de prote\u00e7\u00e3o contra curto- circuito. Para v\u00e1lvulas distantes da subesta\u00e7\u00e3o pode ser previsto painel de distribui\u00e7\u00e3o, localizado na \u00e1rea, pr\u00f3ximo \u00e0s v\u00e1lvulas motorizadas.",
+                        "score": 27.003984
+                    },
+                    {
+                        "file_id": "e770e245-5688-422b-8965-1fc181f3edc8",
+                        "id": "17g9IXQBpwE8LF2WLs53",
+                        "lines": [
+                            {
+                                "line_words": "solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET.",
+                                "ocr_line": "line_40_38",
+                                "score": 11.831522,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1094,
+                                            1533,
+                                            1236,
+                                            1594
+                                        ],
+                                        "ocrx_word": "word_40_180",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1094 1533 1236 1594; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia",
+                                "ocr_line": "line_40_36",
+                                "score": 11.467925,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2133,
+                                            1427,
+                                            2268,
+                                            1488
+                                        ],
+                                        "ocrx_word": "word_40_155",
+                                        "score": 7.5950336,
+                                        "title": "bbox 2133 1427 2268 1488; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_40",
+                        "page": 40,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 41 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u2022 Disjuntor fechado (cor vermelha); \u2022 Disjuntor aberto (cor verde); \u2022 Mola descarregada (cor amarela); \u2022 Posi\u00e7\u00e3o teste ou extra\u00eddo (cor branca); \u2022 Supervis\u00e3o da bobina de abertura (cor branca). Os disjuntores de entrada, interliga\u00e7\u00e3o e de alimenta\u00e7\u00e3o de CCMs devem possuir os seguintes contatos dispon\u00edveis para sinaliza\u00e7\u00e3o remota: \u2022 Posi\u00e7\u00e3o \u201cinserido\u201d; \u2022 Estado do disjuntor \u201cligado\u201d e \u201cdesligado\u201d. Os rel\u00e9s t\u00e9rmicos das sa\u00eddas para motores dos CCMs devem ser separados dos respectivos disjuntores caixa moldada. N\u00e3o s\u00e3o aceit\u00e1veis rel\u00e9s t\u00e9rmicos incorporados aos disjuntores de caixa moldada. O certificado para resist\u00eancia ao arco interno do painel deve ser adequado ao local onde ser\u00e1 instalado na subesta\u00e7\u00e3o. Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia incidente de arco de, no m\u00e1ximo, 33,47 J/cm 2 (8cal/cm 2 ), devendo para isso ser adotada uma das solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET. Todos os cub\u00edculos e gavetas de cargas mot\u00f3ricas dever\u00e3o possuir bot\u00e3o de emerg\u00eancia vermelho do tipo cogumelo, que abre o seu respectivo circuito. Todos os cub\u00edculos e gavetas dever\u00e3o ser identificados atrav\u00e9s de plaquetas contendo no m\u00ednimo o tag do equipamento alimentado e sua descri\u00e7\u00e3o. O comando de liga local dos disjuntores que alimentam cargas mot\u00f3ricas s\u00f3 deve atuar com disjuntor na posi\u00e7\u00e3o de teste. 4.17. DUTOS DE BARRAMENTOS Os dutos de barramentos devem possuir barras isoladas. As capacidades de condu\u00e7\u00e3o de corrente dos dutos devem ser compat\u00edveis com as pot\u00eancias dos transformadores atingidas com ventila\u00e7\u00e3o for\u00e7ada. Adicionalmente, as capacidades nominais de condu\u00e7\u00e3o de corrente em regime cont\u00ednuo e de curto-circuito dos dutos devem ser iguais \u00e0s capacidades nominais dos barramentos do painel por eles alimentados. Os dutos de barramentos devem ser adequados \u00e0 instala\u00e7\u00e3o ao tempo, mesmo com a \u00e1rea externa da subesta\u00e7\u00e3o possuindo cobertura para os transformadores. A carca\u00e7a do duto deve ser feita de chapa de a\u00e7o dobrada. N\u00e3o devem ser feitas jun\u00e7\u00f5es e soldas no topo das carca\u00e7as do duto, de forma a evitar a entrada de umidade. Os dutos de m\u00e9dia tens\u00e3o devem possuir sistema de exaust\u00e3o de gases provenientes de curto- circuito interno com arco. O duto de barramento deve ser provido de resistores de aquecimento em seu interior, em quantidade e distribui\u00e7\u00e3o de forma a evitar a condensa\u00e7\u00e3o de umidade. Esses resistores devem ser controlados automaticamente por meio de termostatos, adequadamente localizados, com faixa de gradua\u00e7\u00e3o m\u00e1xima em 60 \u00baC. 4.18. PAIN\u00c9IS PARA ALIMENTA\u00c7\u00c3O DE V\u00c1LVULAS MOTORIZADAS Cada v\u00e1lvula motorizada deve possuir alimenta\u00e7\u00e3o individual, provida de prote\u00e7\u00e3o contra curto- circuito. Para v\u00e1lvulas distantes da subesta\u00e7\u00e3o pode ser previsto painel de distribui\u00e7\u00e3o, localizado na \u00e1rea, pr\u00f3ximo \u00e0s v\u00e1lvulas motorizadas.",
+                        "score": 27.003984
+                    },
+                    {
+                        "file_id": "ed863078-463c-4302-bd6a-e6ef7db89778",
+                        "id": "nLg8IXQBpwE8LF2W7c4n",
+                        "lines": [
+                            {
+                                "line_words": "solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET.",
+                                "ocr_line": "line_40_38",
+                                "score": 11.831522,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1094,
+                                            1533,
+                                            1236,
+                                            1594
+                                        ],
+                                        "ocrx_word": "word_40_180",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1094 1533 1236 1594; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia",
+                                "ocr_line": "line_40_36",
+                                "score": 11.467925,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2133,
+                                            1427,
+                                            2268,
+                                            1488
+                                        ],
+                                        "ocrx_word": "word_40_155",
+                                        "score": 7.5950336,
+                                        "title": "bbox 2133 1427 2268 1488; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_40",
+                        "page": 40,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 41 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u2022 Disjuntor fechado (cor vermelha); \u2022 Disjuntor aberto (cor verde); \u2022 Mola descarregada (cor amarela); \u2022 Posi\u00e7\u00e3o teste ou extra\u00eddo (cor branca); \u2022 Supervis\u00e3o da bobina de abertura (cor branca). Os disjuntores de entrada, interliga\u00e7\u00e3o e de alimenta\u00e7\u00e3o de CCMs devem possuir os seguintes contatos dispon\u00edveis para sinaliza\u00e7\u00e3o remota: \u2022 Posi\u00e7\u00e3o \u201cinserido\u201d; \u2022 Estado do disjuntor \u201cligado\u201d e \u201cdesligado\u201d. Os rel\u00e9s t\u00e9rmicos das sa\u00eddas para motores dos CCMs devem ser separados dos respectivos disjuntores caixa moldada. N\u00e3o s\u00e3o aceit\u00e1veis rel\u00e9s t\u00e9rmicos incorporados aos disjuntores de caixa moldada. O certificado para resist\u00eancia ao arco interno do painel deve ser adequado ao local onde ser\u00e1 instalado na subesta\u00e7\u00e3o. Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia incidente de arco de, no m\u00e1ximo, 33,47 J/cm 2 (8cal/cm 2 ), devendo para isso ser adotada uma das solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET. Todos os cub\u00edculos e gavetas de cargas mot\u00f3ricas dever\u00e3o possuir bot\u00e3o de emerg\u00eancia vermelho do tipo cogumelo, que abre o seu respectivo circuito. Todos os cub\u00edculos e gavetas dever\u00e3o ser identificados atrav\u00e9s de plaquetas contendo no m\u00ednimo o tag do equipamento alimentado e sua descri\u00e7\u00e3o. O comando de liga local dos disjuntores que alimentam cargas mot\u00f3ricas s\u00f3 deve atuar com disjuntor na posi\u00e7\u00e3o de teste. 4.17. DUTOS DE BARRAMENTOS Os dutos de barramentos devem possuir barras isoladas. As capacidades de condu\u00e7\u00e3o de corrente dos dutos devem ser compat\u00edveis com as pot\u00eancias dos transformadores atingidas com ventila\u00e7\u00e3o for\u00e7ada. Adicionalmente, as capacidades nominais de condu\u00e7\u00e3o de corrente em regime cont\u00ednuo e de curto-circuito dos dutos devem ser iguais \u00e0s capacidades nominais dos barramentos do painel por eles alimentados. Os dutos de barramentos devem ser adequados \u00e0 instala\u00e7\u00e3o ao tempo, mesmo com a \u00e1rea externa da subesta\u00e7\u00e3o possuindo cobertura para os transformadores. A carca\u00e7a do duto deve ser feita de chapa de a\u00e7o dobrada. N\u00e3o devem ser feitas jun\u00e7\u00f5es e soldas no topo das carca\u00e7as do duto, de forma a evitar a entrada de umidade. Os dutos de m\u00e9dia tens\u00e3o devem possuir sistema de exaust\u00e3o de gases provenientes de curto- circuito interno com arco. O duto de barramento deve ser provido de resistores de aquecimento em seu interior, em quantidade e distribui\u00e7\u00e3o de forma a evitar a condensa\u00e7\u00e3o de umidade. Esses resistores devem ser controlados automaticamente por meio de termostatos, adequadamente localizados, com faixa de gradua\u00e7\u00e3o m\u00e1xima em 60 \u00baC. 4.18. PAIN\u00c9IS PARA ALIMENTA\u00c7\u00c3O DE V\u00c1LVULAS MOTORIZADAS Cada v\u00e1lvula motorizada deve possuir alimenta\u00e7\u00e3o individual, provida de prote\u00e7\u00e3o contra curto- circuito. Para v\u00e1lvulas distantes da subesta\u00e7\u00e3o pode ser previsto painel de distribui\u00e7\u00e3o, localizado na \u00e1rea, pr\u00f3ximo \u00e0s v\u00e1lvulas motorizadas.",
+                        "score": 27.003984
+                    },
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "m7g9IXQBpwE8LF2Wyc91",
+                        "lines": [
+                            {
+                                "line_words": "transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante;",
+                                "ocr_line": "line_30_35",
+                                "score": 11.641573,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1529,
+                                            1573,
+                                            1664,
+                                            1634
+                                        ],
+                                        "ocrx_word": "word_30_228",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1529 1573 1664 1634; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da",
+                                "ocr_line": "line_30_31",
+                                "score": 11.161806,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1700,
+                                            1362,
+                                            1835,
+                                            1423
+                                        ],
+                                        "ocrx_word": "word_30_178",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1700 1362 1835 1423; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_30",
+                        "page": 30,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 31 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN a) prote\u00e7\u00e3o contra sobreexcita\u00e7\u00e3o (Fun\u00e7\u00e3o 24); b) prote\u00e7\u00e3o por subtens\u00e3o (Fun\u00e7\u00e3o 27); c) fun\u00e7\u00f5es de monitora\u00e7\u00e3o e alarme (Fun\u00e7\u00f5es 30/74); d) prote\u00e7\u00e3o de perda de campo ou de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 40); e) prote\u00e7\u00e3o de sequ\u00eancia incompleta (Fun\u00e7\u00e3o 48); f) prote\u00e7\u00e3o contra sobrecarga t\u00e9rmica (Fun\u00e7\u00e3o 49); g) prote\u00e7\u00e3o contra falta a terra do sistema de corrente cont\u00ednua para alimenta\u00e7\u00e3o da excitatriz \u201cBrushless\u201d (Fun\u00e7\u00e3o 50 GS); h) prote\u00e7\u00e3o de sobrecorrente de tempo inverso (Fun\u00e7\u00e3o 51); i) prote\u00e7\u00e3o de verifica\u00e7\u00e3o de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 53); j) fun\u00e7\u00e3o de prote\u00e7\u00e3o por fator de pot\u00eancia (Fun\u00e7\u00e3o 55); k) fun\u00e7\u00e3o de supervis\u00e3o de falha de aplica\u00e7\u00e3o de campo (\u201cField Application Relay\u201d - FAR) (Fun\u00e7\u00e3o 56); l) monitora\u00e7\u00e3o de falha dos diodos rotativos (Fun\u00e7\u00e3o 58); m) prote\u00e7\u00e3o por sobretens\u00e3o (Fun\u00e7\u00e3o 59). Requisitos de Pr\u00e9-Excita\u00e7\u00e3o e Desexcita\u00e7\u00e3o do Campo a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da abertura do contator de campo na condi\u00e7\u00e3o mais cr\u00edtica. As sobretens\u00f5es que ocorram n\u00e3o devem causar danos a qualquer parte do equipamento; b) o contator de campo deve ser capaz de interromper a corrente de campo durante anormalidades transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante; c) o contator de campo deve possuir contatos auxiliares dispon\u00edveis para intertravamento com o sistema de prote\u00e7\u00e3o e controle do motor s\u00edncrono; d) caso ocorra falha no processo de pr\u00e9-excita\u00e7\u00e3o, deve haver sinaliza\u00e7\u00e3o correspondente a este defeito. Sinais de Comando, Controle e Supervis\u00e3o a serem Enviados ou Recebidos Atrav\u00e9s de Interface Serial a) indica\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; b) indica\u00e7\u00e3o do modo de opera\u00e7\u00e3o local/remoto; c) indica\u00e7\u00e3o de corrente e tens\u00e3o de campo; d) sele\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; e) indica\u00e7\u00e3o do \u201cstatus\u201d do contator de campo (aberto/fechado); f) ajuste do fator de pot\u00eancia; g) indica\u00e7\u00e3o de falha de tiristor; h) alarme de sum\u00e1rio de defeitos; i) habilita\u00e7\u00e3o do controlador autom\u00e1tico de fator de pot\u00eancia (\u201cAutomatic Power Factor Regulator\u201d - APFR); j) controle autom\u00e1tico/manual e local/remoto; k) temporizador do tipo c\u00e3o de guarda (\u201cWatch dog timer\u201d); l) sequ\u00eancia incompleta de partida; m) subexcita\u00e7\u00e3o de corrente; n) sobrexcita\u00e7\u00e3o de corrente; o) falha dos diodos rotativos; p) alarme de falha do rotor \u00e0 terra; q) falha de sincronismo; r) sobrecarga do sistema de excita\u00e7\u00e3o; s) subtens\u00e3o do sistema de excita\u00e7\u00e3o; t) falha geral da prote\u00e7\u00e3o; u) falha dos fus\u00edveis; v) falha de realimenta\u00e7\u00e3o do controlador; w) falha no controlador de fator de pot\u00eancia;",
+                        "score": 26.567148
+                    },
+                    {
+                        "file_id": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                        "id": "Bbg9IXQBpwE8LF2WXM8y",
+                        "lines": [
+                            {
+                                "line_words": "transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante;",
+                                "ocr_line": "line_30_35",
+                                "score": 11.641573,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1529,
+                                            1573,
+                                            1664,
+                                            1634
+                                        ],
+                                        "ocrx_word": "word_30_228",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1529 1573 1664 1634; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da",
+                                "ocr_line": "line_30_31",
+                                "score": 11.161806,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1700,
+                                            1362,
+                                            1835,
+                                            1423
+                                        ],
+                                        "ocrx_word": "word_30_178",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1700 1362 1835 1423; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_30",
+                        "page": 30,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 31 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN a) prote\u00e7\u00e3o contra sobreexcita\u00e7\u00e3o (Fun\u00e7\u00e3o 24); b) prote\u00e7\u00e3o por subtens\u00e3o (Fun\u00e7\u00e3o 27); c) fun\u00e7\u00f5es de monitora\u00e7\u00e3o e alarme (Fun\u00e7\u00f5es 30/74); d) prote\u00e7\u00e3o de perda de campo ou de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 40); e) prote\u00e7\u00e3o de sequ\u00eancia incompleta (Fun\u00e7\u00e3o 48); f) prote\u00e7\u00e3o contra sobrecarga t\u00e9rmica (Fun\u00e7\u00e3o 49); g) prote\u00e7\u00e3o contra falta a terra do sistema de corrente cont\u00ednua para alimenta\u00e7\u00e3o da excitatriz \u201cBrushless\u201d (Fun\u00e7\u00e3o 50 GS); h) prote\u00e7\u00e3o de sobrecorrente de tempo inverso (Fun\u00e7\u00e3o 51); i) prote\u00e7\u00e3o de verifica\u00e7\u00e3o de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 53); j) fun\u00e7\u00e3o de prote\u00e7\u00e3o por fator de pot\u00eancia (Fun\u00e7\u00e3o 55); k) fun\u00e7\u00e3o de supervis\u00e3o de falha de aplica\u00e7\u00e3o de campo (\u201cField Application Relay\u201d - FAR) (Fun\u00e7\u00e3o 56); l) monitora\u00e7\u00e3o de falha dos diodos rotativos (Fun\u00e7\u00e3o 58); m) prote\u00e7\u00e3o por sobretens\u00e3o (Fun\u00e7\u00e3o 59). Requisitos de Pr\u00e9-Excita\u00e7\u00e3o e Desexcita\u00e7\u00e3o do Campo a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da abertura do contator de campo na condi\u00e7\u00e3o mais cr\u00edtica. As sobretens\u00f5es que ocorram n\u00e3o devem causar danos a qualquer parte do equipamento; b) o contator de campo deve ser capaz de interromper a corrente de campo durante anormalidades transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante; c) o contator de campo deve possuir contatos auxiliares dispon\u00edveis para intertravamento com o sistema de prote\u00e7\u00e3o e controle do motor s\u00edncrono; d) caso ocorra falha no processo de pr\u00e9-excita\u00e7\u00e3o, deve haver sinaliza\u00e7\u00e3o correspondente a este defeito. Sinais de Comando, Controle e Supervis\u00e3o a serem Enviados ou Recebidos Atrav\u00e9s de Interface Serial a) indica\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; b) indica\u00e7\u00e3o do modo de opera\u00e7\u00e3o local/remoto; c) indica\u00e7\u00e3o de corrente e tens\u00e3o de campo; d) sele\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; e) indica\u00e7\u00e3o do \u201cstatus\u201d do contator de campo (aberto/fechado); f) ajuste do fator de pot\u00eancia; g) indica\u00e7\u00e3o de falha de tiristor; h) alarme de sum\u00e1rio de defeitos; i) habilita\u00e7\u00e3o do controlador autom\u00e1tico de fator de pot\u00eancia (\u201cAutomatic Power Factor Regulator\u201d - APFR); j) controle autom\u00e1tico/manual e local/remoto; k) temporizador do tipo c\u00e3o de guarda (\u201cWatch dog timer\u201d); l) sequ\u00eancia incompleta de partida; m) subexcita\u00e7\u00e3o de corrente; n) sobrexcita\u00e7\u00e3o de corrente; o) falha dos diodos rotativos; p) alarme de falha do rotor \u00e0 terra; q) falha de sincronismo; r) sobrecarga do sistema de excita\u00e7\u00e3o; s) subtens\u00e3o do sistema de excita\u00e7\u00e3o; t) falha geral da prote\u00e7\u00e3o; u) falha dos fus\u00edveis; v) falha de realimenta\u00e7\u00e3o do controlador; w) falha no controlador de fator de pot\u00eancia;",
+                        "score": 26.567148
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "1bg-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante;",
+                                "ocr_line": "line_30_35",
+                                "score": 11.641573,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1529,
+                                            1573,
+                                            1664,
+                                            1634
+                                        ],
+                                        "ocrx_word": "word_30_228",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1529 1573 1664 1634; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da",
+                                "ocr_line": "line_30_31",
+                                "score": 11.161806,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1700,
+                                            1362,
+                                            1835,
+                                            1423
+                                        ],
+                                        "ocrx_word": "word_30_178",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1700 1362 1835 1423; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_30",
+                        "page": 30,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 31 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN a) prote\u00e7\u00e3o contra sobreexcita\u00e7\u00e3o (Fun\u00e7\u00e3o 24); b) prote\u00e7\u00e3o por subtens\u00e3o (Fun\u00e7\u00e3o 27); c) fun\u00e7\u00f5es de monitora\u00e7\u00e3o e alarme (Fun\u00e7\u00f5es 30/74); d) prote\u00e7\u00e3o de perda de campo ou de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 40); e) prote\u00e7\u00e3o de sequ\u00eancia incompleta (Fun\u00e7\u00e3o 48); f) prote\u00e7\u00e3o contra sobrecarga t\u00e9rmica (Fun\u00e7\u00e3o 49); g) prote\u00e7\u00e3o contra falta a terra do sistema de corrente cont\u00ednua para alimenta\u00e7\u00e3o da excitatriz \u201cBrushless\u201d (Fun\u00e7\u00e3o 50 GS); h) prote\u00e7\u00e3o de sobrecorrente de tempo inverso (Fun\u00e7\u00e3o 51); i) prote\u00e7\u00e3o de verifica\u00e7\u00e3o de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 53); j) fun\u00e7\u00e3o de prote\u00e7\u00e3o por fator de pot\u00eancia (Fun\u00e7\u00e3o 55); k) fun\u00e7\u00e3o de supervis\u00e3o de falha de aplica\u00e7\u00e3o de campo (\u201cField Application Relay\u201d - FAR) (Fun\u00e7\u00e3o 56); l) monitora\u00e7\u00e3o de falha dos diodos rotativos (Fun\u00e7\u00e3o 58); m) prote\u00e7\u00e3o por sobretens\u00e3o (Fun\u00e7\u00e3o 59). Requisitos de Pr\u00e9-Excita\u00e7\u00e3o e Desexcita\u00e7\u00e3o do Campo a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da abertura do contator de campo na condi\u00e7\u00e3o mais cr\u00edtica. As sobretens\u00f5es que ocorram n\u00e3o devem causar danos a qualquer parte do equipamento; b) o contator de campo deve ser capaz de interromper a corrente de campo durante anormalidades transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante; c) o contator de campo deve possuir contatos auxiliares dispon\u00edveis para intertravamento com o sistema de prote\u00e7\u00e3o e controle do motor s\u00edncrono; d) caso ocorra falha no processo de pr\u00e9-excita\u00e7\u00e3o, deve haver sinaliza\u00e7\u00e3o correspondente a este defeito. Sinais de Comando, Controle e Supervis\u00e3o a serem Enviados ou Recebidos Atrav\u00e9s de Interface Serial a) indica\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; b) indica\u00e7\u00e3o do modo de opera\u00e7\u00e3o local/remoto; c) indica\u00e7\u00e3o de corrente e tens\u00e3o de campo; d) sele\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; e) indica\u00e7\u00e3o do \u201cstatus\u201d do contator de campo (aberto/fechado); f) ajuste do fator de pot\u00eancia; g) indica\u00e7\u00e3o de falha de tiristor; h) alarme de sum\u00e1rio de defeitos; i) habilita\u00e7\u00e3o do controlador autom\u00e1tico de fator de pot\u00eancia (\u201cAutomatic Power Factor Regulator\u201d - APFR); j) controle autom\u00e1tico/manual e local/remoto; k) temporizador do tipo c\u00e3o de guarda (\u201cWatch dog timer\u201d); l) sequ\u00eancia incompleta de partida; m) subexcita\u00e7\u00e3o de corrente; n) sobrexcita\u00e7\u00e3o de corrente; o) falha dos diodos rotativos; p) alarme de falha do rotor \u00e0 terra; q) falha de sincronismo; r) sobrecarga do sistema de excita\u00e7\u00e3o; s) subtens\u00e3o do sistema de excita\u00e7\u00e3o; t) falha geral da prote\u00e7\u00e3o; u) falha dos fus\u00edveis; v) falha de realimenta\u00e7\u00e3o do controlador; w) falha no controlador de fator de pot\u00eancia;",
+                        "score": 26.567148
+                    },
+                    {
+                        "file_id": "e770e245-5688-422b-8965-1fc181f3edc8",
+                        "id": "zbg9IXQBpwE8LF2WLs53",
+                        "lines": [
+                            {
+                                "line_words": "transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante;",
+                                "ocr_line": "line_30_35",
+                                "score": 11.641573,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1529,
+                                            1573,
+                                            1664,
+                                            1634
+                                        ],
+                                        "ocrx_word": "word_30_228",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1529 1573 1664 1634; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da",
+                                "ocr_line": "line_30_31",
+                                "score": 11.161806,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1700,
+                                            1362,
+                                            1835,
+                                            1423
+                                        ],
+                                        "ocrx_word": "word_30_178",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1700 1362 1835 1423; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_30",
+                        "page": 30,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 31 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN a) prote\u00e7\u00e3o contra sobreexcita\u00e7\u00e3o (Fun\u00e7\u00e3o 24); b) prote\u00e7\u00e3o por subtens\u00e3o (Fun\u00e7\u00e3o 27); c) fun\u00e7\u00f5es de monitora\u00e7\u00e3o e alarme (Fun\u00e7\u00f5es 30/74); d) prote\u00e7\u00e3o de perda de campo ou de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 40); e) prote\u00e7\u00e3o de sequ\u00eancia incompleta (Fun\u00e7\u00e3o 48); f) prote\u00e7\u00e3o contra sobrecarga t\u00e9rmica (Fun\u00e7\u00e3o 49); g) prote\u00e7\u00e3o contra falta a terra do sistema de corrente cont\u00ednua para alimenta\u00e7\u00e3o da excitatriz \u201cBrushless\u201d (Fun\u00e7\u00e3o 50 GS); h) prote\u00e7\u00e3o de sobrecorrente de tempo inverso (Fun\u00e7\u00e3o 51); i) prote\u00e7\u00e3o de verifica\u00e7\u00e3o de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 53); j) fun\u00e7\u00e3o de prote\u00e7\u00e3o por fator de pot\u00eancia (Fun\u00e7\u00e3o 55); k) fun\u00e7\u00e3o de supervis\u00e3o de falha de aplica\u00e7\u00e3o de campo (\u201cField Application Relay\u201d - FAR) (Fun\u00e7\u00e3o 56); l) monitora\u00e7\u00e3o de falha dos diodos rotativos (Fun\u00e7\u00e3o 58); m) prote\u00e7\u00e3o por sobretens\u00e3o (Fun\u00e7\u00e3o 59). Requisitos de Pr\u00e9-Excita\u00e7\u00e3o e Desexcita\u00e7\u00e3o do Campo a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da abertura do contator de campo na condi\u00e7\u00e3o mais cr\u00edtica. As sobretens\u00f5es que ocorram n\u00e3o devem causar danos a qualquer parte do equipamento; b) o contator de campo deve ser capaz de interromper a corrente de campo durante anormalidades transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante; c) o contator de campo deve possuir contatos auxiliares dispon\u00edveis para intertravamento com o sistema de prote\u00e7\u00e3o e controle do motor s\u00edncrono; d) caso ocorra falha no processo de pr\u00e9-excita\u00e7\u00e3o, deve haver sinaliza\u00e7\u00e3o correspondente a este defeito. Sinais de Comando, Controle e Supervis\u00e3o a serem Enviados ou Recebidos Atrav\u00e9s de Interface Serial a) indica\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; b) indica\u00e7\u00e3o do modo de opera\u00e7\u00e3o local/remoto; c) indica\u00e7\u00e3o de corrente e tens\u00e3o de campo; d) sele\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; e) indica\u00e7\u00e3o do \u201cstatus\u201d do contator de campo (aberto/fechado); f) ajuste do fator de pot\u00eancia; g) indica\u00e7\u00e3o de falha de tiristor; h) alarme de sum\u00e1rio de defeitos; i) habilita\u00e7\u00e3o do controlador autom\u00e1tico de fator de pot\u00eancia (\u201cAutomatic Power Factor Regulator\u201d - APFR); j) controle autom\u00e1tico/manual e local/remoto; k) temporizador do tipo c\u00e3o de guarda (\u201cWatch dog timer\u201d); l) sequ\u00eancia incompleta de partida; m) subexcita\u00e7\u00e3o de corrente; n) sobrexcita\u00e7\u00e3o de corrente; o) falha dos diodos rotativos; p) alarme de falha do rotor \u00e0 terra; q) falha de sincronismo; r) sobrecarga do sistema de excita\u00e7\u00e3o; s) subtens\u00e3o do sistema de excita\u00e7\u00e3o; t) falha geral da prote\u00e7\u00e3o; u) falha dos fus\u00edveis; v) falha de realimenta\u00e7\u00e3o do controlador; w) falha no controlador de fator de pot\u00eancia;",
+                        "score": 26.567148
+                    },
+                    {
+                        "file_id": "ed863078-463c-4302-bd6a-e6ef7db89778",
+                        "id": "krg8IXQBpwE8LF2W7c4n",
+                        "lines": [
+                            {
+                                "line_words": "transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante;",
+                                "ocr_line": "line_30_35",
+                                "score": 11.641573,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1529,
+                                            1573,
+                                            1664,
+                                            1634
+                                        ],
+                                        "ocrx_word": "word_30_228",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1529 1573 1664 1634; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da",
+                                "ocr_line": "line_30_31",
+                                "score": 11.161806,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1700,
+                                            1362,
+                                            1835,
+                                            1423
+                                        ],
+                                        "ocrx_word": "word_30_178",
+                                        "score": 7.5950336,
+                                        "title": "bbox 1700 1362 1835 1423; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_30",
+                        "page": 30,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 31 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN a) prote\u00e7\u00e3o contra sobreexcita\u00e7\u00e3o (Fun\u00e7\u00e3o 24); b) prote\u00e7\u00e3o por subtens\u00e3o (Fun\u00e7\u00e3o 27); c) fun\u00e7\u00f5es de monitora\u00e7\u00e3o e alarme (Fun\u00e7\u00f5es 30/74); d) prote\u00e7\u00e3o de perda de campo ou de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 40); e) prote\u00e7\u00e3o de sequ\u00eancia incompleta (Fun\u00e7\u00e3o 48); f) prote\u00e7\u00e3o contra sobrecarga t\u00e9rmica (Fun\u00e7\u00e3o 49); g) prote\u00e7\u00e3o contra falta a terra do sistema de corrente cont\u00ednua para alimenta\u00e7\u00e3o da excitatriz \u201cBrushless\u201d (Fun\u00e7\u00e3o 50 GS); h) prote\u00e7\u00e3o de sobrecorrente de tempo inverso (Fun\u00e7\u00e3o 51); i) prote\u00e7\u00e3o de verifica\u00e7\u00e3o de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 53); j) fun\u00e7\u00e3o de prote\u00e7\u00e3o por fator de pot\u00eancia (Fun\u00e7\u00e3o 55); k) fun\u00e7\u00e3o de supervis\u00e3o de falha de aplica\u00e7\u00e3o de campo (\u201cField Application Relay\u201d - FAR) (Fun\u00e7\u00e3o 56); l) monitora\u00e7\u00e3o de falha dos diodos rotativos (Fun\u00e7\u00e3o 58); m) prote\u00e7\u00e3o por sobretens\u00e3o (Fun\u00e7\u00e3o 59). Requisitos de Pr\u00e9-Excita\u00e7\u00e3o e Desexcita\u00e7\u00e3o do Campo a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da abertura do contator de campo na condi\u00e7\u00e3o mais cr\u00edtica. As sobretens\u00f5es que ocorram n\u00e3o devem causar danos a qualquer parte do equipamento; b) o contator de campo deve ser capaz de interromper a corrente de campo durante anormalidades transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante; c) o contator de campo deve possuir contatos auxiliares dispon\u00edveis para intertravamento com o sistema de prote\u00e7\u00e3o e controle do motor s\u00edncrono; d) caso ocorra falha no processo de pr\u00e9-excita\u00e7\u00e3o, deve haver sinaliza\u00e7\u00e3o correspondente a este defeito. Sinais de Comando, Controle e Supervis\u00e3o a serem Enviados ou Recebidos Atrav\u00e9s de Interface Serial a) indica\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; b) indica\u00e7\u00e3o do modo de opera\u00e7\u00e3o local/remoto; c) indica\u00e7\u00e3o de corrente e tens\u00e3o de campo; d) sele\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; e) indica\u00e7\u00e3o do \u201cstatus\u201d do contator de campo (aberto/fechado); f) ajuste do fator de pot\u00eancia; g) indica\u00e7\u00e3o de falha de tiristor; h) alarme de sum\u00e1rio de defeitos; i) habilita\u00e7\u00e3o do controlador autom\u00e1tico de fator de pot\u00eancia (\u201cAutomatic Power Factor Regulator\u201d - APFR); j) controle autom\u00e1tico/manual e local/remoto; k) temporizador do tipo c\u00e3o de guarda (\u201cWatch dog timer\u201d); l) sequ\u00eancia incompleta de partida; m) subexcita\u00e7\u00e3o de corrente; n) sobrexcita\u00e7\u00e3o de corrente; o) falha dos diodos rotativos; p) alarme de falha do rotor \u00e0 terra; q) falha de sincronismo; r) sobrecarga do sistema de excita\u00e7\u00e3o; s) subtens\u00e3o do sistema de excita\u00e7\u00e3o; t) falha geral da prote\u00e7\u00e3o; u) falha dos fus\u00edveis; v) falha de realimenta\u00e7\u00e3o do controlador; w) falha no controlador de fator de pot\u00eancia;",
+                        "score": 26.567148
+                    }
+                ],
+                "hits_amount": 50
+            }
+        },
+        {
+            "avg": 0.7100000000000001,
+            "method": "equality",
+            "posicoes": [
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "precision_list": [
+                1,
+                0.0,
+                0.5,
+                0.6666666666666666,
+                0.75,
+                0.8,
+                0.8333333333333334
+            ],
+            "qtd_retornado": "6",
+            "recal_list": [
+                0,
+                0.0,
+                0.2,
+                0.4,
+                0.6,
+                0.8,
+                1.0
+            ],
+            "termo_bd": {
+                "_source": {
+                    "interacao": [
+                        {
+                            "id_documento": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 1,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "e770e245-5688-422b-8965-1fc181f3edc8",
+                            "opera\u00e7\u00e3o": "visualizou",
+                            "posicao": 4,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "6b597709-ced2-42d9-b899-ef9d983785de",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 3,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 2,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "6b597709-ced2-42d9-b899-ef9d983785de",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 3,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "e770e245-5688-422b-8965-1fc181f3edc8",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 4,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "ed863078-463c-4302-bd6a-e6ef7db89778",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 5,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 0,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "e770e245-5688-422b-8965-1fc181f3edc8",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 4,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "6b597709-ced2-42d9-b899-ef9d983785de",
+                            "opera\u00e7\u00e3o": "visualizou",
+                            "posicao": 3,
+                            "timestamp": "2020/08/26 11:24:55"
+                        }
+                    ],
+                    "limit": 20,
+                    "metodo": "equality",
+                    "offset": 0,
+                    "query": "PAPA",
+                    "timestamp": "2020/08/26 11:24:55"
+                }
+            },
+            "termo_busca": {
+                "hits": [
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "fbg9IXQBpwE8LF2Wyc90",
+                        "lines": [
+                            {
+                                "line_words": "F\u00c1BIO PAPA",
+                                "ocr_line": "line_0_44",
+                                "score": 21.881294,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            883,
+                                            3159,
+                                            957,
+                                            3198
+                                        ],
+                                        "ocrx_word": "word_0_96",
+                                        "score": 10.228582,
+                                        "title": "bbox 883 3159 957 3198; x_wconf 100",
+                                        "word": "PAPA"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_0",
+                        "page": 0,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 CLIENTE: G\u00c1S & ENERGIA FOLHA 1 de 55 PROGRAMA: PLANO DIRETOR DE ESCOAMENTO DE G\u00c1S DA BACIA DE SANTOS ROTA 3 \u00c1REA: COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL ENG-RLE T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u00cdNDICE DE REVIS\u00d5ES REV DESCRI\u00c7\u00c3O E/OU FOLHAS ATINGIDAS 0 A ORIGINAL REVISADO ONDE INDICADO REV. 0 REV. A REV. B REV. C REV. D REV. E REV. F REV. G REV. H DATA 14/03/2016 23/09/2016 PROJETO ESEL ENG/SEAI EXECU\u00c7\u00c3O REBEQUE WELTON VERIFICA\u00c7\u00c3O WELTON F\u00c1BIO PAPA APROVA\u00c7\u00c3O TADEU TADEU AS INFORMA\u00c7\u00d5ES DESTE DOCUMENTO S\u00c3O PROPRIEDADE DA PETROBRAS, SENDO PROIBIDA A UTILIZA\u00c7\u00c3O FORA DA SUA FINALIDADE. FORMUL\u00c1RIO PADRONIZADO PELA NORMA PETROBRAS N-381-REV.L.",
+                        "score": 28.846134
+                    },
+                    {
+                        "file_id": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                        "id": "57g9IXQBpwE8LF2WXM4x",
+                        "lines": [
+                            {
+                                "line_words": "F\u00c1BIO PAPA",
+                                "ocr_line": "line_0_44",
+                                "score": 21.881294,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            883,
+                                            3159,
+                                            957,
+                                            3198
+                                        ],
+                                        "ocrx_word": "word_0_96",
+                                        "score": 10.228582,
+                                        "title": "bbox 883 3159 957 3198; x_wconf 100",
+                                        "word": "PAPA"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_0",
+                        "page": 0,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 CLIENTE: G\u00c1S & ENERGIA FOLHA 1 de 55 PROGRAMA: PLANO DIRETOR DE ESCOAMENTO DE G\u00c1S DA BACIA DE SANTOS ROTA 3 \u00c1REA: COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL ENG-RLE T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u00cdNDICE DE REVIS\u00d5ES REV DESCRI\u00c7\u00c3O E/OU FOLHAS ATINGIDAS 0 A ORIGINAL REVISADO ONDE INDICADO REV. 0 REV. A REV. B REV. C REV. D REV. E REV. F REV. G REV. H DATA 14/03/2016 23/09/2016 PROJETO ESEL ENG/SEAI EXECU\u00c7\u00c3O REBEQUE WELTON VERIFICA\u00c7\u00c3O WELTON F\u00c1BIO PAPA APROVA\u00c7\u00c3O TADEU TADEU AS INFORMA\u00c7\u00d5ES DESTE DOCUMENTO S\u00c3O PROPRIEDADE DA PETROBRAS, SENDO PROIBIDA A UTILIZA\u00c7\u00c3O FORA DA SUA FINALIDADE. FORMUL\u00c1RIO PADRONIZADO PELA NORMA PETROBRAS N-381-REV.L.",
+                        "score": 28.846134
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "t7g-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "F\u00c1BIO PAPA",
+                                "ocr_line": "line_0_44",
+                                "score": 21.881294,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            883,
+                                            3159,
+                                            957,
+                                            3198
+                                        ],
+                                        "ocrx_word": "word_0_96",
+                                        "score": 10.228582,
+                                        "title": "bbox 883 3159 957 3198; x_wconf 100",
+                                        "word": "PAPA"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_0",
+                        "page": 0,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 CLIENTE: G\u00c1S & ENERGIA FOLHA 1 de 55 PROGRAMA: PLANO DIRETOR DE ESCOAMENTO DE G\u00c1S DA BACIA DE SANTOS ROTA 3 \u00c1REA: COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL ENG-RLE T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u00cdNDICE DE REVIS\u00d5ES REV DESCRI\u00c7\u00c3O E/OU FOLHAS ATINGIDAS 0 A ORIGINAL REVISADO ONDE INDICADO REV. 0 REV. A REV. B REV. C REV. D REV. E REV. F REV. G REV. H DATA 14/03/2016 23/09/2016 PROJETO ESEL ENG/SEAI EXECU\u00c7\u00c3O REBEQUE WELTON VERIFICA\u00c7\u00c3O WELTON F\u00c1BIO PAPA APROVA\u00c7\u00c3O TADEU TADEU AS INFORMA\u00c7\u00d5ES DESTE DOCUMENTO S\u00c3O PROPRIEDADE DA PETROBRAS, SENDO PROIBIDA A UTILIZA\u00c7\u00c3O FORA DA SUA FINALIDADE. FORMUL\u00c1RIO PADRONIZADO PELA NORMA PETROBRAS N-381-REV.L.",
+                        "score": 28.846134
+                    },
+                    {
+                        "file_id": "6b597709-ced2-42d9-b899-ef9d983785de",
+                        "id": "9rg-IXQBpwE8LF2Wc890",
+                        "lines": [
+                            {
+                                "line_words": "F\u00c1BIO PAPA",
+                                "ocr_line": "line_0_44",
+                                "score": 21.881294,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            883,
+                                            3159,
+                                            957,
+                                            3198
+                                        ],
+                                        "ocrx_word": "word_0_96",
+                                        "score": 10.228582,
+                                        "title": "bbox 883 3159 957 3198; x_wconf 100",
+                                        "word": "PAPA"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_0",
+                        "page": 0,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 CLIENTE: G\u00c1S & ENERGIA FOLHA 1 de 55 PROGRAMA: PLANO DIRETOR DE ESCOAMENTO DE G\u00c1S DA BACIA DE SANTOS ROTA 3 \u00c1REA: COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL ENG-RLE T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u00cdNDICE DE REVIS\u00d5ES REV DESCRI\u00c7\u00c3O E/OU FOLHAS ATINGIDAS 0 A ORIGINAL REVISADO ONDE INDICADO REV. 0 REV. A REV. B REV. C REV. D REV. E REV. F REV. G REV. H DATA 14/03/2016 23/09/2016 PROJETO ESEL ENG/SEAI EXECU\u00c7\u00c3O REBEQUE WELTON VERIFICA\u00c7\u00c3O WELTON F\u00c1BIO PAPA APROVA\u00c7\u00c3O TADEU TADEU AS INFORMA\u00c7\u00d5ES DESTE DOCUMENTO S\u00c3O PROPRIEDADE DA PETROBRAS, SENDO PROIBIDA A UTILIZA\u00c7\u00c3O FORA DA SUA FINALIDADE. FORMUL\u00c1RIO PADRONIZADO PELA NORMA PETROBRAS N-381-REV.L.",
+                        "score": 28.846134
+                    },
+                    {
+                        "file_id": "e770e245-5688-422b-8965-1fc181f3edc8",
+                        "id": "r7g9IXQBpwE8LF2WLs53",
+                        "lines": [
+                            {
+                                "line_words": "F\u00c1BIO PAPA",
+                                "ocr_line": "line_0_44",
+                                "score": 21.881294,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            883,
+                                            3159,
+                                            957,
+                                            3198
+                                        ],
+                                        "ocrx_word": "word_0_96",
+                                        "score": 10.228582,
+                                        "title": "bbox 883 3159 957 3198; x_wconf 100",
+                                        "word": "PAPA"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_0",
+                        "page": 0,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 CLIENTE: G\u00c1S & ENERGIA FOLHA 1 de 55 PROGRAMA: PLANO DIRETOR DE ESCOAMENTO DE G\u00c1S DA BACIA DE SANTOS ROTA 3 \u00c1REA: COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL ENG-RLE T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u00cdNDICE DE REVIS\u00d5ES REV DESCRI\u00c7\u00c3O E/OU FOLHAS ATINGIDAS 0 A ORIGINAL REVISADO ONDE INDICADO REV. 0 REV. A REV. B REV. C REV. D REV. E REV. F REV. G REV. H DATA 14/03/2016 23/09/2016 PROJETO ESEL ENG/SEAI EXECU\u00c7\u00c3O REBEQUE WELTON VERIFICA\u00c7\u00c3O WELTON F\u00c1BIO PAPA APROVA\u00c7\u00c3O TADEU TADEU AS INFORMA\u00c7\u00d5ES DESTE DOCUMENTO S\u00c3O PROPRIEDADE DA PETROBRAS, SENDO PROIBIDA A UTILIZA\u00c7\u00c3O FORA DA SUA FINALIDADE. FORMUL\u00c1RIO PADRONIZADO PELA NORMA PETROBRAS N-381-REV.L.",
+                        "score": 28.846134
+                    },
+                    {
+                        "file_id": "ed863078-463c-4302-bd6a-e6ef7db89778",
+                        "id": "dLg8IXQBpwE8LF2W7c4n",
+                        "lines": [
+                            {
+                                "line_words": "F\u00c1BIO PAPA",
+                                "ocr_line": "line_0_44",
+                                "score": 21.881294,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            883,
+                                            3159,
+                                            957,
+                                            3198
+                                        ],
+                                        "ocrx_word": "word_0_96",
+                                        "score": 10.228582,
+                                        "title": "bbox 883 3159 957 3198; x_wconf 100",
+                                        "word": "PAPA"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_0",
+                        "page": 0,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 CLIENTE: G\u00c1S & ENERGIA FOLHA 1 de 55 PROGRAMA: PLANO DIRETOR DE ESCOAMENTO DE G\u00c1S DA BACIA DE SANTOS ROTA 3 \u00c1REA: COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL ENG-RLE T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u00cdNDICE DE REVIS\u00d5ES REV DESCRI\u00c7\u00c3O E/OU FOLHAS ATINGIDAS 0 A ORIGINAL REVISADO ONDE INDICADO REV. 0 REV. A REV. B REV. C REV. D REV. E REV. F REV. G REV. H DATA 14/03/2016 23/09/2016 PROJETO ESEL ENG/SEAI EXECU\u00c7\u00c3O REBEQUE WELTON VERIFICA\u00c7\u00c3O WELTON F\u00c1BIO PAPA APROVA\u00c7\u00c3O TADEU TADEU AS INFORMA\u00c7\u00d5ES DESTE DOCUMENTO S\u00c3O PROPRIEDADE DA PETROBRAS, SENDO PROIBIDA A UTILIZA\u00c7\u00c3O FORA DA SUA FINALIDADE. FORMUL\u00c1RIO PADRONIZADO PELA NORMA PETROBRAS N-381-REV.L.",
+                        "score": 28.846134
+                    }
+                ],
+                "hits_amount": 6
+            }
+        }
+    ],
+    "media_avg": 0.855,
+    "media_precision": [
+        1.0,
+        0.5,
+        0.75,
+        0.8333333333333333,
+        0.875,
+        0.9,
+        0.9166666666666667,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+    ],
+    "media_recal": [
+        0.0,
+        0.025,
+        0.15000000000000002,
+        0.275,
+        0.4,
+        0.525,
+        0.65,
+        0.175,
+        0.2,
+        0.225,
+        0.25,
+        0.275,
+        0.3,
+        0.325,
+        0.35,
+        0.375,
+        0.4,
+        0.425,
+        0.45,
+        0.475,
+        0.5
+    ],
+    "method": "equality"
+}

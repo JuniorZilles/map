@@ -1,0 +1,1798 @@
+{
+    "base": [
+        {
+            "avg": 0.6746031746031745,
+            "method": "substring",
+            "posicoes": [
+                2,
+                3,
+                4,
+                6,
+                7,
+                8
+            ],
+            "precision_list": [
+                1,
+                0.0,
+                0.5,
+                0.6666666666666666,
+                0.75,
+                0.6,
+                0.6666666666666666,
+                0.7142857142857143,
+                0.75
+            ],
+            "qtd_retornado": "8",
+            "recal_list": [
+                0,
+                0.0,
+                0.16666666666666666,
+                0.3333333333333333,
+                0.5,
+                0.5,
+                0.6666666666666666,
+                0.8333333333333334,
+                1.0
+            ],
+            "termo_bd": {
+                "_source": {
+                    "interacao": [
+                        {
+                            "id_documento": "e770e245-5688-422b-8965-1fc181f3edc8",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 4,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                            "opera\u00e7\u00e3o": "visualizou",
+                            "posicao": 8,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "6b597709-ced2-42d9-b899-ef9d983785de",
+                            "opera\u00e7\u00e3o": "visualizou",
+                            "posicao": 3,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 0,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 0,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 6,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "6b597709-ced2-42d9-b899-ef9d983785de",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 9,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                            "opera\u00e7\u00e3o": "visualizou",
+                            "posicao": 2,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 8,
+                            "timestamp": "2020/08/26 11:24:54"
+                        },
+                        {
+                            "id_documento": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 8,
+                            "timestamp": "2020/08/26 11:24:54"
+                        }
+                    ],
+                    "limit": 20,
+                    "metodo": "substring",
+                    "offset": 0,
+                    "query": "Batteries",
+                    "timestamp": "2020/08/26 11:24:54"
+                }
+            },
+            "termo_busca": {
+                "hits": [
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "grg9IXQBpwE8LF2Wyc90",
+                        "lines": [
+                            {
+                                "line_words": "60896 Stationary lead-acid batteries",
+                                "ocr_line": "line_5_26",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            993,
+                                            1271,
+                                            1148,
+                                            1332
+                                        ],
+                                        "ocrx_word": "word_5_123",
+                                        "score": 1.0,
+                                        "title": "bbox 993 1271 1148 1332; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "62259 Secondary cells and batteries containing alkaline or other non-acid electrolytes Nickel-",
+                                "ocr_line": "line_5_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1017,
+                                            2179,
+                                            1173,
+                                            2240
+                                        ],
+                                        "ocrx_word": "word_5_222",
+                                        "score": 1.0,
+                                        "title": "bbox 1017 2179 1173 2240; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "62485 Safety requirements for secondary batteries and battery installations",
+                                "ocr_line": "line_5_42",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1255,
+                                            2464,
+                                            1411,
+                                            2525
+                                        ],
+                                        "ocrx_word": "word_5_256",
+                                        "score": 1.0,
+                                        "title": "bbox 1255 2464 1411 2525; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_5",
+                        "page": 5,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 6 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 60214 - Performance requirements and tests methods 60228 - Conductors of Insulated Cables 60255 - Measuring relays and protection equipment 60287- Electric Cables - Calculation of the Current 60309 - Plugs, socket-outlets and couplers for industrial purposes 60332 - Tests on electric and optical fibre cables under fire conditions 60439 - Low-Voltage Switchgear and Controlgear Assemblies 60470 - High-Voltage Alternating Current Contactors and Contactor-Based Motor-Starters 60529 - Degrees of Protection Provided by Enclosures (IP Code) 60598 - Luminaires 60695 - Fire hazard testing 60896 - Stationary lead-acid batteries 60909 - Short-circuit currents in three-phase a.c. systems 60947 - Low-voltage Switchgear and Controlgear 61000 - Electromagnetic Compatibility (EMC) 61241- Electrical apparatus for use in the presence of combustible dust TR 61641 - Enclosed low-voltage switchgear and controlgear assemblies \u2013 Guide for testing under conditions of arcing due to internal fault 61800 - Adjustable Speed Electrical Power Drive System 61537 - Cable management \u2013 Cable tray systems and cable ladder systems 61850 - Communication Networks and Systems in Substations 61936 - Power installations exceeding 1 kV a.c 62040 - Uninterruptible power systems (UPS) 62259 - Secondary cells and batteries containing alkaline or other non-acid electrolytes Nickel- cadmium prismatic secondary single cells with partial gas recombination 62271 - High-voltage switchgear and controlgear 62305 - Protection against lightning 62485 - Safety requirements for secondary batteries and battery installations 3.5. ANSI (American National Standards Institute) B1.20.1 - Pipe Threads C37.20 - Switchgear Assemblies C37.35 - Guide for Application, Installation, Operation and Maintenance of High - Voltage Air Disconnecting and Load Interrupter Switches 3.6. ASTM (American Society for Testing and Materials) D877 - Standard Test Method for Dielectric Breakdown Voltage of Insulating Liquids Using Disk Electrodes E-119 - Standard Test Methods for Fire Tests of Building Construction and Materials",
+                        "score": 8.0
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "vLg-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "60896 Stationary lead-acid batteries",
+                                "ocr_line": "line_5_26",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            993,
+                                            1271,
+                                            1148,
+                                            1332
+                                        ],
+                                        "ocrx_word": "word_5_123",
+                                        "score": 1.0,
+                                        "title": "bbox 993 1271 1148 1332; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "62259 Secondary cells and batteries containing alkaline or other non-acid electrolytes Nickel-",
+                                "ocr_line": "line_5_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1017,
+                                            2179,
+                                            1173,
+                                            2240
+                                        ],
+                                        "ocrx_word": "word_5_222",
+                                        "score": 1.0,
+                                        "title": "bbox 1017 2179 1173 2240; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "62485 Safety requirements for secondary batteries and battery installations",
+                                "ocr_line": "line_5_42",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1255,
+                                            2464,
+                                            1411,
+                                            2525
+                                        ],
+                                        "ocrx_word": "word_5_256",
+                                        "score": 1.0,
+                                        "title": "bbox 1255 2464 1411 2525; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_5",
+                        "page": 5,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 6 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 60214 - Performance requirements and tests methods 60228 - Conductors of Insulated Cables 60255 - Measuring relays and protection equipment 60287- Electric Cables - Calculation of the Current 60309 - Plugs, socket-outlets and couplers for industrial purposes 60332 - Tests on electric and optical fibre cables under fire conditions 60439 - Low-Voltage Switchgear and Controlgear Assemblies 60470 - High-Voltage Alternating Current Contactors and Contactor-Based Motor-Starters 60529 - Degrees of Protection Provided by Enclosures (IP Code) 60598 - Luminaires 60695 - Fire hazard testing 60896 - Stationary lead-acid batteries 60909 - Short-circuit currents in three-phase a.c. systems 60947 - Low-voltage Switchgear and Controlgear 61000 - Electromagnetic Compatibility (EMC) 61241- Electrical apparatus for use in the presence of combustible dust TR 61641 - Enclosed low-voltage switchgear and controlgear assemblies \u2013 Guide for testing under conditions of arcing due to internal fault 61800 - Adjustable Speed Electrical Power Drive System 61537 - Cable management \u2013 Cable tray systems and cable ladder systems 61850 - Communication Networks and Systems in Substations 61936 - Power installations exceeding 1 kV a.c 62040 - Uninterruptible power systems (UPS) 62259 - Secondary cells and batteries containing alkaline or other non-acid electrolytes Nickel- cadmium prismatic secondary single cells with partial gas recombination 62271 - High-voltage switchgear and controlgear 62305 - Protection against lightning 62485 - Safety requirements for secondary batteries and battery installations 3.5. ANSI (American National Standards Institute) B1.20.1 - Pipe Threads C37.20 - Switchgear Assemblies C37.35 - Guide for Application, Installation, Operation and Maintenance of High - Voltage Air Disconnecting and Load Interrupter Switches 3.6. ASTM (American Society for Testing and Materials) D877 - Standard Test Method for Dielectric Breakdown Voltage of Insulating Liquids Using Disk Electrodes E-119 - Standard Test Methods for Fire Tests of Building Construction and Materials",
+                        "score": 8.0
+                    },
+                    {
+                        "file_id": "6b597709-ced2-42d9-b899-ef9d983785de",
+                        "id": "-7g-IXQBpwE8LF2Wc890",
+                        "lines": [
+                            {
+                                "line_words": "60896 Stationary lead-acid batteries",
+                                "ocr_line": "line_5_26",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            993,
+                                            1271,
+                                            1148,
+                                            1332
+                                        ],
+                                        "ocrx_word": "word_5_123",
+                                        "score": 1.0,
+                                        "title": "bbox 993 1271 1148 1332; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "62259 Secondary cells and batteries containing alkaline or other non-acid electrolytes Nickel-",
+                                "ocr_line": "line_5_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1017,
+                                            2179,
+                                            1173,
+                                            2240
+                                        ],
+                                        "ocrx_word": "word_5_222",
+                                        "score": 1.0,
+                                        "title": "bbox 1017 2179 1173 2240; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "62485 Safety requirements for secondary batteries and battery installations",
+                                "ocr_line": "line_5_42",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1255,
+                                            2464,
+                                            1411,
+                                            2525
+                                        ],
+                                        "ocrx_word": "word_5_256",
+                                        "score": 1.0,
+                                        "title": "bbox 1255 2464 1411 2525; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_5",
+                        "page": 5,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 6 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 60214 - Performance requirements and tests methods 60228 - Conductors of Insulated Cables 60255 - Measuring relays and protection equipment 60287- Electric Cables - Calculation of the Current 60309 - Plugs, socket-outlets and couplers for industrial purposes 60332 - Tests on electric and optical fibre cables under fire conditions 60439 - Low-Voltage Switchgear and Controlgear Assemblies 60470 - High-Voltage Alternating Current Contactors and Contactor-Based Motor-Starters 60529 - Degrees of Protection Provided by Enclosures (IP Code) 60598 - Luminaires 60695 - Fire hazard testing 60896 - Stationary lead-acid batteries 60909 - Short-circuit currents in three-phase a.c. systems 60947 - Low-voltage Switchgear and Controlgear 61000 - Electromagnetic Compatibility (EMC) 61241- Electrical apparatus for use in the presence of combustible dust TR 61641 - Enclosed low-voltage switchgear and controlgear assemblies \u2013 Guide for testing under conditions of arcing due to internal fault 61800 - Adjustable Speed Electrical Power Drive System 61537 - Cable management \u2013 Cable tray systems and cable ladder systems 61850 - Communication Networks and Systems in Substations 61936 - Power installations exceeding 1 kV a.c 62040 - Uninterruptible power systems (UPS) 62259 - Secondary cells and batteries containing alkaline or other non-acid electrolytes Nickel- cadmium prismatic secondary single cells with partial gas recombination 62271 - High-voltage switchgear and controlgear 62305 - Protection against lightning 62485 - Safety requirements for secondary batteries and battery installations 3.5. ANSI (American National Standards Institute) B1.20.1 - Pipe Threads C37.20 - Switchgear Assemblies C37.35 - Guide for Application, Installation, Operation and Maintenance of High - Voltage Air Disconnecting and Load Interrupter Switches 3.6. ASTM (American Society for Testing and Materials) D877 - Standard Test Method for Dielectric Breakdown Voltage of Insulating Liquids Using Disk Electrodes E-119 - Standard Test Methods for Fire Tests of Building Construction and Materials",
+                        "score": 8.0
+                    },
+                    {
+                        "file_id": "e770e245-5688-422b-8965-1fc181f3edc8",
+                        "id": "tLg9IXQBpwE8LF2WLs53",
+                        "lines": [
+                            {
+                                "line_words": "60896 Stationary lead-acid batteries",
+                                "ocr_line": "line_5_26",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            993,
+                                            1271,
+                                            1148,
+                                            1332
+                                        ],
+                                        "ocrx_word": "word_5_123",
+                                        "score": 1.0,
+                                        "title": "bbox 993 1271 1148 1332; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "62259 Secondary cells and batteries containing alkaline or other non-acid electrolytes Nickel-",
+                                "ocr_line": "line_5_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1017,
+                                            2179,
+                                            1173,
+                                            2240
+                                        ],
+                                        "ocrx_word": "word_5_222",
+                                        "score": 1.0,
+                                        "title": "bbox 1017 2179 1173 2240; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "62485 Safety requirements for secondary batteries and battery installations",
+                                "ocr_line": "line_5_42",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1255,
+                                            2464,
+                                            1411,
+                                            2525
+                                        ],
+                                        "ocrx_word": "word_5_256",
+                                        "score": 1.0,
+                                        "title": "bbox 1255 2464 1411 2525; x_wconf 100",
+                                        "word": "batteries"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_5",
+                        "page": 5,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 6 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 60214 - Performance requirements and tests methods 60228 - Conductors of Insulated Cables 60255 - Measuring relays and protection equipment 60287- Electric Cables - Calculation of the Current 60309 - Plugs, socket-outlets and couplers for industrial purposes 60332 - Tests on electric and optical fibre cables under fire conditions 60439 - Low-Voltage Switchgear and Controlgear Assemblies 60470 - High-Voltage Alternating Current Contactors and Contactor-Based Motor-Starters 60529 - Degrees of Protection Provided by Enclosures (IP Code) 60598 - Luminaires 60695 - Fire hazard testing 60896 - Stationary lead-acid batteries 60909 - Short-circuit currents in three-phase a.c. systems 60947 - Low-voltage Switchgear and Controlgear 61000 - Electromagnetic Compatibility (EMC) 61241- Electrical apparatus for use in the presence of combustible dust TR 61641 - Enclosed low-voltage switchgear and controlgear assemblies \u2013 Guide for testing under conditions of arcing due to internal fault 61800 - Adjustable Speed Electrical Power Drive System 61537 - Cable management \u2013 Cable tray systems and cable ladder systems 61850 - Communication Networks and Systems in Substations 61936 - Power installations exceeding 1 kV a.c 62040 - Uninterruptible power systems (UPS) 62259 - Secondary cells and batteries containing alkaline or other non-acid electrolytes Nickel- cadmium prismatic secondary single cells with partial gas recombination 62271 - High-voltage switchgear and controlgear 62305 - Protection against lightning 62485 - Safety requirements for secondary batteries and battery installations 3.5. ANSI (American National Standards Institute) B1.20.1 - Pipe Threads C37.20 - Switchgear Assemblies C37.35 - Guide for Application, Installation, Operation and Maintenance of High - Voltage Air Disconnecting and Load Interrupter Switches 3.6. ASTM (American Society for Testing and Materials) D877 - Standard Test Method for Dielectric Breakdown Voltage of Insulating Liquids Using Disk Electrodes E-119 - Standard Test Methods for Fire Tests of Building Construction and Materials",
+                        "score": 8.0
+                    },
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "g7g9IXQBpwE8LF2Wyc90",
+                        "lines": [
+                            {
+                                "line_words": "Std 485 Recommended Practice for Sizing Lead-Acid Batteries for Stationary Applications",
+                                "ocr_line": "line_6_32",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1484,
+                                            1539,
+                                            1648,
+                                            1600
+                                        ],
+                                        "ocrx_word": "word_6_201",
+                                        "score": 1.0,
+                                        "title": "bbox 1484 1539 1648 1600; x_wconf 100",
+                                        "word": "Batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Std 1115 Recommended Practice for Sizing Nickel-cadmium Batteries for Stationary",
+                                "ocr_line": "line_6_37",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1781,
+                                            1877,
+                                            1944,
+                                            1938
+                                        ],
+                                        "ocrx_word": "word_6_241",
+                                        "score": 1.0,
+                                        "title": "bbox 1781 1877 1944 1938; x_wconf 100",
+                                        "word": "Batteries"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_6",
+                        "page": 6,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 7 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 3.7. IEEE (Institute of Electrical and Electronic Engineers) Std 32 - Standard Requirements, Terminology, and Test Procedure for Neutral Grounding Devices Std 43 - Recommended Practice Testing Insulation Resistance of Rotating Machinery Std 80 - Guide for Safety in AC Substation Grounding Std 81 - Guide for Measuring Earth Resistivity, Ground Impedance, and Earth Surface Potentials of a Ground System Std 112 - Standard Test Procedure for Polyphase Induction Motors and Generators Std 115 - Guide for Test Procedures for Synchronous Machines Part I-Acceptance and Performance Testing Part II-Test Procedures and Parameter Determination for Dynamic Analysis Std 141 - Recommended Practice for Electric Power Distribution for Industrial Plants Std 142 - Recommended Practice for Grounding of Industrial and Commercial Power Systems IEEE Green Book Std 241 - Recommended Practice for Electric Power Systems in Commercial Buildings IEEE Gray Book Std 242 - Recommended Practice for Protection and Coordination of Industrial and Commercial Power Systems IEEE Buff Book Std 485 - Recommended Practice for Sizing Lead-Acid Batteries for Stationary Applications Std 519 - Recommended Practices and Requirements for Harmonic Control in Electrical Power Systems Std 1100 - Recommended Practice for Powering and Grounding Electronic Equipment IEEE Emerald Book Std 1115 - Recommended Practice for Sizing Nickel-cadmium Batteries for Stationary Applications Std 1584 - Guide for Performing Arc-Flash Hazard Calculations Std 1613-IEEE Standard Environmental and Testing Requirements for Communications Networking Devices in Electric Power Substations IEEE 1665 - Cylindrical-pole Rotor, Insulation, Rotor Rewind, Salient-pole Rotor, Stator Rewind, Synchronous Generator Std 1202 - Standard for Flame-Propagation Testing of Wire and Cable Std 1531 - Guide for Application and Specification of Harmonic Filters C50.13 - Cylindrical-Rotor 50 Hz and 60 Hz Synchronous Generators Rated 10 MVA and Above C37.9 - Supplement to Test Procedure for AC High-Voltage Circuit Breakers Rated on a Symmetrical Current Basis C57.110 - IEEE Recommended Practice for Establishing Liquid-Filled and Dry- Type Power and Distribution Transformer Capability When Supplying Nonsinusoidal Load Currents 3.8. NEMA (National Electrical Manufacturers Association) MG1 - Motors and Generators PE7 - Communication Type Battery Chargers SG4 - Alternating Current High - Voltage Circuit Breakers VE1 - Metal Cable Tray Systems VE2 - Cable Tray Installation Guidelines",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "vbg-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "Std 485 Recommended Practice for Sizing Lead-Acid Batteries for Stationary Applications",
+                                "ocr_line": "line_6_32",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1484,
+                                            1539,
+                                            1648,
+                                            1600
+                                        ],
+                                        "ocrx_word": "word_6_201",
+                                        "score": 1.0,
+                                        "title": "bbox 1484 1539 1648 1600; x_wconf 100",
+                                        "word": "Batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Std 1115 Recommended Practice for Sizing Nickel-cadmium Batteries for Stationary",
+                                "ocr_line": "line_6_37",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1781,
+                                            1877,
+                                            1944,
+                                            1938
+                                        ],
+                                        "ocrx_word": "word_6_241",
+                                        "score": 1.0,
+                                        "title": "bbox 1781 1877 1944 1938; x_wconf 100",
+                                        "word": "Batteries"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_6",
+                        "page": 6,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 7 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 3.7. IEEE (Institute of Electrical and Electronic Engineers) Std 32 - Standard Requirements, Terminology, and Test Procedure for Neutral Grounding Devices Std 43 - Recommended Practice Testing Insulation Resistance of Rotating Machinery Std 80 - Guide for Safety in AC Substation Grounding Std 81 - Guide for Measuring Earth Resistivity, Ground Impedance, and Earth Surface Potentials of a Ground System Std 112 - Standard Test Procedure for Polyphase Induction Motors and Generators Std 115 - Guide for Test Procedures for Synchronous Machines Part I-Acceptance and Performance Testing Part II-Test Procedures and Parameter Determination for Dynamic Analysis Std 141 - Recommended Practice for Electric Power Distribution for Industrial Plants Std 142 - Recommended Practice for Grounding of Industrial and Commercial Power Systems IEEE Green Book Std 241 - Recommended Practice for Electric Power Systems in Commercial Buildings IEEE Gray Book Std 242 - Recommended Practice for Protection and Coordination of Industrial and Commercial Power Systems IEEE Buff Book Std 485 - Recommended Practice for Sizing Lead-Acid Batteries for Stationary Applications Std 519 - Recommended Practices and Requirements for Harmonic Control in Electrical Power Systems Std 1100 - Recommended Practice for Powering and Grounding Electronic Equipment IEEE Emerald Book Std 1115 - Recommended Practice for Sizing Nickel-cadmium Batteries for Stationary Applications Std 1584 - Guide for Performing Arc-Flash Hazard Calculations Std 1613-IEEE Standard Environmental and Testing Requirements for Communications Networking Devices in Electric Power Substations IEEE 1665 - Cylindrical-pole Rotor, Insulation, Rotor Rewind, Salient-pole Rotor, Stator Rewind, Synchronous Generator Std 1202 - Standard for Flame-Propagation Testing of Wire and Cable Std 1531 - Guide for Application and Specification of Harmonic Filters C50.13 - Cylindrical-Rotor 50 Hz and 60 Hz Synchronous Generators Rated 10 MVA and Above C37.9 - Supplement to Test Procedure for AC High-Voltage Circuit Breakers Rated on a Symmetrical Current Basis C57.110 - IEEE Recommended Practice for Establishing Liquid-Filled and Dry- Type Power and Distribution Transformer Capability When Supplying Nonsinusoidal Load Currents 3.8. NEMA (National Electrical Manufacturers Association) MG1 - Motors and Generators PE7 - Communication Type Battery Chargers SG4 - Alternating Current High - Voltage Circuit Breakers VE1 - Metal Cable Tray Systems VE2 - Cable Tray Installation Guidelines",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "6b597709-ced2-42d9-b899-ef9d983785de",
+                        "id": "_Lg-IXQBpwE8LF2Wc890",
+                        "lines": [
+                            {
+                                "line_words": "Std 485 Recommended Practice for Sizing Lead-Acid Batteries for Stationary Applications",
+                                "ocr_line": "line_6_32",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1484,
+                                            1539,
+                                            1648,
+                                            1600
+                                        ],
+                                        "ocrx_word": "word_6_201",
+                                        "score": 1.0,
+                                        "title": "bbox 1484 1539 1648 1600; x_wconf 100",
+                                        "word": "Batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Std 1115 Recommended Practice for Sizing Nickel-cadmium Batteries for Stationary",
+                                "ocr_line": "line_6_37",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1781,
+                                            1877,
+                                            1944,
+                                            1938
+                                        ],
+                                        "ocrx_word": "word_6_241",
+                                        "score": 1.0,
+                                        "title": "bbox 1781 1877 1944 1938; x_wconf 100",
+                                        "word": "Batteries"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_6",
+                        "page": 6,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 7 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 3.7. IEEE (Institute of Electrical and Electronic Engineers) Std 32 - Standard Requirements, Terminology, and Test Procedure for Neutral Grounding Devices Std 43 - Recommended Practice Testing Insulation Resistance of Rotating Machinery Std 80 - Guide for Safety in AC Substation Grounding Std 81 - Guide for Measuring Earth Resistivity, Ground Impedance, and Earth Surface Potentials of a Ground System Std 112 - Standard Test Procedure for Polyphase Induction Motors and Generators Std 115 - Guide for Test Procedures for Synchronous Machines Part I-Acceptance and Performance Testing Part II-Test Procedures and Parameter Determination for Dynamic Analysis Std 141 - Recommended Practice for Electric Power Distribution for Industrial Plants Std 142 - Recommended Practice for Grounding of Industrial and Commercial Power Systems IEEE Green Book Std 241 - Recommended Practice for Electric Power Systems in Commercial Buildings IEEE Gray Book Std 242 - Recommended Practice for Protection and Coordination of Industrial and Commercial Power Systems IEEE Buff Book Std 485 - Recommended Practice for Sizing Lead-Acid Batteries for Stationary Applications Std 519 - Recommended Practices and Requirements for Harmonic Control in Electrical Power Systems Std 1100 - Recommended Practice for Powering and Grounding Electronic Equipment IEEE Emerald Book Std 1115 - Recommended Practice for Sizing Nickel-cadmium Batteries for Stationary Applications Std 1584 - Guide for Performing Arc-Flash Hazard Calculations Std 1613-IEEE Standard Environmental and Testing Requirements for Communications Networking Devices in Electric Power Substations IEEE 1665 - Cylindrical-pole Rotor, Insulation, Rotor Rewind, Salient-pole Rotor, Stator Rewind, Synchronous Generator Std 1202 - Standard for Flame-Propagation Testing of Wire and Cable Std 1531 - Guide for Application and Specification of Harmonic Filters C50.13 - Cylindrical-Rotor 50 Hz and 60 Hz Synchronous Generators Rated 10 MVA and Above C37.9 - Supplement to Test Procedure for AC High-Voltage Circuit Breakers Rated on a Symmetrical Current Basis C57.110 - IEEE Recommended Practice for Establishing Liquid-Filled and Dry- Type Power and Distribution Transformer Capability When Supplying Nonsinusoidal Load Currents 3.8. NEMA (National Electrical Manufacturers Association) MG1 - Motors and Generators PE7 - Communication Type Battery Chargers SG4 - Alternating Current High - Voltage Circuit Breakers VE1 - Metal Cable Tray Systems VE2 - Cable Tray Installation Guidelines",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "e770e245-5688-422b-8965-1fc181f3edc8",
+                        "id": "tbg9IXQBpwE8LF2WLs53",
+                        "lines": [
+                            {
+                                "line_words": "Std 485 Recommended Practice for Sizing Lead-Acid Batteries for Stationary Applications",
+                                "ocr_line": "line_6_32",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1484,
+                                            1539,
+                                            1648,
+                                            1600
+                                        ],
+                                        "ocrx_word": "word_6_201",
+                                        "score": 1.0,
+                                        "title": "bbox 1484 1539 1648 1600; x_wconf 100",
+                                        "word": "Batteries"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Std 1115 Recommended Practice for Sizing Nickel-cadmium Batteries for Stationary",
+                                "ocr_line": "line_6_37",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1781,
+                                            1877,
+                                            1944,
+                                            1938
+                                        ],
+                                        "ocrx_word": "word_6_241",
+                                        "score": 1.0,
+                                        "title": "bbox 1781 1877 1944 1938; x_wconf 100",
+                                        "word": "Batteries"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_6",
+                        "page": 6,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 7 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 3.7. IEEE (Institute of Electrical and Electronic Engineers) Std 32 - Standard Requirements, Terminology, and Test Procedure for Neutral Grounding Devices Std 43 - Recommended Practice Testing Insulation Resistance of Rotating Machinery Std 80 - Guide for Safety in AC Substation Grounding Std 81 - Guide for Measuring Earth Resistivity, Ground Impedance, and Earth Surface Potentials of a Ground System Std 112 - Standard Test Procedure for Polyphase Induction Motors and Generators Std 115 - Guide for Test Procedures for Synchronous Machines Part I-Acceptance and Performance Testing Part II-Test Procedures and Parameter Determination for Dynamic Analysis Std 141 - Recommended Practice for Electric Power Distribution for Industrial Plants Std 142 - Recommended Practice for Grounding of Industrial and Commercial Power Systems IEEE Green Book Std 241 - Recommended Practice for Electric Power Systems in Commercial Buildings IEEE Gray Book Std 242 - Recommended Practice for Protection and Coordination of Industrial and Commercial Power Systems IEEE Buff Book Std 485 - Recommended Practice for Sizing Lead-Acid Batteries for Stationary Applications Std 519 - Recommended Practices and Requirements for Harmonic Control in Electrical Power Systems Std 1100 - Recommended Practice for Powering and Grounding Electronic Equipment IEEE Emerald Book Std 1115 - Recommended Practice for Sizing Nickel-cadmium Batteries for Stationary Applications Std 1584 - Guide for Performing Arc-Flash Hazard Calculations Std 1613-IEEE Standard Environmental and Testing Requirements for Communications Networking Devices in Electric Power Substations IEEE 1665 - Cylindrical-pole Rotor, Insulation, Rotor Rewind, Salient-pole Rotor, Stator Rewind, Synchronous Generator Std 1202 - Standard for Flame-Propagation Testing of Wire and Cable Std 1531 - Guide for Application and Specification of Harmonic Filters C50.13 - Cylindrical-Rotor 50 Hz and 60 Hz Synchronous Generators Rated 10 MVA and Above C37.9 - Supplement to Test Procedure for AC High-Voltage Circuit Breakers Rated on a Symmetrical Current Basis C57.110 - IEEE Recommended Practice for Establishing Liquid-Filled and Dry- Type Power and Distribution Transformer Capability When Supplying Nonsinusoidal Load Currents 3.8. NEMA (National Electrical Manufacturers Association) MG1 - Motors and Generators PE7 - Communication Type Battery Chargers SG4 - Alternating Current High - Voltage Circuit Breakers VE1 - Metal Cable Tray Systems VE2 - Cable Tray Installation Guidelines",
+                        "score": 6.0
+                    }
+                ],
+                "hits_amount": 8
+            }
+        },
+        {
+            "avg": 0.6581873100526352,
+            "method": "substring",
+            "posicoes": [
+                2,
+                3,
+                4,
+                5,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+            ],
+            "precision_list": [
+                1,
+                0.0,
+                0.5,
+                0.6666666666666666,
+                0.75,
+                0.8,
+                0.6666666666666666,
+                0.5714285714285714,
+                0.5,
+                0.4444444444444444,
+                0.5,
+                0.5454545454545454,
+                0.5833333333333334,
+                0.6153846153846154,
+                0.6428571428571429,
+                0.6666666666666666,
+                0.6875,
+                0.7058823529411765,
+                0.7222222222222222,
+                0.7368421052631579,
+                0.75
+            ],
+            "qtd_retornado": "20",
+            "recal_list": [
+                0,
+                0.0,
+                0.06666666666666667,
+                0.13333333333333333,
+                0.2,
+                0.26666666666666666,
+                0.26666666666666666,
+                0.26666666666666666,
+                0.26666666666666666,
+                0.26666666666666666,
+                0.3333333333333333,
+                0.4,
+                0.4666666666666667,
+                0.5333333333333333,
+                0.6,
+                0.6666666666666666,
+                0.7333333333333333,
+                0.8,
+                0.8666666666666667,
+                0.9333333333333333,
+                1.0
+            ],
+            "termo_bd": {
+                "_source": {
+                    "interacao": [
+                        {
+                            "id_documento": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 17,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                            "opera\u00e7\u00e3o": "visualizou",
+                            "posicao": 0,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 9,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 11,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 0,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "ed863078-463c-4302-bd6a-e6ef7db89778",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 5,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "6b597709-ced2-42d9-b899-ef9d983785de",
+                            "opera\u00e7\u00e3o": "visualizou",
+                            "posicao": 18,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                            "opera\u00e7\u00e3o": "baixou xfdf",
+                            "posicao": 16,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 1,
+                            "timestamp": "2020/08/26 11:24:55"
+                        },
+                        {
+                            "id_documento": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                            "opera\u00e7\u00e3o": "baixou jpg",
+                            "posicao": 1,
+                            "timestamp": "2020/08/26 11:24:55"
+                        }
+                    ],
+                    "limit": 20,
+                    "metodo": "substring",
+                    "offset": 0,
+                    "query": "energia",
+                    "timestamp": "2020/08/26 11:24:55"
+                }
+            },
+            "termo_busca": {
+                "hits": [
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "hrg9IXQBpwE8LF2Wyc91",
+                        "lines": [
+                            {
+                                "line_words": "SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA",
+                                "ocr_line": "line_9_34",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1122,
+                                            1399,
+                                            1336,
+                                            1463
+                                        ],
+                                        "ocrx_word": "word_9_200",
+                                        "score": 1.0,
+                                        "title": "bbox 1122 1399 1336 1463; x_wconf 100",
+                                        "word": "ENERGIA"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador",
+                                "ocr_line": "line_9_35",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            773,
+                                            1475,
+                                            908,
+                                            1536
+                                        ],
+                                        "ocrx_word": "word_9_208",
+                                        "score": 1.0,
+                                        "title": "bbox 773 1475 908 1536; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                                "ocr_line": "line_9_67",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1234,
+                                            3243,
+                                            1369,
+                                            3304
+                                        ],
+                                        "ocrx_word": "word_9_513",
+                                        "score": 1.0,
+                                        "title": "bbox 1234 3243 1369 3304; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_9",
+                        "page": 9,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 10 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN c) Todos os circuitos para o sistema de intercomunica\u00e7\u00e3o s\u00e3o energizados durante todo o ciclo; d) Abertura da quantidade de disjuntores correspondente a condi\u00e7\u00e3o operacional mais severa no in\u00edcio do ciclo; e) Fechamento da quantidade de disjuntores correspondente \u00e0 energiza\u00e7\u00e3o dos carregadores de bateria. O carregador deve ser ligado em paralelo com a bateria, sendo esta \u00faltima mantida em flutua\u00e7\u00e3o autom\u00e1tica. O carregador deve possuir recarga manual e autom\u00e1tica e ser capaz de manter a tens\u00e3o de sa\u00edda do consumidor dentro de limites adequados \u00e0 opera\u00e7\u00e3o das cargas. O n\u00edvel de tens\u00e3o residual alternada (ripple) para as cargas n\u00e3o deve ser superior a 2%, estando a bateria desconectada O carregador deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ser flutuante. Deve ser prevista sinaliza\u00e7\u00e3o no caso de aterramento acidental de um dos polos do sistema, a ser localizada na parte frontal do Painel de Corrente Cont\u00ednua. 4.3. SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador de bateria, inversor, transformador auxiliar de alimenta\u00e7\u00e3o alternativa (by-pass), chave est\u00e1tica e um quadro de distribui\u00e7\u00e3o de UPS. Quando necess\u00e1rio ao projeto a instala\u00e7\u00e3o de UPS na subesta\u00e7\u00e3o, deve haver um sistema destinado a alimentar as cargas de instrumenta\u00e7\u00e3o, shut-down e sistemas de seguran\u00e7a em 120 V CA; independente de outros UPSs eventualmente requeridos com outras finalidades, tal como alimenta\u00e7\u00e3o de ilumina\u00e7\u00e3o de emerg\u00eancia em corrente alternada. As cargas de Telecomunica\u00e7\u00f5es tamb\u00e9m devem ser consideradas. A alimenta\u00e7\u00e3o el\u00e9trica para atender os equipamentos de Telecomunica\u00e7\u00f5es deve ser em 208 VAC. O UPS destinado a alimenta\u00e7\u00e3o de instrumenta\u00e7\u00e3o, anteriormente descrito deve possuir bateria de acumuladores dimensionada para um per\u00edodo necess\u00e1rio a parada segura das unidades de processo. Para carregador de bateria e a bateria de acumuladores do UPS, sempre que aplic\u00e1vel, devem ser seguidos os crit\u00e9rios descritos para sistema de corrente cont\u00ednua. Para alimenta\u00e7\u00e3o das cargas atrav\u00e9s do UPS, devem ser seguidos os seguintes crit\u00e9rios de segrega\u00e7\u00e3o, \u00e0 partir do painel de distribui\u00e7\u00e3o do UPS: a) Devem ser previstos circuitos de alimenta\u00e7\u00e3o exclusivos para a automa\u00e7\u00e3o; b) Devem ser previstos circuitos exclusivos para grupos de instrumentos; c) Devem ser previstos circuitos exclusivos para cada c\u00e2mera e para cada ponto de controle de acesso eletr\u00f4nico; d) Devem ser previstos circuitos exclusivos para grandes equipamentos como fornos, compressores, caldeiras, etc. e) Devem ser previsto dois circuitos exclusivos para cada bastidor de Telecomunica\u00e7\u00f5es. O UPS deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ter neutro isolado. O Painel deve conter sistema de monitora\u00e7\u00e3o de isolamento capaz de identificar o ramal da carga com baixa isola\u00e7\u00e3o. A condi\u00e7\u00e3o mais severa deve ser considerada para o dimensionamento do UPS, considerando a parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                        "score": 8.0
+                    },
+                    {
+                        "file_id": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                        "id": "8Lg9IXQBpwE8LF2WXM4x",
+                        "lines": [
+                            {
+                                "line_words": "SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA",
+                                "ocr_line": "line_9_34",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1122,
+                                            1399,
+                                            1336,
+                                            1463
+                                        ],
+                                        "ocrx_word": "word_9_200",
+                                        "score": 1.0,
+                                        "title": "bbox 1122 1399 1336 1463; x_wconf 100",
+                                        "word": "ENERGIA"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador",
+                                "ocr_line": "line_9_35",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            773,
+                                            1475,
+                                            908,
+                                            1536
+                                        ],
+                                        "ocrx_word": "word_9_208",
+                                        "score": 1.0,
+                                        "title": "bbox 773 1475 908 1536; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                                "ocr_line": "line_9_67",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1234,
+                                            3243,
+                                            1369,
+                                            3304
+                                        ],
+                                        "ocrx_word": "word_9_513",
+                                        "score": 1.0,
+                                        "title": "bbox 1234 3243 1369 3304; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_9",
+                        "page": 9,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 10 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN c) Todos os circuitos para o sistema de intercomunica\u00e7\u00e3o s\u00e3o energizados durante todo o ciclo; d) Abertura da quantidade de disjuntores correspondente a condi\u00e7\u00e3o operacional mais severa no in\u00edcio do ciclo; e) Fechamento da quantidade de disjuntores correspondente \u00e0 energiza\u00e7\u00e3o dos carregadores de bateria. O carregador deve ser ligado em paralelo com a bateria, sendo esta \u00faltima mantida em flutua\u00e7\u00e3o autom\u00e1tica. O carregador deve possuir recarga manual e autom\u00e1tica e ser capaz de manter a tens\u00e3o de sa\u00edda do consumidor dentro de limites adequados \u00e0 opera\u00e7\u00e3o das cargas. O n\u00edvel de tens\u00e3o residual alternada (ripple) para as cargas n\u00e3o deve ser superior a 2%, estando a bateria desconectada O carregador deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ser flutuante. Deve ser prevista sinaliza\u00e7\u00e3o no caso de aterramento acidental de um dos polos do sistema, a ser localizada na parte frontal do Painel de Corrente Cont\u00ednua. 4.3. SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador de bateria, inversor, transformador auxiliar de alimenta\u00e7\u00e3o alternativa (by-pass), chave est\u00e1tica e um quadro de distribui\u00e7\u00e3o de UPS. Quando necess\u00e1rio ao projeto a instala\u00e7\u00e3o de UPS na subesta\u00e7\u00e3o, deve haver um sistema destinado a alimentar as cargas de instrumenta\u00e7\u00e3o, shut-down e sistemas de seguran\u00e7a em 120 V CA; independente de outros UPSs eventualmente requeridos com outras finalidades, tal como alimenta\u00e7\u00e3o de ilumina\u00e7\u00e3o de emerg\u00eancia em corrente alternada. As cargas de Telecomunica\u00e7\u00f5es tamb\u00e9m devem ser consideradas. A alimenta\u00e7\u00e3o el\u00e9trica para atender os equipamentos de Telecomunica\u00e7\u00f5es deve ser em 208 VAC. O UPS destinado a alimenta\u00e7\u00e3o de instrumenta\u00e7\u00e3o, anteriormente descrito deve possuir bateria de acumuladores dimensionada para um per\u00edodo necess\u00e1rio a parada segura das unidades de processo. Para carregador de bateria e a bateria de acumuladores do UPS, sempre que aplic\u00e1vel, devem ser seguidos os crit\u00e9rios descritos para sistema de corrente cont\u00ednua. Para alimenta\u00e7\u00e3o das cargas atrav\u00e9s do UPS, devem ser seguidos os seguintes crit\u00e9rios de segrega\u00e7\u00e3o, \u00e0 partir do painel de distribui\u00e7\u00e3o do UPS: a) Devem ser previstos circuitos de alimenta\u00e7\u00e3o exclusivos para a automa\u00e7\u00e3o; b) Devem ser previstos circuitos exclusivos para grupos de instrumentos; c) Devem ser previstos circuitos exclusivos para cada c\u00e2mera e para cada ponto de controle de acesso eletr\u00f4nico; d) Devem ser previstos circuitos exclusivos para grandes equipamentos como fornos, compressores, caldeiras, etc. e) Devem ser previsto dois circuitos exclusivos para cada bastidor de Telecomunica\u00e7\u00f5es. O UPS deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ter neutro isolado. O Painel deve conter sistema de monitora\u00e7\u00e3o de isolamento capaz de identificar o ramal da carga com baixa isola\u00e7\u00e3o. A condi\u00e7\u00e3o mais severa deve ser considerada para o dimensionamento do UPS, considerando a parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                        "score": 8.0
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "wLg-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA",
+                                "ocr_line": "line_9_34",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1122,
+                                            1399,
+                                            1336,
+                                            1463
+                                        ],
+                                        "ocrx_word": "word_9_200",
+                                        "score": 1.0,
+                                        "title": "bbox 1122 1399 1336 1463; x_wconf 100",
+                                        "word": "ENERGIA"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador",
+                                "ocr_line": "line_9_35",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            773,
+                                            1475,
+                                            908,
+                                            1536
+                                        ],
+                                        "ocrx_word": "word_9_208",
+                                        "score": 1.0,
+                                        "title": "bbox 773 1475 908 1536; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                                "ocr_line": "line_9_67",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1234,
+                                            3243,
+                                            1369,
+                                            3304
+                                        ],
+                                        "ocrx_word": "word_9_513",
+                                        "score": 1.0,
+                                        "title": "bbox 1234 3243 1369 3304; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_9",
+                        "page": 9,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 10 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN c) Todos os circuitos para o sistema de intercomunica\u00e7\u00e3o s\u00e3o energizados durante todo o ciclo; d) Abertura da quantidade de disjuntores correspondente a condi\u00e7\u00e3o operacional mais severa no in\u00edcio do ciclo; e) Fechamento da quantidade de disjuntores correspondente \u00e0 energiza\u00e7\u00e3o dos carregadores de bateria. O carregador deve ser ligado em paralelo com a bateria, sendo esta \u00faltima mantida em flutua\u00e7\u00e3o autom\u00e1tica. O carregador deve possuir recarga manual e autom\u00e1tica e ser capaz de manter a tens\u00e3o de sa\u00edda do consumidor dentro de limites adequados \u00e0 opera\u00e7\u00e3o das cargas. O n\u00edvel de tens\u00e3o residual alternada (ripple) para as cargas n\u00e3o deve ser superior a 2%, estando a bateria desconectada O carregador deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ser flutuante. Deve ser prevista sinaliza\u00e7\u00e3o no caso de aterramento acidental de um dos polos do sistema, a ser localizada na parte frontal do Painel de Corrente Cont\u00ednua. 4.3. SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador de bateria, inversor, transformador auxiliar de alimenta\u00e7\u00e3o alternativa (by-pass), chave est\u00e1tica e um quadro de distribui\u00e7\u00e3o de UPS. Quando necess\u00e1rio ao projeto a instala\u00e7\u00e3o de UPS na subesta\u00e7\u00e3o, deve haver um sistema destinado a alimentar as cargas de instrumenta\u00e7\u00e3o, shut-down e sistemas de seguran\u00e7a em 120 V CA; independente de outros UPSs eventualmente requeridos com outras finalidades, tal como alimenta\u00e7\u00e3o de ilumina\u00e7\u00e3o de emerg\u00eancia em corrente alternada. As cargas de Telecomunica\u00e7\u00f5es tamb\u00e9m devem ser consideradas. A alimenta\u00e7\u00e3o el\u00e9trica para atender os equipamentos de Telecomunica\u00e7\u00f5es deve ser em 208 VAC. O UPS destinado a alimenta\u00e7\u00e3o de instrumenta\u00e7\u00e3o, anteriormente descrito deve possuir bateria de acumuladores dimensionada para um per\u00edodo necess\u00e1rio a parada segura das unidades de processo. Para carregador de bateria e a bateria de acumuladores do UPS, sempre que aplic\u00e1vel, devem ser seguidos os crit\u00e9rios descritos para sistema de corrente cont\u00ednua. Para alimenta\u00e7\u00e3o das cargas atrav\u00e9s do UPS, devem ser seguidos os seguintes crit\u00e9rios de segrega\u00e7\u00e3o, \u00e0 partir do painel de distribui\u00e7\u00e3o do UPS: a) Devem ser previstos circuitos de alimenta\u00e7\u00e3o exclusivos para a automa\u00e7\u00e3o; b) Devem ser previstos circuitos exclusivos para grupos de instrumentos; c) Devem ser previstos circuitos exclusivos para cada c\u00e2mera e para cada ponto de controle de acesso eletr\u00f4nico; d) Devem ser previstos circuitos exclusivos para grandes equipamentos como fornos, compressores, caldeiras, etc. e) Devem ser previsto dois circuitos exclusivos para cada bastidor de Telecomunica\u00e7\u00f5es. O UPS deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ter neutro isolado. O Painel deve conter sistema de monitora\u00e7\u00e3o de isolamento capaz de identificar o ramal da carga com baixa isola\u00e7\u00e3o. A condi\u00e7\u00e3o mais severa deve ser considerada para o dimensionamento do UPS, considerando a parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                        "score": 8.0
+                    },
+                    {
+                        "file_id": "6b597709-ced2-42d9-b899-ef9d983785de",
+                        "id": "_7g-IXQBpwE8LF2Wc890",
+                        "lines": [
+                            {
+                                "line_words": "SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA",
+                                "ocr_line": "line_9_34",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1122,
+                                            1399,
+                                            1336,
+                                            1463
+                                        ],
+                                        "ocrx_word": "word_9_200",
+                                        "score": 1.0,
+                                        "title": "bbox 1122 1399 1336 1463; x_wconf 100",
+                                        "word": "ENERGIA"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador",
+                                "ocr_line": "line_9_35",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            773,
+                                            1475,
+                                            908,
+                                            1536
+                                        ],
+                                        "ocrx_word": "word_9_208",
+                                        "score": 1.0,
+                                        "title": "bbox 773 1475 908 1536; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                                "ocr_line": "line_9_67",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1234,
+                                            3243,
+                                            1369,
+                                            3304
+                                        ],
+                                        "ocrx_word": "word_9_513",
+                                        "score": 1.0,
+                                        "title": "bbox 1234 3243 1369 3304; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_9",
+                        "page": 9,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 10 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN c) Todos os circuitos para o sistema de intercomunica\u00e7\u00e3o s\u00e3o energizados durante todo o ciclo; d) Abertura da quantidade de disjuntores correspondente a condi\u00e7\u00e3o operacional mais severa no in\u00edcio do ciclo; e) Fechamento da quantidade de disjuntores correspondente \u00e0 energiza\u00e7\u00e3o dos carregadores de bateria. O carregador deve ser ligado em paralelo com a bateria, sendo esta \u00faltima mantida em flutua\u00e7\u00e3o autom\u00e1tica. O carregador deve possuir recarga manual e autom\u00e1tica e ser capaz de manter a tens\u00e3o de sa\u00edda do consumidor dentro de limites adequados \u00e0 opera\u00e7\u00e3o das cargas. O n\u00edvel de tens\u00e3o residual alternada (ripple) para as cargas n\u00e3o deve ser superior a 2%, estando a bateria desconectada O carregador deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ser flutuante. Deve ser prevista sinaliza\u00e7\u00e3o no caso de aterramento acidental de um dos polos do sistema, a ser localizada na parte frontal do Painel de Corrente Cont\u00ednua. 4.3. SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador de bateria, inversor, transformador auxiliar de alimenta\u00e7\u00e3o alternativa (by-pass), chave est\u00e1tica e um quadro de distribui\u00e7\u00e3o de UPS. Quando necess\u00e1rio ao projeto a instala\u00e7\u00e3o de UPS na subesta\u00e7\u00e3o, deve haver um sistema destinado a alimentar as cargas de instrumenta\u00e7\u00e3o, shut-down e sistemas de seguran\u00e7a em 120 V CA; independente de outros UPSs eventualmente requeridos com outras finalidades, tal como alimenta\u00e7\u00e3o de ilumina\u00e7\u00e3o de emerg\u00eancia em corrente alternada. As cargas de Telecomunica\u00e7\u00f5es tamb\u00e9m devem ser consideradas. A alimenta\u00e7\u00e3o el\u00e9trica para atender os equipamentos de Telecomunica\u00e7\u00f5es deve ser em 208 VAC. O UPS destinado a alimenta\u00e7\u00e3o de instrumenta\u00e7\u00e3o, anteriormente descrito deve possuir bateria de acumuladores dimensionada para um per\u00edodo necess\u00e1rio a parada segura das unidades de processo. Para carregador de bateria e a bateria de acumuladores do UPS, sempre que aplic\u00e1vel, devem ser seguidos os crit\u00e9rios descritos para sistema de corrente cont\u00ednua. Para alimenta\u00e7\u00e3o das cargas atrav\u00e9s do UPS, devem ser seguidos os seguintes crit\u00e9rios de segrega\u00e7\u00e3o, \u00e0 partir do painel de distribui\u00e7\u00e3o do UPS: a) Devem ser previstos circuitos de alimenta\u00e7\u00e3o exclusivos para a automa\u00e7\u00e3o; b) Devem ser previstos circuitos exclusivos para grupos de instrumentos; c) Devem ser previstos circuitos exclusivos para cada c\u00e2mera e para cada ponto de controle de acesso eletr\u00f4nico; d) Devem ser previstos circuitos exclusivos para grandes equipamentos como fornos, compressores, caldeiras, etc. e) Devem ser previsto dois circuitos exclusivos para cada bastidor de Telecomunica\u00e7\u00f5es. O UPS deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ter neutro isolado. O Painel deve conter sistema de monitora\u00e7\u00e3o de isolamento capaz de identificar o ramal da carga com baixa isola\u00e7\u00e3o. A condi\u00e7\u00e3o mais severa deve ser considerada para o dimensionamento do UPS, considerando a parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                        "score": 8.0
+                    },
+                    {
+                        "file_id": "ed863078-463c-4302-bd6a-e6ef7db89778",
+                        "id": "fbg8IXQBpwE8LF2W7c4n",
+                        "lines": [
+                            {
+                                "line_words": "SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA",
+                                "ocr_line": "line_9_34",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1122,
+                                            1399,
+                                            1336,
+                                            1463
+                                        ],
+                                        "ocrx_word": "word_9_200",
+                                        "score": 1.0,
+                                        "title": "bbox 1122 1399 1336 1463; x_wconf 100",
+                                        "word": "ENERGIA"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador",
+                                "ocr_line": "line_9_35",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            773,
+                                            1475,
+                                            908,
+                                            1536
+                                        ],
+                                        "ocrx_word": "word_9_208",
+                                        "score": 1.0,
+                                        "title": "bbox 773 1475 908 1536; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                                "ocr_line": "line_9_67",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1234,
+                                            3243,
+                                            1369,
+                                            3304
+                                        ],
+                                        "ocrx_word": "word_9_513",
+                                        "score": 1.0,
+                                        "title": "bbox 1234 3243 1369 3304; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_9",
+                        "page": 9,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 10 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN c) Todos os circuitos para o sistema de intercomunica\u00e7\u00e3o s\u00e3o energizados durante todo o ciclo; d) Abertura da quantidade de disjuntores correspondente a condi\u00e7\u00e3o operacional mais severa no in\u00edcio do ciclo; e) Fechamento da quantidade de disjuntores correspondente \u00e0 energiza\u00e7\u00e3o dos carregadores de bateria. O carregador deve ser ligado em paralelo com a bateria, sendo esta \u00faltima mantida em flutua\u00e7\u00e3o autom\u00e1tica. O carregador deve possuir recarga manual e autom\u00e1tica e ser capaz de manter a tens\u00e3o de sa\u00edda do consumidor dentro de limites adequados \u00e0 opera\u00e7\u00e3o das cargas. O n\u00edvel de tens\u00e3o residual alternada (ripple) para as cargas n\u00e3o deve ser superior a 2%, estando a bateria desconectada O carregador deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ser flutuante. Deve ser prevista sinaliza\u00e7\u00e3o no caso de aterramento acidental de um dos polos do sistema, a ser localizada na parte frontal do Painel de Corrente Cont\u00ednua. 4.3. SISTEMA ININTERRUPTO DE ENERGIA (UPS) EM CORRENTE ALTERNADA Cada sistema de energia ininterrupta deve ser constitu\u00eddo por bateria de acumuladores, carregador de bateria, inversor, transformador auxiliar de alimenta\u00e7\u00e3o alternativa (by-pass), chave est\u00e1tica e um quadro de distribui\u00e7\u00e3o de UPS. Quando necess\u00e1rio ao projeto a instala\u00e7\u00e3o de UPS na subesta\u00e7\u00e3o, deve haver um sistema destinado a alimentar as cargas de instrumenta\u00e7\u00e3o, shut-down e sistemas de seguran\u00e7a em 120 V CA; independente de outros UPSs eventualmente requeridos com outras finalidades, tal como alimenta\u00e7\u00e3o de ilumina\u00e7\u00e3o de emerg\u00eancia em corrente alternada. As cargas de Telecomunica\u00e7\u00f5es tamb\u00e9m devem ser consideradas. A alimenta\u00e7\u00e3o el\u00e9trica para atender os equipamentos de Telecomunica\u00e7\u00f5es deve ser em 208 VAC. O UPS destinado a alimenta\u00e7\u00e3o de instrumenta\u00e7\u00e3o, anteriormente descrito deve possuir bateria de acumuladores dimensionada para um per\u00edodo necess\u00e1rio a parada segura das unidades de processo. Para carregador de bateria e a bateria de acumuladores do UPS, sempre que aplic\u00e1vel, devem ser seguidos os crit\u00e9rios descritos para sistema de corrente cont\u00ednua. Para alimenta\u00e7\u00e3o das cargas atrav\u00e9s do UPS, devem ser seguidos os seguintes crit\u00e9rios de segrega\u00e7\u00e3o, \u00e0 partir do painel de distribui\u00e7\u00e3o do UPS: a) Devem ser previstos circuitos de alimenta\u00e7\u00e3o exclusivos para a automa\u00e7\u00e3o; b) Devem ser previstos circuitos exclusivos para grupos de instrumentos; c) Devem ser previstos circuitos exclusivos para cada c\u00e2mera e para cada ponto de controle de acesso eletr\u00f4nico; d) Devem ser previstos circuitos exclusivos para grandes equipamentos como fornos, compressores, caldeiras, etc. e) Devem ser previsto dois circuitos exclusivos para cada bastidor de Telecomunica\u00e7\u00f5es. O UPS deve ser dimensionado com capacidade suficiente para suprir a corrente de carga da bateria e a corrente de consumidor. O sistema deve ter neutro isolado. O Painel deve conter sistema de monitora\u00e7\u00e3o de isolamento capaz de identificar o ramal da carga com baixa isola\u00e7\u00e3o. A condi\u00e7\u00e3o mais severa deve ser considerada para o dimensionamento do UPS, considerando a parada segura das unidades de processo e energia necess\u00e1ria para o retorno do sistema. O perfil de",
+                        "score": 8.0
+                    },
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "hLg9IXQBpwE8LF2Wyc90",
+                        "lines": [
+                            {
+                                "line_words": "Levantamento de campo do consumo das cargas el\u00e9tricas e do consumo de energia",
+                                "ocr_line": "line_7_60",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2134,
+                                            2419,
+                                            2268,
+                                            2480
+                                        ],
+                                        "ocrx_word": "word_7_310",
+                                        "score": 1.0,
+                                        "title": "bbox 2134 2419 2268 2480; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "instala\u00e7\u00e3o de medidores e registradores de corrente, tens\u00e3o, pot\u00eancia e energia, por",
+                                "ocr_line": "line_7_63",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2050,
+                                            2577,
+                                            2196,
+                                            2638
+                                        ],
+                                        "ocrx_word": "word_7_344",
+                                        "score": 1.0,
+                                        "title": "bbox 2050 2577 2196 2638; x_wconf 100",
+                                        "word": "energia,"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_7",
+                        "page": 7,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 8 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 3.9. NR (Normas Regulamentadoras de Seguran\u00e7a e Sa\u00fade no Trabalho - Minist\u00e9rio do Trabalho e Emprego) NR 10 - Instala\u00e7\u00f5es e Servi\u00e7os em Eletricidade NR 12 - M\u00e1quinas e Equipamentos NR 17 - Ergonomia NR 23 - Prote\u00e7\u00e3o contra Inc\u00eandios NR 26 - Sinaliza\u00e7\u00e3o de Seguran\u00e7a 4. CRIT\u00c9RIOS PARA DETALHAMENTO 4.1. CONDI\u00c7\u00d5ES GERAIS Este item tem como objetivo definir crit\u00e9rios gerais para detalhamento do projeto. Em caso de d\u00favidas, a PETROBRAS deve sempre ser consultada. A interface deste projeto com as instala\u00e7\u00f5es existentes deve atender os seguintes requisitos: a) Documentos existentes devem ser revisados, devendo ser tamb\u00e9m atualizados todos os demais documentos correlacionados e atingidos pela revis\u00e3o, mesmo que esta seja apenas para uma simples inclus\u00e3o de refer\u00eancia; b) Quando houver falta de espa\u00e7o ou de legibilidade nos documentos de projeto existentes, ou ainda incompatibilidades dos mesmos com projetos emitidos empregando computador devem ser emitidos novos documentos. Esses novos documentos, al\u00e9m de incluir as novas informa\u00e7\u00f5es, devem consolidar as informa\u00e7\u00f5es existentes de projetos anteriores, de forma a se evitar a necessidade de consulta a diversos documentos para se obter uma informa\u00e7\u00e3o; c) Deve ser feito um levantamento de campo completo para elaborar o projeto, verificando, entre outros itens, os seguintes pontos: \u2022 Situa\u00e7\u00e3o real das instala\u00e7\u00f5es e interfer\u00eancias que devem ser evitadas ou contornadas; \u2022 Disponibilidades das instala\u00e7\u00f5es existentes (espa\u00e7os para amplia\u00e7\u00f5es, compartimentos reserva em pain\u00e9is e de pot\u00eancia em transformadores, etc.), incluindo a emiss\u00e3o de notifica\u00e7\u00e3o \u00e0 PETROBRAS no caso de alguma especifica\u00e7\u00e3o por ela preparada necessitar ser modificada, em fun\u00e7\u00e3o do levantamento de campo e da execu\u00e7\u00e3o do detalhamento; \u2022 Levantamento de campo do consumo das cargas el\u00e9tricas e do consumo de energia existente em cada local, painel ou subesta\u00e7\u00e3o, para fins de dimensionamento de cabos, pain\u00e9is, transformadores, etc. Este levantamento deve ser feito atrav\u00e9s da instala\u00e7\u00e3o de medidores e registradores de corrente, tens\u00e3o, pot\u00eancia e energia, por um per\u00edodo de, no m\u00ednimo, uma semana; \u2022 Levantamento da resistividade do solo no local da instala\u00e7\u00e3o; \u2022 Todos os desenhos existentes a serem revisados. Quando aplic\u00e1vel, os crit\u00e9rios e solu\u00e7\u00f5es adotadas no detalhamento e na sele\u00e7\u00e3o de materiais devem ser compat\u00edveis com solu\u00e7\u00f5es consagradas adotadas nas instala\u00e7\u00f5es existentes. As diretrizes b\u00e1sicas relativas \u00e0 seguran\u00e7a e sa\u00fade estabelecidas na Norma Regulamentadora NR 10 do \u201cMinist\u00e9rio do Trabalho e Emprego - MTE\u201d devem ser aplicadas ao projeto el\u00e9trico. A CONTRATADA deve emitir e fornecer para a PETROBRAS um Laudo T\u00e9cnico, elaborado por um Engenheiro Eletricista qualificado, atestando que todos os materiais, equipamentos, servi\u00e7os de projeto, servi\u00e7os de montagem e sistema el\u00e9trico instalado est\u00e3o de acordo com as exig\u00eancias da",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "m7g9IXQBpwE8LF2Wyc91",
+                        "lines": [
+                            {
+                                "line_words": "a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da",
+                                "ocr_line": "line_30_31",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1700,
+                                            1362,
+                                            1835,
+                                            1423
+                                        ],
+                                        "ocrx_word": "word_30_178",
+                                        "score": 1.0,
+                                        "title": "bbox 1700 1362 1835 1423; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante;",
+                                "ocr_line": "line_30_35",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1529,
+                                            1573,
+                                            1664,
+                                            1634
+                                        ],
+                                        "ocrx_word": "word_30_228",
+                                        "score": 1.0,
+                                        "title": "bbox 1529 1573 1664 1634; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_30",
+                        "page": 30,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 31 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN a) prote\u00e7\u00e3o contra sobreexcita\u00e7\u00e3o (Fun\u00e7\u00e3o 24); b) prote\u00e7\u00e3o por subtens\u00e3o (Fun\u00e7\u00e3o 27); c) fun\u00e7\u00f5es de monitora\u00e7\u00e3o e alarme (Fun\u00e7\u00f5es 30/74); d) prote\u00e7\u00e3o de perda de campo ou de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 40); e) prote\u00e7\u00e3o de sequ\u00eancia incompleta (Fun\u00e7\u00e3o 48); f) prote\u00e7\u00e3o contra sobrecarga t\u00e9rmica (Fun\u00e7\u00e3o 49); g) prote\u00e7\u00e3o contra falta a terra do sistema de corrente cont\u00ednua para alimenta\u00e7\u00e3o da excitatriz \u201cBrushless\u201d (Fun\u00e7\u00e3o 50 GS); h) prote\u00e7\u00e3o de sobrecorrente de tempo inverso (Fun\u00e7\u00e3o 51); i) prote\u00e7\u00e3o de verifica\u00e7\u00e3o de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 53); j) fun\u00e7\u00e3o de prote\u00e7\u00e3o por fator de pot\u00eancia (Fun\u00e7\u00e3o 55); k) fun\u00e7\u00e3o de supervis\u00e3o de falha de aplica\u00e7\u00e3o de campo (\u201cField Application Relay\u201d - FAR) (Fun\u00e7\u00e3o 56); l) monitora\u00e7\u00e3o de falha dos diodos rotativos (Fun\u00e7\u00e3o 58); m) prote\u00e7\u00e3o por sobretens\u00e3o (Fun\u00e7\u00e3o 59). Requisitos de Pr\u00e9-Excita\u00e7\u00e3o e Desexcita\u00e7\u00e3o do Campo a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da abertura do contator de campo na condi\u00e7\u00e3o mais cr\u00edtica. As sobretens\u00f5es que ocorram n\u00e3o devem causar danos a qualquer parte do equipamento; b) o contator de campo deve ser capaz de interromper a corrente de campo durante anormalidades transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante; c) o contator de campo deve possuir contatos auxiliares dispon\u00edveis para intertravamento com o sistema de prote\u00e7\u00e3o e controle do motor s\u00edncrono; d) caso ocorra falha no processo de pr\u00e9-excita\u00e7\u00e3o, deve haver sinaliza\u00e7\u00e3o correspondente a este defeito. Sinais de Comando, Controle e Supervis\u00e3o a serem Enviados ou Recebidos Atrav\u00e9s de Interface Serial a) indica\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; b) indica\u00e7\u00e3o do modo de opera\u00e7\u00e3o local/remoto; c) indica\u00e7\u00e3o de corrente e tens\u00e3o de campo; d) sele\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; e) indica\u00e7\u00e3o do \u201cstatus\u201d do contator de campo (aberto/fechado); f) ajuste do fator de pot\u00eancia; g) indica\u00e7\u00e3o de falha de tiristor; h) alarme de sum\u00e1rio de defeitos; i) habilita\u00e7\u00e3o do controlador autom\u00e1tico de fator de pot\u00eancia (\u201cAutomatic Power Factor Regulator\u201d - APFR); j) controle autom\u00e1tico/manual e local/remoto; k) temporizador do tipo c\u00e3o de guarda (\u201cWatch dog timer\u201d); l) sequ\u00eancia incompleta de partida; m) subexcita\u00e7\u00e3o de corrente; n) sobrexcita\u00e7\u00e3o de corrente; o) falha dos diodos rotativos; p) alarme de falha do rotor \u00e0 terra; q) falha de sincronismo; r) sobrecarga do sistema de excita\u00e7\u00e3o; s) subtens\u00e3o do sistema de excita\u00e7\u00e3o; t) falha geral da prote\u00e7\u00e3o; u) falha dos fus\u00edveis; v) falha de realimenta\u00e7\u00e3o do controlador; w) falha no controlador de fator de pot\u00eancia;",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "pbg9IXQBpwE8LF2Wyc91",
+                        "lines": [
+                            {
+                                "line_words": "Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia",
+                                "ocr_line": "line_40_36",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2133,
+                                            1427,
+                                            2268,
+                                            1488
+                                        ],
+                                        "ocrx_word": "word_40_155",
+                                        "score": 1.0,
+                                        "title": "bbox 2133 1427 2268 1488; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET.",
+                                "ocr_line": "line_40_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1094,
+                                            1533,
+                                            1236,
+                                            1594
+                                        ],
+                                        "ocrx_word": "word_40_180",
+                                        "score": 1.0,
+                                        "title": "bbox 1094 1533 1236 1594; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_40",
+                        "page": 40,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 41 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u2022 Disjuntor fechado (cor vermelha); \u2022 Disjuntor aberto (cor verde); \u2022 Mola descarregada (cor amarela); \u2022 Posi\u00e7\u00e3o teste ou extra\u00eddo (cor branca); \u2022 Supervis\u00e3o da bobina de abertura (cor branca). Os disjuntores de entrada, interliga\u00e7\u00e3o e de alimenta\u00e7\u00e3o de CCMs devem possuir os seguintes contatos dispon\u00edveis para sinaliza\u00e7\u00e3o remota: \u2022 Posi\u00e7\u00e3o \u201cinserido\u201d; \u2022 Estado do disjuntor \u201cligado\u201d e \u201cdesligado\u201d. Os rel\u00e9s t\u00e9rmicos das sa\u00eddas para motores dos CCMs devem ser separados dos respectivos disjuntores caixa moldada. N\u00e3o s\u00e3o aceit\u00e1veis rel\u00e9s t\u00e9rmicos incorporados aos disjuntores de caixa moldada. O certificado para resist\u00eancia ao arco interno do painel deve ser adequado ao local onde ser\u00e1 instalado na subesta\u00e7\u00e3o. Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia incidente de arco de, no m\u00e1ximo, 33,47 J/cm 2 (8cal/cm 2 ), devendo para isso ser adotada uma das solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET. Todos os cub\u00edculos e gavetas de cargas mot\u00f3ricas dever\u00e3o possuir bot\u00e3o de emerg\u00eancia vermelho do tipo cogumelo, que abre o seu respectivo circuito. Todos os cub\u00edculos e gavetas dever\u00e3o ser identificados atrav\u00e9s de plaquetas contendo no m\u00ednimo o tag do equipamento alimentado e sua descri\u00e7\u00e3o. O comando de liga local dos disjuntores que alimentam cargas mot\u00f3ricas s\u00f3 deve atuar com disjuntor na posi\u00e7\u00e3o de teste. 4.17. DUTOS DE BARRAMENTOS Os dutos de barramentos devem possuir barras isoladas. As capacidades de condu\u00e7\u00e3o de corrente dos dutos devem ser compat\u00edveis com as pot\u00eancias dos transformadores atingidas com ventila\u00e7\u00e3o for\u00e7ada. Adicionalmente, as capacidades nominais de condu\u00e7\u00e3o de corrente em regime cont\u00ednuo e de curto-circuito dos dutos devem ser iguais \u00e0s capacidades nominais dos barramentos do painel por eles alimentados. Os dutos de barramentos devem ser adequados \u00e0 instala\u00e7\u00e3o ao tempo, mesmo com a \u00e1rea externa da subesta\u00e7\u00e3o possuindo cobertura para os transformadores. A carca\u00e7a do duto deve ser feita de chapa de a\u00e7o dobrada. N\u00e3o devem ser feitas jun\u00e7\u00f5es e soldas no topo das carca\u00e7as do duto, de forma a evitar a entrada de umidade. Os dutos de m\u00e9dia tens\u00e3o devem possuir sistema de exaust\u00e3o de gases provenientes de curto- circuito interno com arco. O duto de barramento deve ser provido de resistores de aquecimento em seu interior, em quantidade e distribui\u00e7\u00e3o de forma a evitar a condensa\u00e7\u00e3o de umidade. Esses resistores devem ser controlados automaticamente por meio de termostatos, adequadamente localizados, com faixa de gradua\u00e7\u00e3o m\u00e1xima em 60 \u00baC. 4.18. PAIN\u00c9IS PARA ALIMENTA\u00c7\u00c3O DE V\u00c1LVULAS MOTORIZADAS Cada v\u00e1lvula motorizada deve possuir alimenta\u00e7\u00e3o individual, provida de prote\u00e7\u00e3o contra curto- circuito. Para v\u00e1lvulas distantes da subesta\u00e7\u00e3o pode ser previsto painel de distribui\u00e7\u00e3o, localizado na \u00e1rea, pr\u00f3ximo \u00e0s v\u00e1lvulas motorizadas.",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "37c5f60e-b044-4fa9-8582-f2e115af2501",
+                        "id": "qLg9IXQBpwE8LF2Wyc91",
+                        "lines": [
+                            {
+                                "line_words": "CEPEL Centro de Pesquisas de Energia El\u00e9trica",
+                                "ocr_line": "line_43_24",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1226,
+                                            891,
+                                            1368,
+                                            952
+                                        ],
+                                        "ocrx_word": "word_43_135",
+                                        "score": 1.0,
+                                        "title": "bbox 1226 891 1368 952; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Energia da USP)",
+                                "ocr_line": "line_43_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            611,
+                                            1805,
+                                            754,
+                                            1866
+                                        ],
+                                        "ocrx_word": "word_43_209",
+                                        "score": 1.0,
+                                        "title": "bbox 611 1805 754 1866; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_43",
+                        "page": 43,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 44 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN Equipamentos e materiais para uso em \u00e1rea classificada, que n\u00e3o possam ser de uso geral, devem possuir Certifica\u00e7\u00e3o de Conformidade, atendendo \u00e0 Portaria INMETRO n\u00ba 179 de 18/05/2010. Esta Resolu\u00e7\u00e3o Normativa pode ser encontrada no web site: http://www.inmetro.gov.br. Este certificado deve ser emitido por um Organismo de Certifica\u00e7\u00e3o de Produto (OCP), que \u00e9 uma entidade credenciada pelo INMETRO respons\u00e1vel pela emiss\u00e3o dos Certificados de Conformidade e pelas inspe\u00e7\u00f5es dos produtos certificados, atestando a similaridade dos requisitos analisados com as disposi\u00e7\u00f5es da Resolu\u00e7\u00e3o acima mencionada. Os organismos de certifica\u00e7\u00e3o credenciados s\u00e3o os seguintes: \u2022 CEPEL - Centro de Pesquisas de Energia El\u00e9trica Escrit\u00f3rio de Certifica\u00e7\u00e3o de Produtos - ECPS Address: Av. 1, s/n\u00ba - Ilha da Cidade Universit\u00e1ria 21941-590 - Rio de Janeiro - RJ -Brasil Tel. + 55-21-598-2442 or 598-2461 Fax. + 55-21-598-2443 \u2022 UCIEE - Uni\u00e3o Certificadora de Ind\u00fastria Eletro-eletr\u00f4nica Address: Av. Brigadeiro Faria Lima, 613, 2\u00ba andar S\u00e3o Paulo - SP -Brazil Tel. + 55-11-820-7144 Fax. + 55-11-820-2674 \u2022 CERTUSP - Servi\u00e7o T\u00e9cnico de Certifica\u00e7\u00e3o do IEE/USP (Instituto de Eletrot\u00e9cnica e Energia da USP) Address: Av. Prof. Luciano Gualberto, 1289 Cidade Universit\u00e1ria - S\u00e3o Paulo - SP CEP 05508-900 - S\u00e3o Paulo - SP - Brazil Tel. + 55-11-818-4912 Fax. + 55-11-212-9923 http://www.iee.usp.br e-mail: certusp@iee.usp.br Em princ\u00edpio, a menos de casos particulares previamente aprovados pela PETROBRAS, equipamentos para uso em \u00e1rea classificada devem atender \u00e0 classe de temperatura T3. Caso os produtos envolvidos requeiram equipamentos com temperatura m\u00e1xima de superf\u00edcie menor que a estabelecida para a classe de temperatura T3, devem ser adotadas classes de temperatura condizentes com os mesmos. No caso de fornecimento de equipamentos ou componentes importados, o fornecedor deve garantir facilidades quanto \u00e0 assist\u00eancia t\u00e9cnica, bem como o pronto atendimento no fornecimento de pe\u00e7as de reposi\u00e7\u00e3o. Especifica\u00e7\u00f5es de equipamentos, componentes e materiais devem atender eventuais padroniza\u00e7\u00f5es de tipos ou modelos definidos pelo cliente. Esta padroniza\u00e7\u00e3o pode ocorrer devido a facilidades de manuten\u00e7\u00e3o ou opera\u00e7\u00e3o. Equipamentos de um mesmo tipo, como por exemplo, transformadores de for\u00e7a, conversores de frequ\u00eancia ou pain\u00e9is devem ser de um \u00fanico fabricante.",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                        "id": "7rg9IXQBpwE8LF2WXM4x",
+                        "lines": [
+                            {
+                                "line_words": "Levantamento de campo do consumo das cargas el\u00e9tricas e do consumo de energia",
+                                "ocr_line": "line_7_60",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2134,
+                                            2419,
+                                            2268,
+                                            2480
+                                        ],
+                                        "ocrx_word": "word_7_310",
+                                        "score": 1.0,
+                                        "title": "bbox 2134 2419 2268 2480; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "instala\u00e7\u00e3o de medidores e registradores de corrente, tens\u00e3o, pot\u00eancia e energia, por",
+                                "ocr_line": "line_7_63",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2050,
+                                            2577,
+                                            2196,
+                                            2638
+                                        ],
+                                        "ocrx_word": "word_7_344",
+                                        "score": 1.0,
+                                        "title": "bbox 2050 2577 2196 2638; x_wconf 100",
+                                        "word": "energia,"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_7",
+                        "page": 7,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 8 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 3.9. NR (Normas Regulamentadoras de Seguran\u00e7a e Sa\u00fade no Trabalho - Minist\u00e9rio do Trabalho e Emprego) NR 10 - Instala\u00e7\u00f5es e Servi\u00e7os em Eletricidade NR 12 - M\u00e1quinas e Equipamentos NR 17 - Ergonomia NR 23 - Prote\u00e7\u00e3o contra Inc\u00eandios NR 26 - Sinaliza\u00e7\u00e3o de Seguran\u00e7a 4. CRIT\u00c9RIOS PARA DETALHAMENTO 4.1. CONDI\u00c7\u00d5ES GERAIS Este item tem como objetivo definir crit\u00e9rios gerais para detalhamento do projeto. Em caso de d\u00favidas, a PETROBRAS deve sempre ser consultada. A interface deste projeto com as instala\u00e7\u00f5es existentes deve atender os seguintes requisitos: a) Documentos existentes devem ser revisados, devendo ser tamb\u00e9m atualizados todos os demais documentos correlacionados e atingidos pela revis\u00e3o, mesmo que esta seja apenas para uma simples inclus\u00e3o de refer\u00eancia; b) Quando houver falta de espa\u00e7o ou de legibilidade nos documentos de projeto existentes, ou ainda incompatibilidades dos mesmos com projetos emitidos empregando computador devem ser emitidos novos documentos. Esses novos documentos, al\u00e9m de incluir as novas informa\u00e7\u00f5es, devem consolidar as informa\u00e7\u00f5es existentes de projetos anteriores, de forma a se evitar a necessidade de consulta a diversos documentos para se obter uma informa\u00e7\u00e3o; c) Deve ser feito um levantamento de campo completo para elaborar o projeto, verificando, entre outros itens, os seguintes pontos: \u2022 Situa\u00e7\u00e3o real das instala\u00e7\u00f5es e interfer\u00eancias que devem ser evitadas ou contornadas; \u2022 Disponibilidades das instala\u00e7\u00f5es existentes (espa\u00e7os para amplia\u00e7\u00f5es, compartimentos reserva em pain\u00e9is e de pot\u00eancia em transformadores, etc.), incluindo a emiss\u00e3o de notifica\u00e7\u00e3o \u00e0 PETROBRAS no caso de alguma especifica\u00e7\u00e3o por ela preparada necessitar ser modificada, em fun\u00e7\u00e3o do levantamento de campo e da execu\u00e7\u00e3o do detalhamento; \u2022 Levantamento de campo do consumo das cargas el\u00e9tricas e do consumo de energia existente em cada local, painel ou subesta\u00e7\u00e3o, para fins de dimensionamento de cabos, pain\u00e9is, transformadores, etc. Este levantamento deve ser feito atrav\u00e9s da instala\u00e7\u00e3o de medidores e registradores de corrente, tens\u00e3o, pot\u00eancia e energia, por um per\u00edodo de, no m\u00ednimo, uma semana; \u2022 Levantamento da resistividade do solo no local da instala\u00e7\u00e3o; \u2022 Todos os desenhos existentes a serem revisados. Quando aplic\u00e1vel, os crit\u00e9rios e solu\u00e7\u00f5es adotadas no detalhamento e na sele\u00e7\u00e3o de materiais devem ser compat\u00edveis com solu\u00e7\u00f5es consagradas adotadas nas instala\u00e7\u00f5es existentes. As diretrizes b\u00e1sicas relativas \u00e0 seguran\u00e7a e sa\u00fade estabelecidas na Norma Regulamentadora NR 10 do \u201cMinist\u00e9rio do Trabalho e Emprego - MTE\u201d devem ser aplicadas ao projeto el\u00e9trico. A CONTRATADA deve emitir e fornecer para a PETROBRAS um Laudo T\u00e9cnico, elaborado por um Engenheiro Eletricista qualificado, atestando que todos os materiais, equipamentos, servi\u00e7os de projeto, servi\u00e7os de montagem e sistema el\u00e9trico instalado est\u00e3o de acordo com as exig\u00eancias da",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                        "id": "Bbg9IXQBpwE8LF2WXM8y",
+                        "lines": [
+                            {
+                                "line_words": "a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da",
+                                "ocr_line": "line_30_31",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1700,
+                                            1362,
+                                            1835,
+                                            1423
+                                        ],
+                                        "ocrx_word": "word_30_178",
+                                        "score": 1.0,
+                                        "title": "bbox 1700 1362 1835 1423; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante;",
+                                "ocr_line": "line_30_35",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1529,
+                                            1573,
+                                            1664,
+                                            1634
+                                        ],
+                                        "ocrx_word": "word_30_228",
+                                        "score": 1.0,
+                                        "title": "bbox 1529 1573 1664 1634; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_30",
+                        "page": 30,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 31 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN a) prote\u00e7\u00e3o contra sobreexcita\u00e7\u00e3o (Fun\u00e7\u00e3o 24); b) prote\u00e7\u00e3o por subtens\u00e3o (Fun\u00e7\u00e3o 27); c) fun\u00e7\u00f5es de monitora\u00e7\u00e3o e alarme (Fun\u00e7\u00f5es 30/74); d) prote\u00e7\u00e3o de perda de campo ou de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 40); e) prote\u00e7\u00e3o de sequ\u00eancia incompleta (Fun\u00e7\u00e3o 48); f) prote\u00e7\u00e3o contra sobrecarga t\u00e9rmica (Fun\u00e7\u00e3o 49); g) prote\u00e7\u00e3o contra falta a terra do sistema de corrente cont\u00ednua para alimenta\u00e7\u00e3o da excitatriz \u201cBrushless\u201d (Fun\u00e7\u00e3o 50 GS); h) prote\u00e7\u00e3o de sobrecorrente de tempo inverso (Fun\u00e7\u00e3o 51); i) prote\u00e7\u00e3o de verifica\u00e7\u00e3o de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 53); j) fun\u00e7\u00e3o de prote\u00e7\u00e3o por fator de pot\u00eancia (Fun\u00e7\u00e3o 55); k) fun\u00e7\u00e3o de supervis\u00e3o de falha de aplica\u00e7\u00e3o de campo (\u201cField Application Relay\u201d - FAR) (Fun\u00e7\u00e3o 56); l) monitora\u00e7\u00e3o de falha dos diodos rotativos (Fun\u00e7\u00e3o 58); m) prote\u00e7\u00e3o por sobretens\u00e3o (Fun\u00e7\u00e3o 59). Requisitos de Pr\u00e9-Excita\u00e7\u00e3o e Desexcita\u00e7\u00e3o do Campo a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da abertura do contator de campo na condi\u00e7\u00e3o mais cr\u00edtica. As sobretens\u00f5es que ocorram n\u00e3o devem causar danos a qualquer parte do equipamento; b) o contator de campo deve ser capaz de interromper a corrente de campo durante anormalidades transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante; c) o contator de campo deve possuir contatos auxiliares dispon\u00edveis para intertravamento com o sistema de prote\u00e7\u00e3o e controle do motor s\u00edncrono; d) caso ocorra falha no processo de pr\u00e9-excita\u00e7\u00e3o, deve haver sinaliza\u00e7\u00e3o correspondente a este defeito. Sinais de Comando, Controle e Supervis\u00e3o a serem Enviados ou Recebidos Atrav\u00e9s de Interface Serial a) indica\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; b) indica\u00e7\u00e3o do modo de opera\u00e7\u00e3o local/remoto; c) indica\u00e7\u00e3o de corrente e tens\u00e3o de campo; d) sele\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; e) indica\u00e7\u00e3o do \u201cstatus\u201d do contator de campo (aberto/fechado); f) ajuste do fator de pot\u00eancia; g) indica\u00e7\u00e3o de falha de tiristor; h) alarme de sum\u00e1rio de defeitos; i) habilita\u00e7\u00e3o do controlador autom\u00e1tico de fator de pot\u00eancia (\u201cAutomatic Power Factor Regulator\u201d - APFR); j) controle autom\u00e1tico/manual e local/remoto; k) temporizador do tipo c\u00e3o de guarda (\u201cWatch dog timer\u201d); l) sequ\u00eancia incompleta de partida; m) subexcita\u00e7\u00e3o de corrente; n) sobrexcita\u00e7\u00e3o de corrente; o) falha dos diodos rotativos; p) alarme de falha do rotor \u00e0 terra; q) falha de sincronismo; r) sobrecarga do sistema de excita\u00e7\u00e3o; s) subtens\u00e3o do sistema de excita\u00e7\u00e3o; t) falha geral da prote\u00e7\u00e3o; u) falha dos fus\u00edveis; v) falha de realimenta\u00e7\u00e3o do controlador; w) falha no controlador de fator de pot\u00eancia;",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                        "id": "D7g9IXQBpwE8LF2WXM8y",
+                        "lines": [
+                            {
+                                "line_words": "Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia",
+                                "ocr_line": "line_40_36",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2133,
+                                            1427,
+                                            2268,
+                                            1488
+                                        ],
+                                        "ocrx_word": "word_40_155",
+                                        "score": 1.0,
+                                        "title": "bbox 2133 1427 2268 1488; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET.",
+                                "ocr_line": "line_40_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1094,
+                                            1533,
+                                            1236,
+                                            1594
+                                        ],
+                                        "ocrx_word": "word_40_180",
+                                        "score": 1.0,
+                                        "title": "bbox 1094 1533 1236 1594; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_40",
+                        "page": 40,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 41 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u2022 Disjuntor fechado (cor vermelha); \u2022 Disjuntor aberto (cor verde); \u2022 Mola descarregada (cor amarela); \u2022 Posi\u00e7\u00e3o teste ou extra\u00eddo (cor branca); \u2022 Supervis\u00e3o da bobina de abertura (cor branca). Os disjuntores de entrada, interliga\u00e7\u00e3o e de alimenta\u00e7\u00e3o de CCMs devem possuir os seguintes contatos dispon\u00edveis para sinaliza\u00e7\u00e3o remota: \u2022 Posi\u00e7\u00e3o \u201cinserido\u201d; \u2022 Estado do disjuntor \u201cligado\u201d e \u201cdesligado\u201d. Os rel\u00e9s t\u00e9rmicos das sa\u00eddas para motores dos CCMs devem ser separados dos respectivos disjuntores caixa moldada. N\u00e3o s\u00e3o aceit\u00e1veis rel\u00e9s t\u00e9rmicos incorporados aos disjuntores de caixa moldada. O certificado para resist\u00eancia ao arco interno do painel deve ser adequado ao local onde ser\u00e1 instalado na subesta\u00e7\u00e3o. Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia incidente de arco de, no m\u00e1ximo, 33,47 J/cm 2 (8cal/cm 2 ), devendo para isso ser adotada uma das solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET. Todos os cub\u00edculos e gavetas de cargas mot\u00f3ricas dever\u00e3o possuir bot\u00e3o de emerg\u00eancia vermelho do tipo cogumelo, que abre o seu respectivo circuito. Todos os cub\u00edculos e gavetas dever\u00e3o ser identificados atrav\u00e9s de plaquetas contendo no m\u00ednimo o tag do equipamento alimentado e sua descri\u00e7\u00e3o. O comando de liga local dos disjuntores que alimentam cargas mot\u00f3ricas s\u00f3 deve atuar com disjuntor na posi\u00e7\u00e3o de teste. 4.17. DUTOS DE BARRAMENTOS Os dutos de barramentos devem possuir barras isoladas. As capacidades de condu\u00e7\u00e3o de corrente dos dutos devem ser compat\u00edveis com as pot\u00eancias dos transformadores atingidas com ventila\u00e7\u00e3o for\u00e7ada. Adicionalmente, as capacidades nominais de condu\u00e7\u00e3o de corrente em regime cont\u00ednuo e de curto-circuito dos dutos devem ser iguais \u00e0s capacidades nominais dos barramentos do painel por eles alimentados. Os dutos de barramentos devem ser adequados \u00e0 instala\u00e7\u00e3o ao tempo, mesmo com a \u00e1rea externa da subesta\u00e7\u00e3o possuindo cobertura para os transformadores. A carca\u00e7a do duto deve ser feita de chapa de a\u00e7o dobrada. N\u00e3o devem ser feitas jun\u00e7\u00f5es e soldas no topo das carca\u00e7as do duto, de forma a evitar a entrada de umidade. Os dutos de m\u00e9dia tens\u00e3o devem possuir sistema de exaust\u00e3o de gases provenientes de curto- circuito interno com arco. O duto de barramento deve ser provido de resistores de aquecimento em seu interior, em quantidade e distribui\u00e7\u00e3o de forma a evitar a condensa\u00e7\u00e3o de umidade. Esses resistores devem ser controlados automaticamente por meio de termostatos, adequadamente localizados, com faixa de gradua\u00e7\u00e3o m\u00e1xima em 60 \u00baC. 4.18. PAIN\u00c9IS PARA ALIMENTA\u00c7\u00c3O DE V\u00c1LVULAS MOTORIZADAS Cada v\u00e1lvula motorizada deve possuir alimenta\u00e7\u00e3o individual, provida de prote\u00e7\u00e3o contra curto- circuito. Para v\u00e1lvulas distantes da subesta\u00e7\u00e3o pode ser previsto painel de distribui\u00e7\u00e3o, localizado na \u00e1rea, pr\u00f3ximo \u00e0s v\u00e1lvulas motorizadas.",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "b60b729d-fb42-413c-8c0f-66d0402e1b8a",
+                        "id": "Erg9IXQBpwE8LF2WXM8y",
+                        "lines": [
+                            {
+                                "line_words": "CEPEL Centro de Pesquisas de Energia El\u00e9trica",
+                                "ocr_line": "line_43_24",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1226,
+                                            891,
+                                            1368,
+                                            952
+                                        ],
+                                        "ocrx_word": "word_43_135",
+                                        "score": 1.0,
+                                        "title": "bbox 1226 891 1368 952; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Energia da USP)",
+                                "ocr_line": "line_43_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            611,
+                                            1805,
+                                            754,
+                                            1866
+                                        ],
+                                        "ocrx_word": "word_43_209",
+                                        "score": 1.0,
+                                        "title": "bbox 611 1805 754 1866; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_43",
+                        "page": 43,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 44 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN Equipamentos e materiais para uso em \u00e1rea classificada, que n\u00e3o possam ser de uso geral, devem possuir Certifica\u00e7\u00e3o de Conformidade, atendendo \u00e0 Portaria INMETRO n\u00ba 179 de 18/05/2010. Esta Resolu\u00e7\u00e3o Normativa pode ser encontrada no web site: http://www.inmetro.gov.br. Este certificado deve ser emitido por um Organismo de Certifica\u00e7\u00e3o de Produto (OCP), que \u00e9 uma entidade credenciada pelo INMETRO respons\u00e1vel pela emiss\u00e3o dos Certificados de Conformidade e pelas inspe\u00e7\u00f5es dos produtos certificados, atestando a similaridade dos requisitos analisados com as disposi\u00e7\u00f5es da Resolu\u00e7\u00e3o acima mencionada. Os organismos de certifica\u00e7\u00e3o credenciados s\u00e3o os seguintes: \u2022 CEPEL - Centro de Pesquisas de Energia El\u00e9trica Escrit\u00f3rio de Certifica\u00e7\u00e3o de Produtos - ECPS Address: Av. 1, s/n\u00ba - Ilha da Cidade Universit\u00e1ria 21941-590 - Rio de Janeiro - RJ -Brasil Tel. + 55-21-598-2442 or 598-2461 Fax. + 55-21-598-2443 \u2022 UCIEE - Uni\u00e3o Certificadora de Ind\u00fastria Eletro-eletr\u00f4nica Address: Av. Brigadeiro Faria Lima, 613, 2\u00ba andar S\u00e3o Paulo - SP -Brazil Tel. + 55-11-820-7144 Fax. + 55-11-820-2674 \u2022 CERTUSP - Servi\u00e7o T\u00e9cnico de Certifica\u00e7\u00e3o do IEE/USP (Instituto de Eletrot\u00e9cnica e Energia da USP) Address: Av. Prof. Luciano Gualberto, 1289 Cidade Universit\u00e1ria - S\u00e3o Paulo - SP CEP 05508-900 - S\u00e3o Paulo - SP - Brazil Tel. + 55-11-818-4912 Fax. + 55-11-212-9923 http://www.iee.usp.br e-mail: certusp@iee.usp.br Em princ\u00edpio, a menos de casos particulares previamente aprovados pela PETROBRAS, equipamentos para uso em \u00e1rea classificada devem atender \u00e0 classe de temperatura T3. Caso os produtos envolvidos requeiram equipamentos com temperatura m\u00e1xima de superf\u00edcie menor que a estabelecida para a classe de temperatura T3, devem ser adotadas classes de temperatura condizentes com os mesmos. No caso de fornecimento de equipamentos ou componentes importados, o fornecedor deve garantir facilidades quanto \u00e0 assist\u00eancia t\u00e9cnica, bem como o pronto atendimento no fornecimento de pe\u00e7as de reposi\u00e7\u00e3o. Especifica\u00e7\u00f5es de equipamentos, componentes e materiais devem atender eventuais padroniza\u00e7\u00f5es de tipos ou modelos definidos pelo cliente. Esta padroniza\u00e7\u00e3o pode ocorrer devido a facilidades de manuten\u00e7\u00e3o ou opera\u00e7\u00e3o. Equipamentos de um mesmo tipo, como por exemplo, transformadores de for\u00e7a, conversores de frequ\u00eancia ou pain\u00e9is devem ser de um \u00fanico fabricante.",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "vrg-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "Levantamento de campo do consumo das cargas el\u00e9tricas e do consumo de energia",
+                                "ocr_line": "line_7_60",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2134,
+                                            2419,
+                                            2268,
+                                            2480
+                                        ],
+                                        "ocrx_word": "word_7_310",
+                                        "score": 1.0,
+                                        "title": "bbox 2134 2419 2268 2480; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "instala\u00e7\u00e3o de medidores e registradores de corrente, tens\u00e3o, pot\u00eancia e energia, por",
+                                "ocr_line": "line_7_63",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2050,
+                                            2577,
+                                            2196,
+                                            2638
+                                        ],
+                                        "ocrx_word": "word_7_344",
+                                        "score": 1.0,
+                                        "title": "bbox 2050 2577 2196 2638; x_wconf 100",
+                                        "word": "energia,"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_7",
+                        "page": 7,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 8 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 3.9. NR (Normas Regulamentadoras de Seguran\u00e7a e Sa\u00fade no Trabalho - Minist\u00e9rio do Trabalho e Emprego) NR 10 - Instala\u00e7\u00f5es e Servi\u00e7os em Eletricidade NR 12 - M\u00e1quinas e Equipamentos NR 17 - Ergonomia NR 23 - Prote\u00e7\u00e3o contra Inc\u00eandios NR 26 - Sinaliza\u00e7\u00e3o de Seguran\u00e7a 4. CRIT\u00c9RIOS PARA DETALHAMENTO 4.1. CONDI\u00c7\u00d5ES GERAIS Este item tem como objetivo definir crit\u00e9rios gerais para detalhamento do projeto. Em caso de d\u00favidas, a PETROBRAS deve sempre ser consultada. A interface deste projeto com as instala\u00e7\u00f5es existentes deve atender os seguintes requisitos: a) Documentos existentes devem ser revisados, devendo ser tamb\u00e9m atualizados todos os demais documentos correlacionados e atingidos pela revis\u00e3o, mesmo que esta seja apenas para uma simples inclus\u00e3o de refer\u00eancia; b) Quando houver falta de espa\u00e7o ou de legibilidade nos documentos de projeto existentes, ou ainda incompatibilidades dos mesmos com projetos emitidos empregando computador devem ser emitidos novos documentos. Esses novos documentos, al\u00e9m de incluir as novas informa\u00e7\u00f5es, devem consolidar as informa\u00e7\u00f5es existentes de projetos anteriores, de forma a se evitar a necessidade de consulta a diversos documentos para se obter uma informa\u00e7\u00e3o; c) Deve ser feito um levantamento de campo completo para elaborar o projeto, verificando, entre outros itens, os seguintes pontos: \u2022 Situa\u00e7\u00e3o real das instala\u00e7\u00f5es e interfer\u00eancias que devem ser evitadas ou contornadas; \u2022 Disponibilidades das instala\u00e7\u00f5es existentes (espa\u00e7os para amplia\u00e7\u00f5es, compartimentos reserva em pain\u00e9is e de pot\u00eancia em transformadores, etc.), incluindo a emiss\u00e3o de notifica\u00e7\u00e3o \u00e0 PETROBRAS no caso de alguma especifica\u00e7\u00e3o por ela preparada necessitar ser modificada, em fun\u00e7\u00e3o do levantamento de campo e da execu\u00e7\u00e3o do detalhamento; \u2022 Levantamento de campo do consumo das cargas el\u00e9tricas e do consumo de energia existente em cada local, painel ou subesta\u00e7\u00e3o, para fins de dimensionamento de cabos, pain\u00e9is, transformadores, etc. Este levantamento deve ser feito atrav\u00e9s da instala\u00e7\u00e3o de medidores e registradores de corrente, tens\u00e3o, pot\u00eancia e energia, por um per\u00edodo de, no m\u00ednimo, uma semana; \u2022 Levantamento da resistividade do solo no local da instala\u00e7\u00e3o; \u2022 Todos os desenhos existentes a serem revisados. Quando aplic\u00e1vel, os crit\u00e9rios e solu\u00e7\u00f5es adotadas no detalhamento e na sele\u00e7\u00e3o de materiais devem ser compat\u00edveis com solu\u00e7\u00f5es consagradas adotadas nas instala\u00e7\u00f5es existentes. As diretrizes b\u00e1sicas relativas \u00e0 seguran\u00e7a e sa\u00fade estabelecidas na Norma Regulamentadora NR 10 do \u201cMinist\u00e9rio do Trabalho e Emprego - MTE\u201d devem ser aplicadas ao projeto el\u00e9trico. A CONTRATADA deve emitir e fornecer para a PETROBRAS um Laudo T\u00e9cnico, elaborado por um Engenheiro Eletricista qualificado, atestando que todos os materiais, equipamentos, servi\u00e7os de projeto, servi\u00e7os de montagem e sistema el\u00e9trico instalado est\u00e3o de acordo com as exig\u00eancias da",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "1bg-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da",
+                                "ocr_line": "line_30_31",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1700,
+                                            1362,
+                                            1835,
+                                            1423
+                                        ],
+                                        "ocrx_word": "word_30_178",
+                                        "score": 1.0,
+                                        "title": "bbox 1700 1362 1835 1423; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante;",
+                                "ocr_line": "line_30_35",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1529,
+                                            1573,
+                                            1664,
+                                            1634
+                                        ],
+                                        "ocrx_word": "word_30_228",
+                                        "score": 1.0,
+                                        "title": "bbox 1529 1573 1664 1634; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_30",
+                        "page": 30,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 31 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN a) prote\u00e7\u00e3o contra sobreexcita\u00e7\u00e3o (Fun\u00e7\u00e3o 24); b) prote\u00e7\u00e3o por subtens\u00e3o (Fun\u00e7\u00e3o 27); c) fun\u00e7\u00f5es de monitora\u00e7\u00e3o e alarme (Fun\u00e7\u00f5es 30/74); d) prote\u00e7\u00e3o de perda de campo ou de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 40); e) prote\u00e7\u00e3o de sequ\u00eancia incompleta (Fun\u00e7\u00e3o 48); f) prote\u00e7\u00e3o contra sobrecarga t\u00e9rmica (Fun\u00e7\u00e3o 49); g) prote\u00e7\u00e3o contra falta a terra do sistema de corrente cont\u00ednua para alimenta\u00e7\u00e3o da excitatriz \u201cBrushless\u201d (Fun\u00e7\u00e3o 50 GS); h) prote\u00e7\u00e3o de sobrecorrente de tempo inverso (Fun\u00e7\u00e3o 51); i) prote\u00e7\u00e3o de verifica\u00e7\u00e3o de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 53); j) fun\u00e7\u00e3o de prote\u00e7\u00e3o por fator de pot\u00eancia (Fun\u00e7\u00e3o 55); k) fun\u00e7\u00e3o de supervis\u00e3o de falha de aplica\u00e7\u00e3o de campo (\u201cField Application Relay\u201d - FAR) (Fun\u00e7\u00e3o 56); l) monitora\u00e7\u00e3o de falha dos diodos rotativos (Fun\u00e7\u00e3o 58); m) prote\u00e7\u00e3o por sobretens\u00e3o (Fun\u00e7\u00e3o 59). Requisitos de Pr\u00e9-Excita\u00e7\u00e3o e Desexcita\u00e7\u00e3o do Campo a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da abertura do contator de campo na condi\u00e7\u00e3o mais cr\u00edtica. As sobretens\u00f5es que ocorram n\u00e3o devem causar danos a qualquer parte do equipamento; b) o contator de campo deve ser capaz de interromper a corrente de campo durante anormalidades transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante; c) o contator de campo deve possuir contatos auxiliares dispon\u00edveis para intertravamento com o sistema de prote\u00e7\u00e3o e controle do motor s\u00edncrono; d) caso ocorra falha no processo de pr\u00e9-excita\u00e7\u00e3o, deve haver sinaliza\u00e7\u00e3o correspondente a este defeito. Sinais de Comando, Controle e Supervis\u00e3o a serem Enviados ou Recebidos Atrav\u00e9s de Interface Serial a) indica\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; b) indica\u00e7\u00e3o do modo de opera\u00e7\u00e3o local/remoto; c) indica\u00e7\u00e3o de corrente e tens\u00e3o de campo; d) sele\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; e) indica\u00e7\u00e3o do \u201cstatus\u201d do contator de campo (aberto/fechado); f) ajuste do fator de pot\u00eancia; g) indica\u00e7\u00e3o de falha de tiristor; h) alarme de sum\u00e1rio de defeitos; i) habilita\u00e7\u00e3o do controlador autom\u00e1tico de fator de pot\u00eancia (\u201cAutomatic Power Factor Regulator\u201d - APFR); j) controle autom\u00e1tico/manual e local/remoto; k) temporizador do tipo c\u00e3o de guarda (\u201cWatch dog timer\u201d); l) sequ\u00eancia incompleta de partida; m) subexcita\u00e7\u00e3o de corrente; n) sobrexcita\u00e7\u00e3o de corrente; o) falha dos diodos rotativos; p) alarme de falha do rotor \u00e0 terra; q) falha de sincronismo; r) sobrecarga do sistema de excita\u00e7\u00e3o; s) subtens\u00e3o do sistema de excita\u00e7\u00e3o; t) falha geral da prote\u00e7\u00e3o; u) falha dos fus\u00edveis; v) falha de realimenta\u00e7\u00e3o do controlador; w) falha no controlador de fator de pot\u00eancia;",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "37g-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia",
+                                "ocr_line": "line_40_36",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2133,
+                                            1427,
+                                            2268,
+                                            1488
+                                        ],
+                                        "ocrx_word": "word_40_155",
+                                        "score": 1.0,
+                                        "title": "bbox 2133 1427 2268 1488; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET.",
+                                "ocr_line": "line_40_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1094,
+                                            1533,
+                                            1236,
+                                            1594
+                                        ],
+                                        "ocrx_word": "word_40_180",
+                                        "score": 1.0,
+                                        "title": "bbox 1094 1533 1236 1594; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_40",
+                        "page": 40,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 41 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u2022 Disjuntor fechado (cor vermelha); \u2022 Disjuntor aberto (cor verde); \u2022 Mola descarregada (cor amarela); \u2022 Posi\u00e7\u00e3o teste ou extra\u00eddo (cor branca); \u2022 Supervis\u00e3o da bobina de abertura (cor branca). Os disjuntores de entrada, interliga\u00e7\u00e3o e de alimenta\u00e7\u00e3o de CCMs devem possuir os seguintes contatos dispon\u00edveis para sinaliza\u00e7\u00e3o remota: \u2022 Posi\u00e7\u00e3o \u201cinserido\u201d; \u2022 Estado do disjuntor \u201cligado\u201d e \u201cdesligado\u201d. Os rel\u00e9s t\u00e9rmicos das sa\u00eddas para motores dos CCMs devem ser separados dos respectivos disjuntores caixa moldada. N\u00e3o s\u00e3o aceit\u00e1veis rel\u00e9s t\u00e9rmicos incorporados aos disjuntores de caixa moldada. O certificado para resist\u00eancia ao arco interno do painel deve ser adequado ao local onde ser\u00e1 instalado na subesta\u00e7\u00e3o. Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia incidente de arco de, no m\u00e1ximo, 33,47 J/cm 2 (8cal/cm 2 ), devendo para isso ser adotada uma das solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET. Todos os cub\u00edculos e gavetas de cargas mot\u00f3ricas dever\u00e3o possuir bot\u00e3o de emerg\u00eancia vermelho do tipo cogumelo, que abre o seu respectivo circuito. Todos os cub\u00edculos e gavetas dever\u00e3o ser identificados atrav\u00e9s de plaquetas contendo no m\u00ednimo o tag do equipamento alimentado e sua descri\u00e7\u00e3o. O comando de liga local dos disjuntores que alimentam cargas mot\u00f3ricas s\u00f3 deve atuar com disjuntor na posi\u00e7\u00e3o de teste. 4.17. DUTOS DE BARRAMENTOS Os dutos de barramentos devem possuir barras isoladas. As capacidades de condu\u00e7\u00e3o de corrente dos dutos devem ser compat\u00edveis com as pot\u00eancias dos transformadores atingidas com ventila\u00e7\u00e3o for\u00e7ada. Adicionalmente, as capacidades nominais de condu\u00e7\u00e3o de corrente em regime cont\u00ednuo e de curto-circuito dos dutos devem ser iguais \u00e0s capacidades nominais dos barramentos do painel por eles alimentados. Os dutos de barramentos devem ser adequados \u00e0 instala\u00e7\u00e3o ao tempo, mesmo com a \u00e1rea externa da subesta\u00e7\u00e3o possuindo cobertura para os transformadores. A carca\u00e7a do duto deve ser feita de chapa de a\u00e7o dobrada. N\u00e3o devem ser feitas jun\u00e7\u00f5es e soldas no topo das carca\u00e7as do duto, de forma a evitar a entrada de umidade. Os dutos de m\u00e9dia tens\u00e3o devem possuir sistema de exaust\u00e3o de gases provenientes de curto- circuito interno com arco. O duto de barramento deve ser provido de resistores de aquecimento em seu interior, em quantidade e distribui\u00e7\u00e3o de forma a evitar a condensa\u00e7\u00e3o de umidade. Esses resistores devem ser controlados automaticamente por meio de termostatos, adequadamente localizados, com faixa de gradua\u00e7\u00e3o m\u00e1xima em 60 \u00baC. 4.18. PAIN\u00c9IS PARA ALIMENTA\u00c7\u00c3O DE V\u00c1LVULAS MOTORIZADAS Cada v\u00e1lvula motorizada deve possuir alimenta\u00e7\u00e3o individual, provida de prote\u00e7\u00e3o contra curto- circuito. Para v\u00e1lvulas distantes da subesta\u00e7\u00e3o pode ser previsto painel de distribui\u00e7\u00e3o, localizado na \u00e1rea, pr\u00f3ximo \u00e0s v\u00e1lvulas motorizadas.",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "9cee72fd-835a-440b-a09b-a2a2c4777509",
+                        "id": "4rg-IXQBpwE8LF2WAM_2",
+                        "lines": [
+                            {
+                                "line_words": "CEPEL Centro de Pesquisas de Energia El\u00e9trica",
+                                "ocr_line": "line_43_24",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1226,
+                                            891,
+                                            1368,
+                                            952
+                                        ],
+                                        "ocrx_word": "word_43_135",
+                                        "score": 1.0,
+                                        "title": "bbox 1226 891 1368 952; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "Energia da USP)",
+                                "ocr_line": "line_43_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            611,
+                                            1805,
+                                            754,
+                                            1866
+                                        ],
+                                        "ocrx_word": "word_43_209",
+                                        "score": 1.0,
+                                        "title": "bbox 611 1805 754 1866; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_43",
+                        "page": 43,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 44 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN Equipamentos e materiais para uso em \u00e1rea classificada, que n\u00e3o possam ser de uso geral, devem possuir Certifica\u00e7\u00e3o de Conformidade, atendendo \u00e0 Portaria INMETRO n\u00ba 179 de 18/05/2010. Esta Resolu\u00e7\u00e3o Normativa pode ser encontrada no web site: http://www.inmetro.gov.br. Este certificado deve ser emitido por um Organismo de Certifica\u00e7\u00e3o de Produto (OCP), que \u00e9 uma entidade credenciada pelo INMETRO respons\u00e1vel pela emiss\u00e3o dos Certificados de Conformidade e pelas inspe\u00e7\u00f5es dos produtos certificados, atestando a similaridade dos requisitos analisados com as disposi\u00e7\u00f5es da Resolu\u00e7\u00e3o acima mencionada. Os organismos de certifica\u00e7\u00e3o credenciados s\u00e3o os seguintes: \u2022 CEPEL - Centro de Pesquisas de Energia El\u00e9trica Escrit\u00f3rio de Certifica\u00e7\u00e3o de Produtos - ECPS Address: Av. 1, s/n\u00ba - Ilha da Cidade Universit\u00e1ria 21941-590 - Rio de Janeiro - RJ -Brasil Tel. + 55-21-598-2442 or 598-2461 Fax. + 55-21-598-2443 \u2022 UCIEE - Uni\u00e3o Certificadora de Ind\u00fastria Eletro-eletr\u00f4nica Address: Av. Brigadeiro Faria Lima, 613, 2\u00ba andar S\u00e3o Paulo - SP -Brazil Tel. + 55-11-820-7144 Fax. + 55-11-820-2674 \u2022 CERTUSP - Servi\u00e7o T\u00e9cnico de Certifica\u00e7\u00e3o do IEE/USP (Instituto de Eletrot\u00e9cnica e Energia da USP) Address: Av. Prof. Luciano Gualberto, 1289 Cidade Universit\u00e1ria - S\u00e3o Paulo - SP CEP 05508-900 - S\u00e3o Paulo - SP - Brazil Tel. + 55-11-818-4912 Fax. + 55-11-212-9923 http://www.iee.usp.br e-mail: certusp@iee.usp.br Em princ\u00edpio, a menos de casos particulares previamente aprovados pela PETROBRAS, equipamentos para uso em \u00e1rea classificada devem atender \u00e0 classe de temperatura T3. Caso os produtos envolvidos requeiram equipamentos com temperatura m\u00e1xima de superf\u00edcie menor que a estabelecida para a classe de temperatura T3, devem ser adotadas classes de temperatura condizentes com os mesmos. No caso de fornecimento de equipamentos ou componentes importados, o fornecedor deve garantir facilidades quanto \u00e0 assist\u00eancia t\u00e9cnica, bem como o pronto atendimento no fornecimento de pe\u00e7as de reposi\u00e7\u00e3o. Especifica\u00e7\u00f5es de equipamentos, componentes e materiais devem atender eventuais padroniza\u00e7\u00f5es de tipos ou modelos definidos pelo cliente. Esta padroniza\u00e7\u00e3o pode ocorrer devido a facilidades de manuten\u00e7\u00e3o ou opera\u00e7\u00e3o. Equipamentos de um mesmo tipo, como por exemplo, transformadores de for\u00e7a, conversores de frequ\u00eancia ou pain\u00e9is devem ser de um \u00fanico fabricante.",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "6b597709-ced2-42d9-b899-ef9d983785de",
+                        "id": "_bg-IXQBpwE8LF2Wc890",
+                        "lines": [
+                            {
+                                "line_words": "Levantamento de campo do consumo das cargas el\u00e9tricas e do consumo de energia",
+                                "ocr_line": "line_7_60",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2134,
+                                            2419,
+                                            2268,
+                                            2480
+                                        ],
+                                        "ocrx_word": "word_7_310",
+                                        "score": 1.0,
+                                        "title": "bbox 2134 2419 2268 2480; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "instala\u00e7\u00e3o de medidores e registradores de corrente, tens\u00e3o, pot\u00eancia e energia, por",
+                                "ocr_line": "line_7_63",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2050,
+                                            2577,
+                                            2196,
+                                            2638
+                                        ],
+                                        "ocrx_word": "word_7_344",
+                                        "score": 1.0,
+                                        "title": "bbox 2050 2577 2196 2638; x_wconf 100",
+                                        "word": "energia,"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_7",
+                        "page": 7,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 8 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN 3.9. NR (Normas Regulamentadoras de Seguran\u00e7a e Sa\u00fade no Trabalho - Minist\u00e9rio do Trabalho e Emprego) NR 10 - Instala\u00e7\u00f5es e Servi\u00e7os em Eletricidade NR 12 - M\u00e1quinas e Equipamentos NR 17 - Ergonomia NR 23 - Prote\u00e7\u00e3o contra Inc\u00eandios NR 26 - Sinaliza\u00e7\u00e3o de Seguran\u00e7a 4. CRIT\u00c9RIOS PARA DETALHAMENTO 4.1. CONDI\u00c7\u00d5ES GERAIS Este item tem como objetivo definir crit\u00e9rios gerais para detalhamento do projeto. Em caso de d\u00favidas, a PETROBRAS deve sempre ser consultada. A interface deste projeto com as instala\u00e7\u00f5es existentes deve atender os seguintes requisitos: a) Documentos existentes devem ser revisados, devendo ser tamb\u00e9m atualizados todos os demais documentos correlacionados e atingidos pela revis\u00e3o, mesmo que esta seja apenas para uma simples inclus\u00e3o de refer\u00eancia; b) Quando houver falta de espa\u00e7o ou de legibilidade nos documentos de projeto existentes, ou ainda incompatibilidades dos mesmos com projetos emitidos empregando computador devem ser emitidos novos documentos. Esses novos documentos, al\u00e9m de incluir as novas informa\u00e7\u00f5es, devem consolidar as informa\u00e7\u00f5es existentes de projetos anteriores, de forma a se evitar a necessidade de consulta a diversos documentos para se obter uma informa\u00e7\u00e3o; c) Deve ser feito um levantamento de campo completo para elaborar o projeto, verificando, entre outros itens, os seguintes pontos: \u2022 Situa\u00e7\u00e3o real das instala\u00e7\u00f5es e interfer\u00eancias que devem ser evitadas ou contornadas; \u2022 Disponibilidades das instala\u00e7\u00f5es existentes (espa\u00e7os para amplia\u00e7\u00f5es, compartimentos reserva em pain\u00e9is e de pot\u00eancia em transformadores, etc.), incluindo a emiss\u00e3o de notifica\u00e7\u00e3o \u00e0 PETROBRAS no caso de alguma especifica\u00e7\u00e3o por ela preparada necessitar ser modificada, em fun\u00e7\u00e3o do levantamento de campo e da execu\u00e7\u00e3o do detalhamento; \u2022 Levantamento de campo do consumo das cargas el\u00e9tricas e do consumo de energia existente em cada local, painel ou subesta\u00e7\u00e3o, para fins de dimensionamento de cabos, pain\u00e9is, transformadores, etc. Este levantamento deve ser feito atrav\u00e9s da instala\u00e7\u00e3o de medidores e registradores de corrente, tens\u00e3o, pot\u00eancia e energia, por um per\u00edodo de, no m\u00ednimo, uma semana; \u2022 Levantamento da resistividade do solo no local da instala\u00e7\u00e3o; \u2022 Todos os desenhos existentes a serem revisados. Quando aplic\u00e1vel, os crit\u00e9rios e solu\u00e7\u00f5es adotadas no detalhamento e na sele\u00e7\u00e3o de materiais devem ser compat\u00edveis com solu\u00e7\u00f5es consagradas adotadas nas instala\u00e7\u00f5es existentes. As diretrizes b\u00e1sicas relativas \u00e0 seguran\u00e7a e sa\u00fade estabelecidas na Norma Regulamentadora NR 10 do \u201cMinist\u00e9rio do Trabalho e Emprego - MTE\u201d devem ser aplicadas ao projeto el\u00e9trico. A CONTRATADA deve emitir e fornecer para a PETROBRAS um Laudo T\u00e9cnico, elaborado por um Engenheiro Eletricista qualificado, atestando que todos os materiais, equipamentos, servi\u00e7os de projeto, servi\u00e7os de montagem e sistema el\u00e9trico instalado est\u00e3o de acordo com as exig\u00eancias da",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "6b597709-ced2-42d9-b899-ef9d983785de",
+                        "id": "FLg-IXQBpwE8LF2Wc9B0",
+                        "lines": [
+                            {
+                                "line_words": "a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da",
+                                "ocr_line": "line_30_31",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1700,
+                                            1362,
+                                            1835,
+                                            1423
+                                        ],
+                                        "ocrx_word": "word_30_178",
+                                        "score": 1.0,
+                                        "title": "bbox 1700 1362 1835 1423; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante;",
+                                "ocr_line": "line_30_35",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1529,
+                                            1573,
+                                            1664,
+                                            1634
+                                        ],
+                                        "ocrx_word": "word_30_228",
+                                        "score": 1.0,
+                                        "title": "bbox 1529 1573 1664 1634; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_30",
+                        "page": 30,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 31 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN a) prote\u00e7\u00e3o contra sobreexcita\u00e7\u00e3o (Fun\u00e7\u00e3o 24); b) prote\u00e7\u00e3o por subtens\u00e3o (Fun\u00e7\u00e3o 27); c) fun\u00e7\u00f5es de monitora\u00e7\u00e3o e alarme (Fun\u00e7\u00f5es 30/74); d) prote\u00e7\u00e3o de perda de campo ou de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 40); e) prote\u00e7\u00e3o de sequ\u00eancia incompleta (Fun\u00e7\u00e3o 48); f) prote\u00e7\u00e3o contra sobrecarga t\u00e9rmica (Fun\u00e7\u00e3o 49); g) prote\u00e7\u00e3o contra falta a terra do sistema de corrente cont\u00ednua para alimenta\u00e7\u00e3o da excitatriz \u201cBrushless\u201d (Fun\u00e7\u00e3o 50 GS); h) prote\u00e7\u00e3o de sobrecorrente de tempo inverso (Fun\u00e7\u00e3o 51); i) prote\u00e7\u00e3o de verifica\u00e7\u00e3o de excita\u00e7\u00e3o (Fun\u00e7\u00e3o 53); j) fun\u00e7\u00e3o de prote\u00e7\u00e3o por fator de pot\u00eancia (Fun\u00e7\u00e3o 55); k) fun\u00e7\u00e3o de supervis\u00e3o de falha de aplica\u00e7\u00e3o de campo (\u201cField Application Relay\u201d - FAR) (Fun\u00e7\u00e3o 56); l) monitora\u00e7\u00e3o de falha dos diodos rotativos (Fun\u00e7\u00e3o 58); m) prote\u00e7\u00e3o por sobretens\u00e3o (Fun\u00e7\u00e3o 59). Requisitos de Pr\u00e9-Excita\u00e7\u00e3o e Desexcita\u00e7\u00e3o do Campo a) o sistema de desexcita\u00e7\u00e3o deve assegurar a descarga de toda a energia armazenada quando da abertura do contator de campo na condi\u00e7\u00e3o mais cr\u00edtica. As sobretens\u00f5es que ocorram n\u00e3o devem causar danos a qualquer parte do equipamento; b) o contator de campo deve ser capaz de interromper a corrente de campo durante anormalidades transit\u00f3rias, suportando os valores m\u00e1ximos de tens\u00e3o e energia decorrente do arco resultante; c) o contator de campo deve possuir contatos auxiliares dispon\u00edveis para intertravamento com o sistema de prote\u00e7\u00e3o e controle do motor s\u00edncrono; d) caso ocorra falha no processo de pr\u00e9-excita\u00e7\u00e3o, deve haver sinaliza\u00e7\u00e3o correspondente a este defeito. Sinais de Comando, Controle e Supervis\u00e3o a serem Enviados ou Recebidos Atrav\u00e9s de Interface Serial a) indica\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; b) indica\u00e7\u00e3o do modo de opera\u00e7\u00e3o local/remoto; c) indica\u00e7\u00e3o de corrente e tens\u00e3o de campo; d) sele\u00e7\u00e3o do modo de controle autom\u00e1tico/manual; e) indica\u00e7\u00e3o do \u201cstatus\u201d do contator de campo (aberto/fechado); f) ajuste do fator de pot\u00eancia; g) indica\u00e7\u00e3o de falha de tiristor; h) alarme de sum\u00e1rio de defeitos; i) habilita\u00e7\u00e3o do controlador autom\u00e1tico de fator de pot\u00eancia (\u201cAutomatic Power Factor Regulator\u201d - APFR); j) controle autom\u00e1tico/manual e local/remoto; k) temporizador do tipo c\u00e3o de guarda (\u201cWatch dog timer\u201d); l) sequ\u00eancia incompleta de partida; m) subexcita\u00e7\u00e3o de corrente; n) sobrexcita\u00e7\u00e3o de corrente; o) falha dos diodos rotativos; p) alarme de falha do rotor \u00e0 terra; q) falha de sincronismo; r) sobrecarga do sistema de excita\u00e7\u00e3o; s) subtens\u00e3o do sistema de excita\u00e7\u00e3o; t) falha geral da prote\u00e7\u00e3o; u) falha dos fus\u00edveis; v) falha de realimenta\u00e7\u00e3o do controlador; w) falha no controlador de fator de pot\u00eancia;",
+                        "score": 6.0
+                    },
+                    {
+                        "file_id": "6b597709-ced2-42d9-b899-ef9d983785de",
+                        "id": "Hrg-IXQBpwE8LF2Wc9B0",
+                        "lines": [
+                            {
+                                "line_words": "Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia",
+                                "ocr_line": "line_40_36",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            2133,
+                                            1427,
+                                            2268,
+                                            1488
+                                        ],
+                                        "ocrx_word": "word_40_155",
+                                        "score": 1.0,
+                                        "title": "bbox 2133 1427 2268 1488; x_wconf 100",
+                                        "word": "energia"
+                                    }
+                                ]
+                            },
+                            {
+                                "line_words": "solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET.",
+                                "ocr_line": "line_40_38",
+                                "score": 2.0,
+                                "words": [
+                                    {
+                                        "bbox": [
+                                            1094,
+                                            1533,
+                                            1236,
+                                            1594
+                                        ],
+                                        "ocrx_word": "word_40_180",
+                                        "score": 1.0,
+                                        "title": "bbox 1094 1533 1236 1594; x_wconf 100",
+                                        "word": "Energia"
+                                    }
+                                ]
+                            }
+                        ],
+                        "ocr_page": "page_40",
+                        "page": 40,
+                        "page_words": "ESPECIFICA\u00c7\u00c3O T\u00c9CNICA N O ET-5400.00-1230-700-PEI-001 REV. A \u00c1REA COMPERJ U-1230 \u2013 UNIDADES DE G\u00c1S NATURAL - GERAL FOLHA: 41 de 55 T\u00cdTULO: CRIT\u00c9RIOS DE PROJETO PARA DESENVOLVIMENTO DO PROJETO DE ELETRICIDADE DA UPGN NP-1 ENG-RLE/PROJEN \u2022 Disjuntor fechado (cor vermelha); \u2022 Disjuntor aberto (cor verde); \u2022 Mola descarregada (cor amarela); \u2022 Posi\u00e7\u00e3o teste ou extra\u00eddo (cor branca); \u2022 Supervis\u00e3o da bobina de abertura (cor branca). Os disjuntores de entrada, interliga\u00e7\u00e3o e de alimenta\u00e7\u00e3o de CCMs devem possuir os seguintes contatos dispon\u00edveis para sinaliza\u00e7\u00e3o remota: \u2022 Posi\u00e7\u00e3o \u201cinserido\u201d; \u2022 Estado do disjuntor \u201cligado\u201d e \u201cdesligado\u201d. Os rel\u00e9s t\u00e9rmicos das sa\u00eddas para motores dos CCMs devem ser separados dos respectivos disjuntores caixa moldada. N\u00e3o s\u00e3o aceit\u00e1veis rel\u00e9s t\u00e9rmicos incorporados aos disjuntores de caixa moldada. O certificado para resist\u00eancia ao arco interno do painel deve ser adequado ao local onde ser\u00e1 instalado na subesta\u00e7\u00e3o. Os pain\u00e9is devem possuir prote\u00e7\u00e3o contra arco interno de forma a proporcionar uma energia incidente de arco de, no m\u00e1ximo, 33,47 J/cm 2 (8cal/cm 2 ), devendo para isso ser adotada uma das solu\u00e7\u00f5es definidas pelo Estudo de Energia Incidente, conforme item 5.6 desta ET. Todos os cub\u00edculos e gavetas de cargas mot\u00f3ricas dever\u00e3o possuir bot\u00e3o de emerg\u00eancia vermelho do tipo cogumelo, que abre o seu respectivo circuito. Todos os cub\u00edculos e gavetas dever\u00e3o ser identificados atrav\u00e9s de plaquetas contendo no m\u00ednimo o tag do equipamento alimentado e sua descri\u00e7\u00e3o. O comando de liga local dos disjuntores que alimentam cargas mot\u00f3ricas s\u00f3 deve atuar com disjuntor na posi\u00e7\u00e3o de teste. 4.17. DUTOS DE BARRAMENTOS Os dutos de barramentos devem possuir barras isoladas. As capacidades de condu\u00e7\u00e3o de corrente dos dutos devem ser compat\u00edveis com as pot\u00eancias dos transformadores atingidas com ventila\u00e7\u00e3o for\u00e7ada. Adicionalmente, as capacidades nominais de condu\u00e7\u00e3o de corrente em regime cont\u00ednuo e de curto-circuito dos dutos devem ser iguais \u00e0s capacidades nominais dos barramentos do painel por eles alimentados. Os dutos de barramentos devem ser adequados \u00e0 instala\u00e7\u00e3o ao tempo, mesmo com a \u00e1rea externa da subesta\u00e7\u00e3o possuindo cobertura para os transformadores. A carca\u00e7a do duto deve ser feita de chapa de a\u00e7o dobrada. N\u00e3o devem ser feitas jun\u00e7\u00f5es e soldas no topo das carca\u00e7as do duto, de forma a evitar a entrada de umidade. Os dutos de m\u00e9dia tens\u00e3o devem possuir sistema de exaust\u00e3o de gases provenientes de curto- circuito interno com arco. O duto de barramento deve ser provido de resistores de aquecimento em seu interior, em quantidade e distribui\u00e7\u00e3o de forma a evitar a condensa\u00e7\u00e3o de umidade. Esses resistores devem ser controlados automaticamente por meio de termostatos, adequadamente localizados, com faixa de gradua\u00e7\u00e3o m\u00e1xima em 60 \u00baC. 4.18. PAIN\u00c9IS PARA ALIMENTA\u00c7\u00c3O DE V\u00c1LVULAS MOTORIZADAS Cada v\u00e1lvula motorizada deve possuir alimenta\u00e7\u00e3o individual, provida de prote\u00e7\u00e3o contra curto- circuito. Para v\u00e1lvulas distantes da subesta\u00e7\u00e3o pode ser previsto painel de distribui\u00e7\u00e3o, localizado na \u00e1rea, pr\u00f3ximo \u00e0s v\u00e1lvulas motorizadas.",
+                        "score": 6.0
+                    }
+                ],
+                "hits_amount": 50
+            }
+        }
+    ],
+    "media_avg": 0.6663952423279049,
+    "media_precision": [
+        1.0,
+        0.0,
+        0.5,
+        0.6666666666666666,
+        0.75,
+        0.7,
+        0.6666666666666666,
+        0.6428571428571428,
+        0.625
+    ],
+    "media_recal": [
+        0.0,
+        0.0,
+        0.11666666666666667,
+        0.23333333333333334,
+        0.35,
+        0.3833333333333333,
+        0.4666666666666667,
+        0.55,
+        0.6333333333333333
+    ],
+    "method": "substring"
+}
