@@ -6,32 +6,30 @@ from metricas import *
 from model import *
 from utils import *
 class Document:
-    def __init__(self, doc_id, posicao):
+    def __init__(self, doc_id, posicao, page):
         self.doc_id = doc_id
         self.pos = posicao
+        self.page = page
 
 def found(lista, doc):
     if len(lista) == 0:
         return True
     elif len(lista) > 0:
-        if lista[0].doc_id == doc.doc_id and lista[0].pos == doc.pos:
+        if lista[0].doc_id == doc.doc_id and lista[0].pos == doc.pos and lista[0].page == doc.page:
             return False
         else:
             return found(lista[1:], doc)
 
 
-def get_documents_and_positions_from_interactions(interactions: list):
-    documents_id = []
+def get_positions_from_interactions(interactions: list):
     position = []
     atual_pos = -1
     doc_atual = ''
     for x in interactions:
-        if x['id_documento'] not in documents_id:
-            documents_id.append(x['id_documento'])
-        doc = Document(x['id_documento'], x['posicao'])
+        doc = Document(x['id_documento'], x['posicao'], x['page'])
         if found(position, doc):
             position.append(doc)
-    return documents_id, position
+    return position
 
 
 def get_consult(query: str, method: str, limit:int, offset:int, documents_id: list):
@@ -68,11 +66,12 @@ def get_interactions():
         limit = res['_source']['limit']
         offset = res['_source']['offset']
         timestamp = res['_source']['timestamp']
+        documents = res['_source']['documents']
         interactions = res['_source']['interacao']
         interactionssorted = sorted(interactions, key=lambda k: k['posicao'])
-        documents_id, positions = get_documents_and_positions_from_interactions(interactionssorted)
+        positions = get_positions_from_interactions(interactionssorted)
         inicio = time.time()
-        search = get_consult(query, method, limit, offset, documents_id)
+        search = get_consult(query, method, limit, offset, documents)
         tempo_gasto = time.time() - inicio
         times_search.append(tempo_gasto)
         qtd = search['hits_amount']
@@ -81,9 +80,9 @@ def get_interactions():
         pos = 0
         count = 1
         for x in search['hits']:
-            doc = Document(x['file_id'], pos)
+            doc = Document(x['file_id'], pos, x['page'])
             retrieved.append(count)
-            if found(positions, doc):
+            if not found(positions, doc):
                 relevant.append(count)
             count += 1
         qtd_retornado = str(len(retrieved))

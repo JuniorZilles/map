@@ -296,7 +296,7 @@ def plot_curve_j3(info_list: list):
     # Plot da curva interpolada em 11 pontos e
     # cálculo da área abaixo da mesma
     pos = 0
-    colors = ['green', 'red', 'blue', 'orange', 'yellow', 'brown', 'grey', 'purple', 'black', 'gold', 'silver']
+    colors = ['green', 'red', 'blue', 'orange', 'brown', 'grey', 'yellow',  'purple', 'black', 'gold', 'silver']
     line = [
         (0, (1, 1)),
         (0, (5, 10)),

@@ -107,7 +107,7 @@ for a in range(0,10):
   search = get_consult(querys[posquer], methods[posmeth], '20', '0', documents)
   
   jsonstr = {
-      "query": querys[posquer], "metodo": methods[posmeth], "timestamp": datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S"),"limit":20, "offset":0, "interacao":[]
+      "query": querys[posquer], "metodo": methods[posmeth], "timestamp": datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S"),"limit":20, "offset":0, "documents": documents, "interacao":[]
   }
   strjson = json.dumps(jsonstr)
   index_single_document(client, index, a, strjson)
@@ -120,7 +120,7 @@ for a in range(0,10):
         "source": "ctx._source.interacao.add(params.interacao)",
         "lang": "painless",
         "params": {
-          "interacao": {"timestamp":datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S"), 'id_documento': search['hits'][posicao]['file_id'],"posicao":posicao, "operação":operacao[posoper]}
+          "interacao": {"timestamp":datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S"), 'id_documento': search['hits'][posicao]['file_id'], 'page': search['hits'][posicao]['page'],"posicao":posicao, "operação":operacao[posoper]}
         }
       }
     }
