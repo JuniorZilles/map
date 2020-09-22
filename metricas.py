@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
+from matplotlib import colors
+from matplotlib.ticker import PercentFormatter
 import numpy as np
+import pandas as pd
 
 
 def precision(retrived: list, relevant: list):
@@ -296,7 +299,8 @@ def plot_curve_j3(info_list: list):
     # Plot da curva interpolada em 11 pontos e
     # cálculo da área abaixo da mesma
     pos = 0
-    colors = ['green', 'red', 'blue', 'orange', 'brown', 'grey', 'yellow',  'purple', 'black', 'gold', 'silver']
+    colors = ['green', 'red', 'blue', 'orange', 'brown',
+              'grey', 'yellow',  'purple', 'black', 'gold', 'silver']
     line = [
         (0, (1, 1)),
         (0, (5, 10)),
@@ -321,9 +325,108 @@ def plot_curve_j3(info_list: list):
 
         print("\n### Área abaixo da curva: ", a.method)
         print("->", area_rp_1)
-        pos +=1
+        pos += 1
 
     plt.legend()
     plt.grid(True)
     plt.savefig('grafico_tse.png', dpi=1280, orientation='portrait')
+    plt.show()
+
+
+def histogram_plot(np_hist: list):
+    print(np_hist)
+    plt.figure(figsize=[10, 8])
+    plt.grid(axis='y', alpha=0.75)
+    plt.xlabel('Score', fontsize=15)
+    plt.xticks(fontsize=15)
+    plt.yticks(fontsize=15)
+    plt.ylabel('Frequência', fontsize=15)
+    plt.title('Histograma frequência por score', fontsize=15)
+    plt.hist(np_hist, bins=100, label="Scores",
+             color='green', edgecolor='black')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+
+def histogram_plot_v2(x: list, y: list):
+    print(x)
+    print(y)
+    plt.figure(figsize=[10, 8])
+    pos = np.arange(len(x))
+    plt.bar(x, y, color='#6A5ACD')
+    plt.grid(axis='y', alpha=0.75)
+    plt.xlabel('Score', fontsize=15)
+    plt.ylabel('Frequência', fontsize=15)
+    plt.title('Histograma frequência por score', fontsize=15)
+    plt.show()
+
+
+def histogram_plot_v3(np_hist: list):
+    print(np_hist)
+    plt.figure(figsize=[10, 10])
+    plt.grid(axis='y', alpha=0.75)
+    plt.xlabel('Score', fontsize=15)
+    plt.xticks(fontsize=15)
+    plt.yticks(fontsize=15)
+    plt.ylabel('Frequência', fontsize=15)
+    plt.title('Histograma frequência por score', fontsize=15)
+    plt.hist(np_hist, bins=100, label=['Score', "Interações"],
+             color=['blue', 'red'], edgecolor='black', stacked=True)
+    # plt.hist(np_hist, bins=10, label=['Score', "Interações"],
+    #         color=['blue', 'red'], histtype='step', stacked=True)
+    # plt.hist(np_hist[1], bins=10, label="Interações",
+    #         color='blue', edgecolor='black', log=True)
+    # plt.hist(np_hist[0], bins=10, label="Scores",
+    #         color='red', edgecolor='black', log=True)
+    #plt.axvline(10, color="orange")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+
+def histogram_plot_v4(np_hist: list):
+    print(np_hist)
+    df = pd.DataFrame({
+        'Scores': np_hist[0],
+        'Interações': np_hist[1]
+    })
+    plt.figure(figsize=[10, 10])
+    plt.grid(axis='y', alpha=0.75)
+    plt.xlabel('Score', fontsize=15)
+    plt.xticks(fontsize=15)
+    plt.yticks(fontsize=15)
+    plt.ylabel('Frequência', fontsize=15)
+    plt.title('Histograma frequência por score', fontsize=15)
+    df.plot(kind='bar', stacked=True)
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+
+def plot_curve_histo(x: list, y: list):
+    # Definições do plot
+    maxx = round(max(x)) + 10
+    maxy = round(max(y)) + 10
+    qtdx = maxx/20
+    qtdy = maxy/20
+    xpoints = [x*qtdx for x in range(0, 20)]
+    ypoints = [y*qtdy for y in range(0, 20)]
+    plt.style.use('fivethirtyeight')
+    plt.title("Curva frequência por score")
+    plt.xlabel("Score")
+    plt.ylabel("Frequência")
+    #plt.ylim(top=1.05, bottom=0)
+    #plt.xlim(left=0, right=1.05)
+    # plt.xticks(xpoints)
+    # plt.yticks(ypoints)
+    print(x)
+    print(y)
+    plt.plot(x, y,
+             color="green", label='Curva de frequencias')
+
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    #plt.savefig('grafico_'+method+'.png', dpi=1280, orientation='portrait')
     plt.show()

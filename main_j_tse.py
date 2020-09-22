@@ -5,11 +5,14 @@ import json
 from metricas import *
 from model import *
 from utils import *
+
+
 class Document:
     def __init__(self, doc_id, posicao, page):
         self.doc_id = doc_id
         self.pos = posicao
         self.page = page
+
 
 def found(lista, doc):
     if len(lista) == 0:
@@ -32,7 +35,7 @@ def get_positions_from_interactions(interactions: list):
     return position
 
 
-def get_consult(query: str, method: str, limit:int, offset:int, documents_id: list):
+def get_consult(query: str, method: str, limit: int, offset: int, documents_id: list):
     jsonbody = json.dumps({
         'query': query,
         'method': method,
@@ -40,11 +43,14 @@ def get_consult(query: str, method: str, limit:int, offset:int, documents_id: li
         'offset': offset,
         'documents': documents_id
     })
-    response = requests.post(url='http://172.17.0.2:31227/search', data=jsonbody, headers = {'content-type': 'application/json'})
+    response = requests.post(url='http://172.17.0.2:31227/search',
+                             data=jsonbody, headers={'content-type': 'application/json'})
     return response.json()
+
 
 def filterfuntion(lista, method):
     return [x for x in lista if x.method == method]
+
 
 def get_interactions():
     methods = [
@@ -88,9 +94,10 @@ def get_interactions():
         qtd_retornado = str(len(retrieved))
         avg = average_precision(retrieved, relevant)
 
-        recall_list =  recall_at_k(retrieved, relevant)
+        recall_list = recall_at_k(retrieved, relevant)
         precision_list = precision_at_k(retrieved, relevant)
-        m = model(res, search, qtd_retornado, avg, relevant, precision_list, recall_list, method)
+        m = model(res, search, qtd_retornado, avg, relevant,
+                  precision_list, recall_list, method)
         iteration_list.append(m)
     list_plot = []
     for y in methods:
@@ -101,12 +108,15 @@ def get_interactions():
             media_itera = media_avg(method_list)
             print("-> Quantidade Registros ", y, ": ", len(method_list))
             print("-> Média AvgPrec ", y, ": ", media_itera)
-            inf = info(media_itera, mrec_iterac_list, mpr_iterac_list, method_list, y)
+            inf = info(media_itera, mrec_iterac_list,
+                       mpr_iterac_list, method_list, y)
             list_plot.append(inf)
             with open('interacoes'+y+'.json', 'w') as outfile:
                 js = inf.toJSON()
                 outfile.write(js)
     plot_curve_j3(list_plot)
+
+
 def main():
     inicio = time.time()
     get_interactions()
