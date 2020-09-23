@@ -123,11 +123,7 @@ def get_interactions():
             offset = count
             count += 20
         # histogram_plot(score_list)
-        #histogram_plot_v2(x, y)
         histogram_plot_v3([score_list, interaction_score_list])
-        #histogram_plot_v4([x, y])
-
-        #plot_curve_histo(x, y)
 
 
 def main():
