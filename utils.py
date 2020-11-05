@@ -5,6 +5,13 @@ def media_avg(lista:list):
         soma += float(lista[b].avg)
     return soma/qtd
 
+def media_avg2(lista:list):
+    soma = 0.0
+    qtd = len(lista)
+    for b in range(0, qtd):
+        soma += float(lista[b])
+    return soma/qtd
+
 def obter_prec(lista:list):
     media = []
     for a in range(0, len(lista[0].precision_list)):

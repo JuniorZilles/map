@@ -342,10 +342,11 @@ def histogram_plot(np_hist: list):
     plt.yticks(fontsize=15)
     plt.ylabel('Frequência', fontsize=15)
     plt.title('Histograma frequência por score', fontsize=15)
-    plt.hist(np_hist, bins=100, label="Scores",
+    plt.hist(np_hist, bins=30, label="Scores",
              color='green', edgecolor='black')
     plt.legend()
     plt.grid(True)
+    plt.savefig('grafico_sf.png', dpi=1280, orientation='portrait')
     plt.show()
 
 
@@ -362,4 +363,45 @@ def histogram_plot_v3(np_hist: list):
              color=['blue', 'red'], edgecolor='black', stacked=True)
     plt.legend()
     plt.grid(True)
+    plt.show()
+
+
+def plot_search_avrg(count: list, avrg: list):
+    cmax = round(max(count)/10) + 2
+    pointsy = [5*a for a in range(0, cmax)]
+    points = [1.0, 0.9, 0.8, 0.7, 0.6, 0.5,0.4,0.3,0.2,0.1,0]
+    #points = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    plt.title("Search x Avg")
+    plt.xlabel("Avg")
+    plt.ylabel("Search")
+    plt.ylim(bottom=0)
+    plt.xlim(left=1.0, right=-0.05)
+    plt.xticks(points)
+    plt.yticks(pointsy)
+    print(avrg)
+    print(count)
+
+    plt.plot(avrg, count, 
+             color="green")
+
+    #plt.legend()
+    plt.grid(True)
+    plt.savefig('grafico_savg.png', dpi=1280, orientation='portrait')
+    plt.show()
+
+def histogram_search_avrg_plot(np_hist: list):
+    print(np_hist)
+    plt.figure(figsize=[10, 8])
+    plt.grid(axis='y', alpha=0.75)
+    plt.xlabel('Avg', fontsize=15)
+    points = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    plt.xticks(points, fontsize=15)
+    plt.yticks(fontsize=15)
+    plt.ylabel('Search', fontsize=15)
+    plt.title('Search x Avg', fontsize=15)
+    plt.hist(np_hist, bins=10, #label="",
+             color='green', edgecolor='black')
+    plt.legend()
+    plt.grid(True)
+    plt.savefig('grafico_savg.png', dpi=1280, orientation='portrait')
     plt.show()
