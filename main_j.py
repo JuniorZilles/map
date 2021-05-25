@@ -8,100 +8,115 @@ import json
 import time
 
 from model import *
-
 def evaluation():
     qtdTrocas = int(input("Trocar quantos caracteres de cada palavra? "))
     qtdAmostrasBD = int(input("Quantidade de amostras do banco? "))
     qtdAmostrasAPI = input("Quantidade de amostras da API? ")
-    metodoAPI = input("Metodo de consulta da API(ws/s/lk/eq), se for mais de um colocar espaço, máximo 2? ").lower()
+    metodoAPI = input("Metodo de consulta da API(lv/sws/ws/s/lk/eq), se for mais de um colocar espaço, máximo 5? ").lower()
     inicio = time.time()
     lista_metodos = metodoAPI.split(' ')
-    query = obter_query(qtdAmostrasBD+100)
+    query = obter_query(qtdAmostrasBD+1000)
     rows = get_database_rows(query)
     df = pd.DataFrame(rows)
-    lista_1 = []
-    lista_2 = []
-    tempos_1 = []
-    tempos_2 = []
+    dic1 = { x:[] for x in lista_metodos}
     tempos_geral = []
     tempos_processamento = []
-    for i in df.index:
-        nome = df[0][i]
-        #print('Termo de original: '+nome + ', posição:' + str(i))
-        cnome, pnome, unome = quebra_nome(nome.strip(), qtdTrocas)
-        #print('Termo de busca: '+cnome)
-        
-        for b in lista_metodos:
-            inicio_api = time.time()
-            url = "http://localhost:8080/v3/inspector?name="+cnome+"&limit="+qtdAmostrasAPI+"&method="+b
-            inicio_api = time.time()
-            jsonstring = get_request_as_json(url)
-            fim_api = time.time() - inicio_api
-            inspectors = jsonstring["inspetor"]
-            retrieved = []
-            relevant = []
-            count = 1
-            for insp in jsonstring["inspetor"]:
-                rname = insp["nome"]
-                #print(count, ":", rname, "  ->  ", insp["similaridade"]) 
-                retrieved.append(count)
-                if pnome in rname and unome in rname:
-                    relevant.append(count)
-                count += 1
-            qtd_retornado = str(len(retrieved))
-            avg = average_precision(retrieved, relevant)
-            #print("-> AvgPrec:  ", avg)
+    for o in range(2,qtdTrocas+1):
+        dic = { x:[[], [], False] for x in lista_metodos}
+        for i in df.index:
+            nome = df[0][i]
+            #print('Termo de original: '+nome + ', posição:' + str(i))
+            cnome, pnome, unome = quebra_nome(nome.strip(), o)
+            #print('Termo de busca: '+cnome)
+            
+            for b in lista_metodos:
+                inicio_api = time.time()
+                url = "http://localhost:8080/inspector?name="+cnome+"&limit="+qtdAmostrasAPI+"&method="+b
+                inicio_api = time.time()
+                jsonstring = get_request_as_json(url)
+                fim_api = time.time() - inicio_api
+                retrieved = []
+                relevant = []
+                count = 1
+                #print(jsonstring)
+                if 'inspetor' in jsonstring:
+                    for insp in jsonstring["inspetor"]:
+                        rname = insp["nome"]
+                        #print(count, ":", rname, "  ->  ", insp["similaridade"]) 
+                        retrieved.append(count)
+                        if pnome in rname and unome in rname:
+                            relevant.append(count)
+                        count += 1
+                
+                qtd_retornado = str(len(retrieved))
+                avg = average_precision(retrieved, relevant)
+                #print("-> AvgPrec:  ", avg)
 
-            # Calculo do recall e precision para cada pontos
-            recall_list =  recall_at_k(retrieved, relevant)
-            precision_list = precision_at_k(retrieved, relevant)
-            m = model(nome, cnome, qtd_retornado, avg, relevant, precision_list, recall_list)
-            if qtd_retornado == qtdAmostrasAPI:
-                if b == lista_metodos[0] and len(lista_1) < qtdAmostrasBD:
-                    lista_1.append(m)
-                    tempos_1.append(fim_api)
-                elif b == lista_metodos[1] and len(lista_2) < qtdAmostrasBD:
-                    lista_2.append(m)
-                    tempos_2.append(fim_api)
+                # Calculo do recall e precision para cada pontos
+                recall_list =  recall_at_k(retrieved, relevant)
+                precision_list = precision_at_k(retrieved, relevant)
+                m = model(nome, cnome, qtd_retornado, avg, relevant, precision_list, recall_list)
+                
+                if len(dic[b][0]) < qtdAmostrasBD:
+                    dic[b][0].append(m)
+                    dic[b][1].append(fim_api)
+                    dic1[b].append(fim_api)
+                else:
+                    dic[b][2] = True
                 tempos_geral.append(fim_api)
                 fim_processa = time.time() - inicio_api
                 tempos_processamento.append(fim_processa)
-        if len(lista_1) == qtdAmostrasBD and len(lista_2) == qtdAmostrasBD:
-            break
-    mrec_list_1 = obter_recal(lista_1)
-    mpr_list_1 = obter_prec(lista_1)
-    media_1 = media_avg(lista_1)
-    print("-> Quantidade Registros(1): ", len(lista_1))
-    print("-> Média AvgPrec(1):  ", media_1)
-    inf = info(media_1, mrec_list_1, mpr_list_1, lista_1)
-    #convert to JSON string
-    with open('base_'+lista_metodos[0]+'.json', 'w') as outfile:
-        js = inf.toJSON()
-        outfile.write(js)
-    if len(lista_metodos) == 2:
-        mrec_list_2 = obter_recal(lista_2)
-        mpr_list_2 = obter_prec(lista_2)
-        media_2 = media_avg(lista_2)
-    
-        print("-> Quantidade Registros(2):  ", len(lista_2))
-        print("-> Média AvgPrec(2):  ", media_2)
-        inf = info(media_2, mrec_list_2, mpr_list_2, lista_2)
-        #convert to JSON string
-        with open('base_'+lista_metodos[1]+'.json', 'w') as outfile:
-            js = inf.toJSON()
-            outfile.write(js)
-        plot_curve_j2(mpr_list_1, mrec_list_1, mpr_list_2, mrec_list_2, lista_metodos[0], lista_metodos[1])
-    else:
-        plot_curve_j1(mpr_list_1, mrec_list_1, lista_metodos[0])
+            count = 0
+            for k in dic:
+                if dic[k][2]:
+                    count += 1
+            if count == len(lista_metodos):
+                break
+        list_exe = []
+        for k in dic:
+            mrec_list_1 = obter_recal(dic[k][0])
+            mpr_list_1 = obter_prec(dic[k][0])
+            media_1 = media_avg(dic[k][0])
+            print("-> Método: ", k)
+            print("-> Quantidade Registros: ", len(dic[k][0]))
+            print("-> Média AvgPrec:  ", media_1)
+            print("Tempo médio de execução das requisições: " + str(sum(dic[k][1]) / len(dic[k][1])) + " segundos")
+            inf = info(media_1, mrec_list_1, mpr_list_1, dic[k][0], k)
+            list_exe.append(inf)
+            #convert to JSON string
+            with open('proc_'+k+'_2.json', 'w') as outfile:
+                js = inf.toJSON()
+                outfile.write(js)
+        plot_curve_j3(list_exe, str(o))
+        dic = None
+    for l in dic1:
+        print("-> Método: ", l)
+        print("Tempo médio de execução das requisições: " + str(sum(dic1[l]) / len(dic1[l])) + " segundos")
     fim = time.time()
     print("Tempo de execução Total: " + str(fim - inicio) + " segundos")
-    print("Tempo médio de execução das requisições "+lista_metodos[0]+": " + str(sum(tempos_1) / len(tempos_1)) + " segundos")
-    print("Tempo médio de execução das requisições "+lista_metodos[1]+": " + str(sum(tempos_2) / len(tempos_2)) + " segundos")
-    print("Tempo médio de execução geral "+lista_metodos[0]+" e "+lista_metodos[1]+": " + str(sum(tempos_geral) / len(tempos_geral)) + " segundos")
+    print("Tempo médio de execução geral: " + str(sum(tempos_geral) / len(tempos_geral)) + " segundos")
     print("Tempo médio de processamento de cada requisição: " + str(sum(tempos_processamento) / len(tempos_processamento)) + " segundos")
     
-
-
+def geraGrafico():
+    list_exe = []
+    trc = int(input("Gráfico de quantas trocas? "))
+    with open("proc_lv_"+str(trc)+".json") as json_file:
+        data = json.load(json_file)
+        inf = info(data['media_avg'], data['media_recal'], data['media_precision'], None, data['method'])
+        list_exe.append(inf)
+    with open("proc_sws_"+str(trc)+".json") as json_file:
+        data = json.load(json_file)
+        inf = info(data['media_avg'], data['media_recal'], data['media_precision'], None, data['method'])
+        list_exe.append(inf)
+    with open("proc_ws_"+str(trc)+".json") as json_file:
+        data = json.load(json_file)
+        inf = info(data['media_avg'], data['media_recal'], data['media_precision'], None, data['method'])
+        list_exe.append(inf)
+    with open("proc_s_"+str(trc)+".json") as json_file:
+        data = json.load(json_file)
+        inf = info(data['media_avg'], data['media_recal'], data['media_precision'], None, data['method'])
+        list_exe.append(inf)
+    plot_curve_j3(list_exe, str(trc))
     
 def obter_query(qtdAmostra:int):
     return 'SELECT nome FROM annotation.inspetor LIMIT '+str(qtdAmostra)+';'
@@ -120,22 +135,32 @@ def troca_letra(string:str, qtdTrocas:int):
         string = string[:posicao] + letra + string[posicao+1:]
     return string
 def calcula_media_tempos():
-    f_t_s = open("tempos_s.txt", "r")
-    f_t_ws = open("tempos_ws.txt", "r")
+    f_t_s = open("register_s.txt", "r")
+    f_t_ws = open("register_ws.txt", "r")
+    f_t_sws = open("register_sws.txt", "r")
+    f_t_lv = open("register_lv.txt", "r")
     t_s = f_t_s.read().strip().split(';')
     t_s = [int(x) for x in t_s if x != '']
     t_ws = f_t_ws.read().strip().split(';')
     t_ws = [int(x) for x in t_ws if x != '']
-    t_g = t_s + t_ws
+    t_sws = f_t_sws.read().strip().split(';')
+    t_sws = [int(x) for x in t_sws if x != '']
+    t_lv = f_t_lv.read().strip().split(';')
+    t_lv = [int(x) for x in t_lv if x != '']
+    t_g = t_s + t_ws + t_sws + t_lv
     print("Tempo médio de execução das requisições ws: "+str(sum(t_ws)/len(t_ws))+"ms")
     print("Tempo médio de execução das requisições s: "+str(sum(t_s)/len(t_s))+"ms")
+    print("Tempo médio de execução das requisições lv: "+str(sum(t_lv)/len(t_lv))+"ms")
+    print("Tempo médio de execução das requisições sws: "+str(sum(t_sws)/len(t_sws))+"ms")
     print("Tempo médio de execução de todas as requisições: "+str(sum(t_g)/len(t_g))+"ms")
 def main():
-    option = int(input("O que deseja fazer? 1 - realizar os testes; 2 - calcular os tempos; "))
+    option = int(input("O que deseja fazer? 1 - realizar os testes; 2 - calcular os tempos; 3 - gerar gráfico; "))
     if option == 1:
         evaluation()
     elif option == 2:
         calcula_media_tempos()
+    elif option == 3:
+        geraGrafico()
 
 
 if __name__ == '__main__':

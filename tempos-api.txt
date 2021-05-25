@@ -1,0 +1,6 @@
+Tempo médio de execução das requisições ws: 1066.9086726017806ms => 1,0669086726017806832s
+Tempo médio de execução das requisições s: 1019.1555968649518ms => 1,0191555968649517183s
+Tempo médio de execução das requisições lv: 1599.0027497250276ms => 1,59900274972502765s
+Tempo médio de execução das requisições d: 1203.787567351826ms => 1,2037875673518261266s
+Tempo médio de execução das requisições sws: 1068.7499249774933ms => 1,0687499249774932153s
+Tempo médio de execução de todas as requisições: 1191.7148832276011ms => 1,1917148832276012183s

@@ -282,7 +282,7 @@ def plot_curve_j2(precision_list_1: list, recall_list_1: list, precision_list_2:
     plt.show()
 
 
-def plot_curve_j3(info_list: list):
+def plot_curve_j3(info_list: list, n:str):
     """
     Plot das curvas e cálculo de suas áreas.
     """
@@ -329,8 +329,9 @@ def plot_curve_j3(info_list: list):
 
     plt.legend()
     plt.grid(True)
-    plt.savefig('grafico_tse.png', dpi=1280, orientation='portrait')
-    plt.show()
+    plt.savefig('grafico_inspector_'+n+'.png', dpi=1280, orientation='portrait')
+    plt.close()
+    #plt.show()
 
 
 def histogram_plot(np_hist: list):

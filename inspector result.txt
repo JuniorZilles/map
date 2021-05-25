@@ -1,0 +1,28 @@
+-> Método:  lv
+-> Quantidade Registros:  10000
+-> Média AvgPrec:   0.38933915392154167
+Tempo médio de execução das requisições: 1.6829802477836608 segundos
+-> Método:  sws
+-> Quantidade Registros:  10000
+-> Média AvgPrec:   0.6486093238874583
+Tempo médio de execução das requisições: 1.141178593969345 segundos
+-> Método:  ws
+-> Quantidade Registros:  10000
+-> Média AvgPrec:   0.5661740285048333
+Tempo médio de execução das requisições: 1.1413268078804015 segundos
+-> Método:  s
+-> Quantidade Registros:  10000
+-> Média AvgPrec:   0.8073783275577758
+Tempo médio de execução das requisições: 1.0910208362579346 segundos
+
+### Área abaixo da curva:  lv
+-> 0.17399007936507674
+
+### Área abaixo da curva:  sws
+-> 0.40707794047619333
+
+### Área abaixo da curva:  ws
+-> 0.31694912146676496
+
+### Área abaixo da curva:  s
+-> 0.5786053333333314

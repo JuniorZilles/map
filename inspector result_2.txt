@@ -1,0 +1,39 @@
+-> Método:  lv
+-> Quantidade Registros:  10000        
+-> Média AvgPrec:   0.32989217137413407
+Tempo médio de execução das requisições: 1.5586184403419494 segundos
+-> Método:  sws
+-> Quantidade Registros:  10000
+-> Média AvgPrec:   0.3771446822000767
+Tempo médio de execução das requisições: 1.0272504517793655 segundos
+-> Método:  ws
+-> Quantidade Registros:  10000
+-> Média AvgPrec:   0.30409864251896485
+Tempo médio de execução das requisições: 1.0266531700134278 segundos
+-> Método:  s
+-> Quantidade Registros:  10000
+-> Média AvgPrec:   0.534164114442344
+Tempo médio de execução das requisições: 0.9755108961582184 segundos
+
+### Área abaixo da curva:  lv
+-> 0.14235716025641165
+
+### Área abaixo da curva:  sws
+-> 0.16995105699855595
+
+### Área abaixo da curva:  ws
+-> 0.12512999999999888
+
+### Área abaixo da curva:  s
+-> 0.2716700000000006
+-> Método:  lv
+Tempo médio de execução das requisições: 1.5586184403419494 segundos
+-> Método:  sws
+Tempo médio de execução das requisições: 1.0272504517793655 segundos
+-> Método:  ws
+Tempo médio de execução das requisições: 1.0266531700134278 segundos
+-> Método:  s
+Tempo médio de execução das requisições: 0.9755108961582184 segundos
+Tempo de execução Total: 45912.528378248215 segundos
+Tempo médio de execução geral: 1.1470059789951867 segundos
+Tempo médio de processamento de cada requisição: 1.147065413652593 segundos
